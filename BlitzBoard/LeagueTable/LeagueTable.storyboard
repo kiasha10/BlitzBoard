@@ -15,16 +15,48 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="626" translatesAutoresizingMaskIntoConstraints="NO" id="het-LZ-9Qk">
+                                <rect key="frame" x="16" y="163" width="361" height="626"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="het-LZ-9Qk" id="LCP-Ae-Vqc">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="626"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LeagueTableBackgroud" translatesAutoresizingMaskIntoConstraints="NO" id="JXj-oo-wP4">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STANDINGS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h4-GD-Va1">
+                                <rect key="frame" x="123" y="69" width="254" height="50"/>
+                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="43"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JXj-oo-wP4" secondAttribute="trailing" id="45y-Ya-Vvu"/>
+                            <constraint firstItem="9h4-GD-Va1" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="Ogd-jY-hjx"/>
+                            <constraint firstItem="9h4-GD-Va1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="123" id="Yzn-GK-hiS"/>
+                            <constraint firstItem="JXj-oo-wP4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="cNd-Js-ITb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="9h4-GD-Va1" secondAttribute="bottom" constant="699" id="hbt-8E-2W1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="JXj-oo-wP4" secondAttribute="bottom" id="uu2-iJ-sWD"/>
+                            <constraint firstItem="JXj-oo-wP4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vPq-EW-l54"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9h4-GD-Va1" secondAttribute="trailing" constant="16" id="zPP-kW-e9m"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="-22"/>
+            <point key="canvasLocation" x="26.717557251908396" y="-22.535211267605636"/>
         </scene>
     </scenes>
     <resources>
+        <image name="LeagueTableBackgroud" width="563" height="1002"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

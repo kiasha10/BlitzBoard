@@ -36,6 +36,11 @@
 		45FF26682BC90E6D00F75682 /* ServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26652BC90E6D00F75682 /* ServiceErrors.swift */; };
 		45FF266B2BC910DC00F75682 /* LeagueTableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26692BC910DC00F75682 /* LeagueTableRepository.swift */; };
 		45FF266C2BC910DC00F75682 /* LeagueTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF266A2BC910DC00F75682 /* LeagueTableModel.swift */; };
+		45FF26BA2BCC227000F75682 /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26B82BCC227000F75682 /* HomeScreenModel.swift */; };
+		45FF26BB2BCC227000F75682 /* HomeScreenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26B92BCC227000F75682 /* HomeScreenRepository.swift */; };
+		45FF26BF2BCC228600F75682 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26BC2BCC228600F75682 /* HomeViewController.swift */; };
+		45FF26C02BCC228600F75682 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FF26BD2BCC228600F75682 /* HomeScreen.storyboard */; };
+		45FF26C12BCC228600F75682 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26BE2BCC228600F75682 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +75,11 @@
 		45FF26652BC90E6D00F75682 /* ServiceErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceErrors.swift; path = ServiceLayer/ServiceErrors.swift; sourceTree = "<group>"; };
 		45FF26692BC910DC00F75682 /* LeagueTableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeagueTableRepository.swift; path = BlitzBoard/LeagueTable/Repository/LeagueTableRepository.swift; sourceTree = SOURCE_ROOT; };
 		45FF266A2BC910DC00F75682 /* LeagueTableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeagueTableModel.swift; path = BlitzBoard/LeagueTable/Repository/LeagueTableModel.swift; sourceTree = SOURCE_ROOT; };
+		45FF26B82BCC227000F75682 /* HomeScreenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreenModel.swift; path = BlitzBoard/HomeScreen/Repository/HomeScreenModel.swift; sourceTree = SOURCE_ROOT; };
+		45FF26B92BCC227000F75682 /* HomeScreenRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreenRepository.swift; path = BlitzBoard/HomeScreen/Repository/HomeScreenRepository.swift; sourceTree = SOURCE_ROOT; };
+		45FF26BC2BCC228600F75682 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = HomeScreen/HomeViewController.swift; sourceTree = "<group>"; };
+		45FF26BD2BCC228600F75682 /* HomeScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HomeScreen.storyboard; path = HomeScreen/HomeScreen.storyboard; sourceTree = "<group>"; };
+		45FF26BE2BCC228600F75682 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = HomeScreen/HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,7 @@
 			children = (
 				45AA3EE92BC8203600A2C05E /* ServiceLayer */,
 				45AA3EF02BC8210600A2C05E /* Login */,
+				45FF26AC2BCC205800F75682 /* HomeScreen */,
 				45AA3EDB2BC81F7000A2C05E /* LeagueTable */,
 				45AA3EC92BC81EBD00A2C05E /* GameFixtures */,
 				45AA3EC22BC81E5400A2C05E /* TopScorers */,
@@ -216,6 +227,26 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		45FF26AC2BCC205800F75682 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				45FF26BD2BCC228600F75682 /* HomeScreen.storyboard */,
+				45FF26BC2BCC228600F75682 /* HomeViewController.swift */,
+				45FF26BE2BCC228600F75682 /* HomeViewModel.swift */,
+				45FF26B32BCC209400F75682 /* Repository */,
+			);
+			name = HomeScreen;
+			sourceTree = "<group>";
+		};
+		45FF26B32BCC209400F75682 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				45FF26B82BCC227000F75682 /* HomeScreenModel.swift */,
+				45FF26B92BCC227000F75682 /* HomeScreenRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,6 +310,7 @@
 				45FF26482BC90D5000F75682 /* TopScorers.storyboard in Resources */,
 				45AA3EFA2BC821D700A2C05E /* Fixtures.storyboard in Resources */,
 				45AA3EBA2BC81E4000A2C05E /* LaunchScreen.storyboard in Resources */,
+				45FF26C02BCC228600F75682 /* HomeScreen.storyboard in Resources */,
 				45AA3EB72BC81E4000A2C05E /* Assets.xcassets in Resources */,
 				45AA3EB52BC81E3F00A2C05E /* Main.storyboard in Resources */,
 			);
@@ -304,12 +336,16 @@
 				45FF26492BC90D5000F75682 /* TopScorersViewModel.swift in Sources */,
 				45FF265E2BC90E4300F75682 /* LoginViewController.swift in Sources */,
 				45AA3EB22BC81E3F00A2C05E /* ViewController.swift in Sources */,
+				45FF26BF2BCC228600F75682 /* HomeViewController.swift in Sources */,
 				45AA3ECB2BC81ED700A2C05E /* FixtureViewModel.swift in Sources */,
 				45FF26612BC90E5700F75682 /* LoginModel.swift in Sources */,
 				45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */,
 				45AA3ED22BC81F2200A2C05E /* FixtureViewController.swift in Sources */,
 				45FF26622BC90E5700F75682 /* LoginRepository.swift in Sources */,
+				45FF26BB2BCC227000F75682 /* HomeScreenRepository.swift in Sources */,
 				45AA3ED72BC81F4A00A2C05E /* FixturesRepository.swift in Sources */,
+				45FF26C12BCC228600F75682 /* HomeViewModel.swift in Sources */,
+				45FF26BA2BCC227000F75682 /* HomeScreenModel.swift in Sources */,
 				45FF264A2BC90D5000F75682 /* TopScorersViewController.swift in Sources */,
 				45FF26682BC90E6D00F75682 /* ServiceErrors.swift in Sources */,
 				45AA3EB02BC81E3F00A2C05E /* SceneDelegate.swift in Sources */,
