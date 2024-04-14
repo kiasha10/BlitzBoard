@@ -191,10 +191,10 @@
 		45AA3EF02BC8210600A2C05E /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				45AA3EFB2BC821E300A2C05E /* Repository */,
-				45FF265A2BC90E4300F75682 /* Login.storyboard */,
-				45FF265B2BC90E4300F75682 /* LoginViewController.swift */,
 				45FF26592BC90E4300F75682 /* LoginViewModel.swift */,
+				45FF265B2BC90E4300F75682 /* LoginViewController.swift */,
+				45FF265A2BC90E4300F75682 /* Login.storyboard */,
+				45AA3EFB2BC821E300A2C05E /* Repository */,
 			);
 			name = Login;
 			sourceTree = "<group>";
