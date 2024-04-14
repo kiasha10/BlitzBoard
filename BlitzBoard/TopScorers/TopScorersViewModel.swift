@@ -24,7 +24,7 @@ class TopScorerViewModel {
             case .success(let players):
                 // Handle successful retrieval of players
                 self?.player=players
-                print("Top Scorers: \(self?.player?[0].playerName)")
+                print("Top Scorers: \(self?.player?[14].playerName)")
             case .failure(let error):
                 // Handle error
                 print("Error: \(error)")
