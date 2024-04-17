@@ -38,9 +38,11 @@
 		45FF266C2BC910DC00F75682 /* LeagueTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF266A2BC910DC00F75682 /* LeagueTableModel.swift */; };
 		45FF26BA2BCC227000F75682 /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26B82BCC227000F75682 /* HomeScreenModel.swift */; };
 		45FF26BB2BCC227000F75682 /* HomeScreenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26B92BCC227000F75682 /* HomeScreenRepository.swift */; };
-		45FF26BF2BCC228600F75682 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26BC2BCC228600F75682 /* HomeViewController.swift */; };
+		45FF26BF2BCC228600F75682 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26BC2BCC228600F75682 /* HomeScreenViewController.swift */; };
 		45FF26C02BCC228600F75682 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FF26BD2BCC228600F75682 /* HomeScreen.storyboard */; };
 		45FF26C12BCC228600F75682 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26BE2BCC228600F75682 /* HomeViewModel.swift */; };
+		45FF26C82BCEFC7400F75682 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45FF26C72BCEFC7400F75682 /* TableViewCell.xib */; };
+		45FF26CB2BCFB4FC00F75682 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26C92BCFB4FC00F75682 /* TableViewCellViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,9 +79,11 @@
 		45FF266A2BC910DC00F75682 /* LeagueTableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeagueTableModel.swift; path = BlitzBoard/LeagueTable/Repository/LeagueTableModel.swift; sourceTree = SOURCE_ROOT; };
 		45FF26B82BCC227000F75682 /* HomeScreenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreenModel.swift; path = BlitzBoard/HomeScreen/Repository/HomeScreenModel.swift; sourceTree = SOURCE_ROOT; };
 		45FF26B92BCC227000F75682 /* HomeScreenRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreenRepository.swift; path = BlitzBoard/HomeScreen/Repository/HomeScreenRepository.swift; sourceTree = SOURCE_ROOT; };
-		45FF26BC2BCC228600F75682 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = HomeScreen/HomeViewController.swift; sourceTree = "<group>"; };
+		45FF26BC2BCC228600F75682 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreenViewController.swift; path = HomeScreen/HomeScreenViewController.swift; sourceTree = "<group>"; };
 		45FF26BD2BCC228600F75682 /* HomeScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HomeScreen.storyboard; path = HomeScreen/HomeScreen.storyboard; sourceTree = "<group>"; };
 		45FF26BE2BCC228600F75682 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = HomeScreen/HomeViewModel.swift; sourceTree = "<group>"; };
+		45FF26C72BCEFC7400F75682 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		45FF26C92BCFB4FC00F75682 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 		45AA3EDB2BC81F7000A2C05E /* LeagueTable */ = {
 			isa = PBXGroup;
 			children = (
+				45FF26C22BCEAF9900F75682 /* TableViewCell */,
 				45AA3EE22BC81FC200A2C05E /* Repository */,
 				45FF26552BC90DD900F75682 /* LeagueTable.storyboard */,
 				45FF26532BC90DD900F75682 /* LeagueTableViewController.swift */,
@@ -231,7 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				45FF26BD2BCC228600F75682 /* HomeScreen.storyboard */,
-				45FF26BC2BCC228600F75682 /* HomeViewController.swift */,
+				45FF26BC2BCC228600F75682 /* HomeScreenViewController.swift */,
 				45FF26BE2BCC228600F75682 /* HomeViewModel.swift */,
 				45FF26B32BCC209400F75682 /* Repository */,
 			);
@@ -245,6 +250,15 @@
 				45FF26B92BCC227000F75682 /* HomeScreenRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		45FF26C22BCEAF9900F75682 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				45FF26C72BCEFC7400F75682 /* TableViewCell.xib */,
+				45FF26C92BCFB4FC00F75682 /* TableViewCellViewController.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +323,7 @@
 				45FF26582BC90DD900F75682 /* LeagueTable.storyboard in Resources */,
 				45FF26482BC90D5000F75682 /* TopScorers.storyboard in Resources */,
 				45AA3EFA2BC821D700A2C05E /* Fixtures.storyboard in Resources */,
+				45FF26C82BCEFC7400F75682 /* TableViewCell.xib in Resources */,
 				45AA3EBA2BC81E4000A2C05E /* LaunchScreen.storyboard in Resources */,
 				45FF26C02BCC228600F75682 /* HomeScreen.storyboard in Resources */,
 				45AA3EB72BC81E4000A2C05E /* Assets.xcassets in Resources */,
@@ -336,7 +351,8 @@
 				45FF26492BC90D5000F75682 /* TopScorersViewModel.swift in Sources */,
 				45FF265E2BC90E4300F75682 /* LoginViewController.swift in Sources */,
 				45AA3EB22BC81E3F00A2C05E /* ViewController.swift in Sources */,
-				45FF26BF2BCC228600F75682 /* HomeViewController.swift in Sources */,
+				45FF26BF2BCC228600F75682 /* HomeScreenViewController.swift in Sources */,
+				45FF26CB2BCFB4FC00F75682 /* TableViewCellViewController.swift in Sources */,
 				45AA3ECB2BC81ED700A2C05E /* FixtureViewModel.swift in Sources */,
 				45FF26612BC90E5700F75682 /* LoginModel.swift in Sources */,
 				45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */,

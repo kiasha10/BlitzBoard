@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -15,16 +15,38 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-ef-zqS">
+                                <rect key="frame" x="16" y="59" width="361" height="719"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Scorers " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bB1-fP-T63">
+                                <rect key="frame" x="103" y="59" width="202" height="34"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bB1-fP-T63" secondAttribute="trailing" constant="88" id="0PJ-v2-I8E"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="bB1-fP-T63" secondAttribute="bottom" constant="725" id="75V-K4-vsx"/>
+                            <constraint firstItem="Uhh-ef-zqS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="8Lq-tQ-3fA"/>
+                            <constraint firstItem="bB1-fP-T63" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="8zP-wS-XsR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Uhh-ef-zqS" secondAttribute="trailing" constant="16" id="K1Y-6n-b8t"/>
+                            <constraint firstItem="Uhh-ef-zqS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="P7H-je-s9f"/>
+                            <constraint firstItem="bB1-fP-T63" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="103" id="fL6-6X-w4t"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Uhh-ef-zqS" secondAttribute="bottom" constant="40" id="qyF-eF-iPi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81" y="-2"/>
+            <point key="canvasLocation" x="80.152671755725194" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="564" height="987"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

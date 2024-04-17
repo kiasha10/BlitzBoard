@@ -16,3 +16,10 @@ import Foundation
     }
     
 
+import Foundation
+
+struct LeagueTableTeamLogos {
+    
+}
+
+
