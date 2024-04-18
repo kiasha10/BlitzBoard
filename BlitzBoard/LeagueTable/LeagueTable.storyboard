@@ -26,31 +26,24 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RY5-wE-atz">
-                                <rect key="frame" x="26" y="149" width="351" height="489"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dKl-Zr-NgV">
+                                <rect key="frame" x="0.0" y="119" width="393" height="649"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="72" id="2pE-ey-hxe">
-                                        <rect key="frame" x="0.0" y="50" width="351" height="72"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2pE-ey-hxe" id="go6-b7-KMu">
-                                            <rect key="frame" x="0.0" y="0.0" width="351" height="72"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="dKl-Zr-NgV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="09h-kh-oIF"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JXj-oo-wP4" secondAttribute="trailing" id="45y-Ya-Vvu"/>
                             <constraint firstItem="9h4-GD-Va1" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="Ogd-jY-hjx"/>
+                            <constraint firstItem="dKl-Zr-NgV" firstAttribute="top" secondItem="9h4-GD-Va1" secondAttribute="bottom" id="PVt-B0-HnI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dKl-Zr-NgV" secondAttribute="trailing" id="VPe-YJ-jJF"/>
                             <constraint firstItem="9h4-GD-Va1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="123" id="Yzn-GK-hiS"/>
                             <constraint firstItem="JXj-oo-wP4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="cNd-Js-ITb"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="9h4-GD-Va1" secondAttribute="bottom" constant="699" id="hbt-8E-2W1"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="JXj-oo-wP4" secondAttribute="bottom" id="uu2-iJ-sWD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="dKl-Zr-NgV" secondAttribute="bottom" constant="50" id="uvE-ni-lMF"/>
                             <constraint firstItem="JXj-oo-wP4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vPq-EW-l54"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9h4-GD-Va1" secondAttribute="trailing" constant="16" id="zPP-kW-e9m"/>
                         </constraints>
