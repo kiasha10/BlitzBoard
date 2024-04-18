@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         
-        if email == "user@example.com" && password == "password123" {
+        if email == "admin@gmail.com" && password == "admin123" {
             // Login successful
             print("Login successful!")
             // Navigate to next screen or perform segue

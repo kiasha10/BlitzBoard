@@ -18,6 +18,8 @@
 		45AA3ED72BC81F4A00A2C05E /* FixturesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3ED62BC81F4A00A2C05E /* FixturesRepository.swift */; };
 		45AA3ED92BC81F5B00A2C05E /* FixturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3ED82BC81F5B00A2C05E /* FixturesModel.swift */; };
 		45AA3EFA2BC821D700A2C05E /* Fixtures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EF92BC821D700A2C05E /* Fixtures.storyboard */; };
+		45DDFC7B2BD119D000196F32 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DDFC792BD119D000196F32 /* TableViewCellViewController.swift */; };
+		45DDFC7C2BD119D000196F32 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45DDFC7A2BD119D000196F32 /* TableViewCell.xib */; };
 		45FF26482BC90D5000F75682 /* TopScorers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FF26452BC90D5000F75682 /* TopScorers.storyboard */; };
 		45FF26492BC90D5000F75682 /* TopScorersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26462BC90D5000F75682 /* TopScorersViewModel.swift */; };
 		45FF264A2BC90D5000F75682 /* TopScorersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26472BC90D5000F75682 /* TopScorersViewController.swift */; };
@@ -41,8 +43,6 @@
 		45FF26BF2BCC228600F75682 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26BC2BCC228600F75682 /* HomeScreenViewController.swift */; };
 		45FF26C02BCC228600F75682 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FF26BD2BCC228600F75682 /* HomeScreen.storyboard */; };
 		45FF26C12BCC228600F75682 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26BE2BCC228600F75682 /* HomeViewModel.swift */; };
-		45FF26C82BCEFC7400F75682 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45FF26C72BCEFC7400F75682 /* TableViewCell.xib */; };
-		45FF26CB2BCFB4FC00F75682 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26C92BCFB4FC00F75682 /* TableViewCellViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +59,8 @@
 		45AA3ED62BC81F4A00A2C05E /* FixturesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesRepository.swift; sourceTree = "<group>"; };
 		45AA3ED82BC81F5B00A2C05E /* FixturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesModel.swift; sourceTree = "<group>"; };
 		45AA3EF92BC821D700A2C05E /* Fixtures.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fixtures.storyboard; sourceTree = "<group>"; };
+		45DDFC792BD119D000196F32 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
+		45DDFC7A2BD119D000196F32 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		45FF26452BC90D5000F75682 /* TopScorers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TopScorers.storyboard; path = TopScorers/TopScorers.storyboard; sourceTree = "<group>"; };
 		45FF26462BC90D5000F75682 /* TopScorersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopScorersViewModel.swift; path = TopScorers/TopScorersViewModel.swift; sourceTree = "<group>"; };
 		45FF26472BC90D5000F75682 /* TopScorersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopScorersViewController.swift; path = TopScorers/TopScorersViewController.swift; sourceTree = "<group>"; };
@@ -82,8 +84,6 @@
 		45FF26BC2BCC228600F75682 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeScreenViewController.swift; path = HomeScreen/HomeScreenViewController.swift; sourceTree = "<group>"; };
 		45FF26BD2BCC228600F75682 /* HomeScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HomeScreen.storyboard; path = HomeScreen/HomeScreen.storyboard; sourceTree = "<group>"; };
 		45FF26BE2BCC228600F75682 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = HomeScreen/HomeViewModel.swift; sourceTree = "<group>"; };
-		45FF26C72BCEFC7400F75682 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		45FF26C92BCFB4FC00F75682 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,8 +255,8 @@
 		45FF26C22BCEAF9900F75682 /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				45FF26C72BCEFC7400F75682 /* TableViewCell.xib */,
-				45FF26C92BCFB4FC00F75682 /* TableViewCellViewController.swift */,
+				45DDFC7A2BD119D000196F32 /* TableViewCell.xib */,
+				45DDFC792BD119D000196F32 /* TableViewCellViewController.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -320,10 +320,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				45FF265D2BC90E4300F75682 /* Login.storyboard in Resources */,
+				45DDFC7C2BD119D000196F32 /* TableViewCell.xib in Resources */,
 				45FF26582BC90DD900F75682 /* LeagueTable.storyboard in Resources */,
 				45FF26482BC90D5000F75682 /* TopScorers.storyboard in Resources */,
 				45AA3EFA2BC821D700A2C05E /* Fixtures.storyboard in Resources */,
-				45FF26C82BCEFC7400F75682 /* TableViewCell.xib in Resources */,
 				45AA3EBA2BC81E4000A2C05E /* LaunchScreen.storyboard in Resources */,
 				45FF26C02BCC228600F75682 /* HomeScreen.storyboard in Resources */,
 				45AA3EB72BC81E4000A2C05E /* Assets.xcassets in Resources */,
@@ -340,6 +340,7 @@
 			files = (
 				45FF265C2BC90E4300F75682 /* LoginViewModel.swift in Sources */,
 				45FF264D2BC90D6E00F75682 /* TopScorersRepository.swift in Sources */,
+				45DDFC7B2BD119D000196F32 /* TableViewCellViewController.swift in Sources */,
 				45FF264E2BC90D6E00F75682 /* TopScorersModel.swift in Sources */,
 				45FF26672BC90E6D00F75682 /* APIHandler.swift in Sources */,
 				45FF26572BC90DD900F75682 /* LeagueTableViewModel.swift in Sources */,
@@ -352,7 +353,6 @@
 				45FF265E2BC90E4300F75682 /* LoginViewController.swift in Sources */,
 				45AA3EB22BC81E3F00A2C05E /* ViewController.swift in Sources */,
 				45FF26BF2BCC228600F75682 /* HomeScreenViewController.swift in Sources */,
-				45FF26CB2BCFB4FC00F75682 /* TableViewCellViewController.swift in Sources */,
 				45AA3ECB2BC81ED700A2C05E /* FixtureViewModel.swift in Sources */,
 				45FF26612BC90E5700F75682 /* LoginModel.swift in Sources */,
 				45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */,
