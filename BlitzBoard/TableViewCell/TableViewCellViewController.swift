@@ -67,13 +67,16 @@ extension StandingsViewController: UITableViewDataSource {
         return leagueTable.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as? TableViewCell
-        cell.title.text = leagueTable[indexPath.row]
-        return cell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "StandingCell", for: indexPath) as? StandingTableViewCell else {
+            fatalError("Unable to dequeue StandingTableViewCell")
+        }
+        let teamStanding = leagueTable[indexPath.row]
+        cell.configure(with: teamStanding)
+         return cell
     }
 }
 extension StandingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 20 // Adjust the height as needed
+        return 20
     }
 }
