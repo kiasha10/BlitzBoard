@@ -31,7 +31,6 @@
 
 import UIKit
 
-
 class StandingTableViewCell: UITableViewCell {
     @IBOutlet weak var positionLabel: UILabel!
     @IBOutlet weak var teamLogoImageView: UIImageView!
@@ -46,44 +45,35 @@ class StandingTableViewCell: UITableViewCell {
         winsLabel.text = "Wins: \(teamStanding.overallLeagueW)"
         drawsLabel.text = "Draws: \(teamStanding.overallLeagueD)"
         lossesLabel.text = "Losses: \(teamStanding.overallLeagueL)"
-        
-        
     }
 }
-
 class StandingsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var leagueTable: LeagueTable = [] // Assuming you have this data fetched from your API
+    var leagueTable: LeagueTable = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.dataSource = self
         tableView.delegate = self
     }
 }
 
 extension StandingsViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, didSelectRowAT indexPath: IndexPath) {
+        performSegue(withIdentifier: "pageSceenSegue", sender: leagueTable[indexPath.row])
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return leagueTable.count
     }
-    
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "StandingCell", for: indexPath) as? StandingTableViewCell else {
-            fatalError("Unable to dequeue StandingTableViewCell")
-        }
-        
-        let teamStanding = leagueTable[indexPath.row]
-        cell.configure(with: teamStanding)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as? TableViewCell
+        cell.title.text = leagueTable[indexPath.row]
         return cell
     }
 }
-
 extension StandingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100 // Adjust the height as needed
+        return 20 // Adjust the height as needed
     }
 }

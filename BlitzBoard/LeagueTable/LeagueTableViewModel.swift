@@ -29,8 +29,8 @@ class LeagueTableViewModel {
             switch result {
             case .success(let positions):
                 self?.leagueTables = positions
-//                self?.delegate?.reloadView()
-                print("The league table is : \(String(describing: self?.leagueTables))")
+                self?.delegate?.reloadView()
+                print("Here are the stats: \(String(describing: self?.leagueTables))")
             case .failure(let error):
                 self?.delegate?.show(error: error.rawValue)
             }

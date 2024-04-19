@@ -176,11 +176,11 @@
 		45AA3EDB2BC81F7000A2C05E /* LeagueTable */ = {
 			isa = PBXGroup;
 			children = (
-				45FF26C22BCEAF9900F75682 /* TableViewCell */,
-				45AA3EE22BC81FC200A2C05E /* Repository */,
 				45FF26552BC90DD900F75682 /* LeagueTable.storyboard */,
 				45FF26532BC90DD900F75682 /* LeagueTableViewController.swift */,
 				45FF26542BC90DD900F75682 /* LeagueTableViewModel.swift */,
+				45AA3EE22BC81FC200A2C05E /* Repository */,
+				45FF26C22BCEAF9900F75682 /* TableViewCell */,
 			);
 			name = LeagueTable;
 			sourceTree = "<group>";

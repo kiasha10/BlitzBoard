@@ -17,18 +17,8 @@ class LoginViewController: UIViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Additional setup if needed
     }
-    
-    // MARK: - Actions//    @IBAction func login(_ sender: Any)//
-       @IBAction func loginButtonTapped(_ sender: Any)
-    {
-        
-//        guard let email = emailTextField.text, !email.isEmpty,
-//              let password = passwordTextField.text, password.isEmpty else {
-//            showAlert(message: "Please enter both email and password.")
-//            return
-//        }
+       @IBAction func loginButtonTapped(_ sender: Any) {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         
