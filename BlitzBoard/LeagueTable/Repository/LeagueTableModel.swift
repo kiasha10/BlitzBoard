@@ -17,8 +17,6 @@ struct LeagueTableModel: Codable {
     var overallLeagueL: String
     var teamBadge: String
 
-    
-    
 enum CodingKeys: String, CodingKey {
     case leagueName = "league_name"
     case teamName = "team_name"

@@ -31,8 +31,6 @@ class LoginViewController: UIViewController {
             showAlert(message: "Invalid email or password.")
         }
     }
-    
-    // MARK: - Helper Methods
     func showAlert(message: String) {
         let alertController = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
