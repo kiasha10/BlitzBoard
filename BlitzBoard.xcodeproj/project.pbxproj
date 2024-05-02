@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		455C9EE32BDF9C6200BDB334 /* TopScorerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 455C9EE22BDF9C6200BDB334 /* TopScorerTableViewCell.xib */; };
+		455C9EE52BDF9C7E00BDB334 /* TopScorersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455C9EE42BDF9C7E00BDB334 /* TopScorersCell.swift */; };
 		45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EAD2BC81E3F00A2C05E /* AppDelegate.swift */; };
 		45AA3EB02BC81E3F00A2C05E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EAF2BC81E3F00A2C05E /* SceneDelegate.swift */; };
 		45AA3EB22BC81E3F00A2C05E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EB12BC81E3F00A2C05E /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 		45AA3EFA2BC821D700A2C05E /* Fixtures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EF92BC821D700A2C05E /* Fixtures.storyboard */; };
 		45DDFC7B2BD119D000196F32 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DDFC792BD119D000196F32 /* TableViewCellViewController.swift */; };
 		45DDFC7C2BD119D000196F32 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45DDFC7A2BD119D000196F32 /* TableViewCell.xib */; };
+		45DDFC7F2BD6375500196F32 /* BlitzBoardDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45DDFC7D2BD6375500196F32 /* BlitzBoardDB.xcdatamodeld */; };
+		45DDFCA42BD63E1300196F32 /* CoreData .swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DDFCA32BD63E1300196F32 /* CoreData .swift */; };
 		45FF26482BC90D5000F75682 /* TopScorers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FF26452BC90D5000F75682 /* TopScorers.storyboard */; };
 		45FF26492BC90D5000F75682 /* TopScorersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26462BC90D5000F75682 /* TopScorersViewModel.swift */; };
 		45FF264A2BC90D5000F75682 /* TopScorersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26472BC90D5000F75682 /* TopScorersViewController.swift */; };
@@ -46,6 +50,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		455C9EE22BDF9C6200BDB334 /* TopScorerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopScorerTableViewCell.xib; sourceTree = "<group>"; };
+		455C9EE42BDF9C7E00BDB334 /* TopScorersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersCell.swift; sourceTree = "<group>"; };
 		45AA3EAA2BC81E3F00A2C05E /* BlitzBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlitzBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AA3EAD2BC81E3F00A2C05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45AA3EAF2BC81E3F00A2C05E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 		45AA3EF92BC821D700A2C05E /* Fixtures.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fixtures.storyboard; sourceTree = "<group>"; };
 		45DDFC792BD119D000196F32 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
 		45DDFC7A2BD119D000196F32 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		45DDFC7E2BD6375500196F32 /* BlitzBoardDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlitzBoardDB.xcdatamodel; sourceTree = "<group>"; };
+		45DDFCA32BD63E1300196F32 /* CoreData .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData .swift"; sourceTree = "<group>"; };
 		45FF26452BC90D5000F75682 /* TopScorers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TopScorers.storyboard; path = TopScorers/TopScorers.storyboard; sourceTree = "<group>"; };
 		45FF26462BC90D5000F75682 /* TopScorersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopScorersViewModel.swift; path = TopScorers/TopScorersViewModel.swift; sourceTree = "<group>"; };
 		45FF26472BC90D5000F75682 /* TopScorersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopScorersViewController.swift; path = TopScorers/TopScorersViewController.swift; sourceTree = "<group>"; };
@@ -97,9 +105,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		455C9EE12BDF9C4A00BDB334 /* TopScorersViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				455C9EE22BDF9C6200BDB334 /* TopScorerTableViewCell.xib */,
+				455C9EE42BDF9C7E00BDB334 /* TopScorersCell.swift */,
+			);
+			name = TopScorersViewCell;
+			sourceTree = "<group>";
+		};
 		45AA3EA12BC81E3F00A2C05E = {
 			isa = PBXGroup;
 			children = (
+				45DDFC7D2BD6375500196F32 /* BlitzBoardDB.xcdatamodeld */,
 				45AA3EAC2BC81E3F00A2C05E /* BlitzBoard */,
 				45AA3EAB2BC81E3F00A2C05E /* Products */,
 			);
@@ -136,10 +154,11 @@
 		45AA3EC22BC81E5400A2C05E /* TopScorers */ = {
 			isa = PBXGroup;
 			children = (
+				455C9EE12BDF9C4A00BDB334 /* TopScorersViewCell */,
 				45AA3ECC2BC81EDE00A2C05E /* Repository */,
-				45FF26452BC90D5000F75682 /* TopScorers.storyboard */,
 				45FF26472BC90D5000F75682 /* TopScorersViewController.swift */,
 				45FF26462BC90D5000F75682 /* TopScorersViewModel.swift */,
+				45FF26452BC90D5000F75682 /* TopScorers.storyboard */,
 			);
 			name = TopScorers;
 			sourceTree = "<group>";
@@ -200,6 +219,7 @@
 				45FF26642BC90E6D00F75682 /* APIHandler.swift */,
 				45FF26632BC90E6D00F75682 /* Constants.swift */,
 				45FF26652BC90E6D00F75682 /* ServiceErrors.swift */,
+				45DDFCA32BD63E1300196F32 /* CoreData .swift */,
 			);
 			name = ServiceLayer;
 			sourceTree = "<group>";
@@ -320,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45FF265D2BC90E4300F75682 /* Login.storyboard in Resources */,
+				455C9EE32BDF9C6200BDB334 /* TopScorerTableViewCell.xib in Resources */,
 				45DDFC7C2BD119D000196F32 /* TableViewCell.xib in Resources */,
 				45FF26582BC90DD900F75682 /* LeagueTable.storyboard in Resources */,
 				45FF26482BC90D5000F75682 /* TopScorers.storyboard in Resources */,
@@ -338,10 +359,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45DDFCA42BD63E1300196F32 /* CoreData .swift in Sources */,
 				45FF265C2BC90E4300F75682 /* LoginViewModel.swift in Sources */,
 				45FF264D2BC90D6E00F75682 /* TopScorersRepository.swift in Sources */,
 				45DDFC7B2BD119D000196F32 /* TableViewCellViewController.swift in Sources */,
 				45FF264E2BC90D6E00F75682 /* TopScorersModel.swift in Sources */,
+				455C9EE52BDF9C7E00BDB334 /* TopScorersCell.swift in Sources */,
 				45FF26672BC90E6D00F75682 /* APIHandler.swift in Sources */,
 				45FF26572BC90DD900F75682 /* LeagueTableViewModel.swift in Sources */,
 				45FF266C2BC910DC00F75682 /* LeagueTableModel.swift in Sources */,
@@ -354,6 +377,7 @@
 				45AA3EB22BC81E3F00A2C05E /* ViewController.swift in Sources */,
 				45FF26BF2BCC228600F75682 /* HomeScreenViewController.swift in Sources */,
 				45AA3ECB2BC81ED700A2C05E /* FixtureViewModel.swift in Sources */,
+				45DDFC7F2BD6375500196F32 /* BlitzBoardDB.xcdatamodeld in Sources */,
 				45FF26612BC90E5700F75682 /* LoginModel.swift in Sources */,
 				45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */,
 				45AA3ED22BC81F2200A2C05E /* FixtureViewController.swift in Sources */,
@@ -585,6 +609,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45DDFC7D2BD6375500196F32 /* BlitzBoardDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45DDFC7E2BD6375500196F32 /* BlitzBoardDB.xcdatamodel */,
+			);
+			currentVersion = 45DDFC7E2BD6375500196F32 /* BlitzBoardDB.xcdatamodel */;
+			path = BlitzBoardDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 45AA3EA22BC81E3F00A2C05E /* Project object */;
 }

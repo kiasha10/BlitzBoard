@@ -23,7 +23,7 @@ class LeagueTableViewController: UIViewController {
     }
     
     func fetchLeagueTable() {
-        guard let url = URL(string: " https://apiv3.apifootball.com/?action=get_standings&league_id=152&APIkey=6f272244c8ec25329b4c524bf4a60f6ee13a7881fade63ec99acda4ca0437d5f") else {
+        guard let url = URL(string: " https://apiv3.apifootball.com/?action=get_standings&league_id=152&APIkey=afd5a1ede5598029ca62b14f758edd87481d42c83fecb45afb8fa613c50efb7c") else {
             print("Invalid URL")
             return
         }

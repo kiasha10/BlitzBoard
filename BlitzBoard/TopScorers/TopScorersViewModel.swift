@@ -10,13 +10,22 @@ import Foundation
 class TopScorerViewModel {
     private let repository: TopScorerRepositoryType
     
+    var didUpdateData: (() -> Void)?
+    
     var topScorers: [PlayerModel] = []
     var error: APIError?
     var player: [PlayerModel]?
     
+    var scorers: [PlayerModel] = [] {
+            didSet {
+                didUpdateData?()
+            }
+        }
+    
     init(repository: TopScorerRepositoryType = TopScorerRepository()) {
         self.repository = repository
     }
+
     
     func fetchTopScorers() {
         repository.fetchSearchResults{[weak self] result in
@@ -33,3 +42,4 @@ class TopScorerViewModel {
         
     }
 }
+
