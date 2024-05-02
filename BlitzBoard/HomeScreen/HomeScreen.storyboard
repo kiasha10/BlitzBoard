@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Screen View Controller-->
+        <!--Football Data View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="HomeScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="HomeScreenViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="FootballDataViewController" customModule="BlitzBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,6 +75,13 @@
                             <constraint firstItem="om4-Pc-nd6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="zzQ-dZ-WJF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fixturesBtn" destination="tjl-xH-BMF" id="qnw-v2-sOz"/>
+                        <outlet property="scorersBtn" destination="8sn-wi-yo9" id="Fgt-sV-aFK"/>
+                        <outlet property="settingBtn" destination="Yua-pu-6Gg" id="Kk5-gg-aUx"/>
+                        <outlet property="standingsBtn" destination="Lgk-s8-AnV" id="SOT-U5-54u"/>
+                        <outlet property="wallpaper" destination="om4-Pc-nd6" id="sFl-Sk-tUf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

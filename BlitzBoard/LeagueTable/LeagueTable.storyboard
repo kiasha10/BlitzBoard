@@ -48,6 +48,10 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9h4-GD-Va1" secondAttribute="trailing" constant="16" id="zPP-kW-e9m"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="dKl-Zr-NgV" id="w6u-WO-oJj"/>
+                        <outlet property="wallpapers" destination="JXj-oo-wP4" id="yQi-Mt-ivU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

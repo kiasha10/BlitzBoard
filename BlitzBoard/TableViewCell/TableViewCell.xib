@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="158" id="SP5-qw-AO4">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="158" id="SP5-qw-AO4" customClass="StandingTableViewCell" customModule="BlitzBoard" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="711" height="158"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SP5-qw-AO4" id="01E-k9-Hq4">
@@ -56,6 +56,14 @@
                     </label>
                 </subviews>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="drawsLabel" destination="gPj-vF-cWC" id="ShO-Yb-gSV"/>
+                <outlet property="lossesLabel" destination="HJ9-V7-jYJ" id="6bu-wi-rhX"/>
+                <outlet property="positionLabel" destination="ezq-N5-OkK" id="nAi-vm-h5g"/>
+                <outlet property="teamLogoImageView" destination="XIc-xG-g6z" id="Md0-fl-O6U"/>
+                <outlet property="teamNameLabel" destination="Q4S-K6-lSd" id="yP8-z1-NhV"/>
+                <outlet property="winsLabel" destination="6eM-Lv-MYf" id="0Lh-X6-F1b"/>
+            </connections>
             <point key="canvasLocation" x="190.07633587786259" y="-680.28169014084506"/>
         </tableViewCell>
     </objects>

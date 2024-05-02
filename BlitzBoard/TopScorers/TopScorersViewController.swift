@@ -9,10 +9,10 @@ import UIKit
 class TopScorersViewController: UIViewController {
     
 
+    @IBOutlet weak var wallpaper3: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
-    
-    
+
     let viewModel = TopScorerViewModel()
     
     override func viewDidLoad() {

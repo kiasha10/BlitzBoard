@@ -7,9 +7,16 @@
 
 import UIKit
 
-import UIKit
-
 class FootballDataViewController: UIViewController {
+    
+    
+    @IBOutlet weak var wallpaper: UIImageView!
+    
+    @IBOutlet weak var settingBtn: UIButton!
+    @IBOutlet weak var standingsBtn: UIButton!
+    @IBOutlet weak var fixturesBtn: UIButton!
+    @IBOutlet weak var scorersBtn: UIButton!
+    
     let viewModel = FootballDataViewModel()
     
     override func viewDidLoad() {

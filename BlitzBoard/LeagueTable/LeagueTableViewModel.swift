@@ -15,7 +15,7 @@ protocol ViewModelDelegate: AnyObject {
 class LeagueTableViewModel {
     
     private let repository: LeagueTableRepositoryType
-    private var leagueTables: [LeagueTableModel]
+    var leagueTables: [LeagueTableModel]
     private weak var delegate: ViewModelDelegate?
     
     init(repository: LeagueTableRepositoryType, delegate: ViewModelDelegate) {
@@ -36,7 +36,6 @@ class LeagueTableViewModel {
             }
         })
     }
-
     
     func getNumberOfTeams() -> Int {
         return leagueTables.count

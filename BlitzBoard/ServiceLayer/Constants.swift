@@ -16,3 +16,6 @@ import Foundation
     }
     
 
+struct TableViewIdentifiers {
+    static let customCellIdentifier = "StandingTableViewCell"
+}

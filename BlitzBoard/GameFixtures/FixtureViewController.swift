@@ -10,7 +10,7 @@ import UIKit
 
 class FixturesViewController: UIViewController {
     
-    @IBOutlet private var tableView: UITableView!
+   // @IBOutlet private var tableView: UITableView!
     
     private let viewModel = FixturesViewModel(repository: FixturesRepository())
     

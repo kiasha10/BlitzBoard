@@ -4,30 +4,6 @@
 //
 //  Created by Kiasha Rangasamy on 2024/04/17.
 //
-//
-//import UIKit
-//
-//class TableViewCellViewController: UIViewController {
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//    }
-//
-//
-//    /*
-//    // MARK: - Navigation
-//
-//    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        // Get the new view controller using segue.destination.
-//        // Pass the selected object to the new view controller.
-//    }
-//    */
-//
-//}
-
 
 import UIKit
 
@@ -46,37 +22,12 @@ class StandingTableViewCell: UITableViewCell {
         drawsLabel.text = "Draws: \(teamStanding.overallLeagueD)"
         lossesLabel.text = "Losses: \(teamStanding.overallLeagueL)"
     }
-}
-class StandingsViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
     
-    var leagueTable: LeagueTable = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
+    static func tableViewNib() -> UINib {
+        return UINib(nibName: TableViewIdentifiers.customCellIdentifier, bundle: nil)
     }
 }
 
-extension StandingsViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, didSelectRowAT indexPath: IndexPath) {
-        performSegue(withIdentifier: "pageSceenSegue", sender: leagueTable[indexPath.row])
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return leagueTable.count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "StandingCell", for: indexPath) as? StandingTableViewCell else {
-            fatalError("Unable to dequeue StandingTableViewCell")
-        }
-        let teamStanding = leagueTable[indexPath.row]
-        cell.configure(with: teamStanding)
-         return cell
-    }
-}
-extension StandingsViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 20
-    }
-}
+        
+
+      
