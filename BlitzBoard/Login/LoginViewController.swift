@@ -19,12 +19,9 @@ class LoginViewController: UIViewController {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         if email == "admin@gmail.com" && password == "admin123" {
-            // Login successful
             print("Login successful!")
-            // Navigate to next screen or perform segue
         } else {
-            // Login failed
-            showAlert(message: "Invalid email or password.")
+        showAlert(message: "Invalid email or password.")
         }
     }
     func showAlert(message: String) {
