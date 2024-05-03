@@ -14,12 +14,8 @@ protocol FixturesRepositoryType: AnyObject {
 }
 
 class FixturesRepository: FixturesRepositoryType {
-    
     private let apiHandler = APIHandler()
-    
     func fetchFixtures(completion: @escaping (FixturesResult) -> Void) {
         apiHandler.request(endpoint: EndPoint.gameFixtures, method: "GET", completion: completion)
     }
-    
-    
 }

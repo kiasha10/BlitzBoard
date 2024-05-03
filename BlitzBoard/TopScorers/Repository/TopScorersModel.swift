@@ -33,4 +33,3 @@ enum StageName: String, Codable {
 }
 
 typealias Welcome = [PlayerModel]
-

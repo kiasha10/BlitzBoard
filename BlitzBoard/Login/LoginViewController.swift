@@ -7,13 +7,10 @@
 
 import UIKit
 
-
 class LoginViewController: UIViewController {
-    
     // MARK: - Outlets
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +18,6 @@ class LoginViewController: UIViewController {
        @IBAction func loginButtonTapped(_ sender: Any) {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
-        
         if email == "admin@gmail.com" && password == "admin123" {
             // Login successful
             print("Login successful!")
@@ -38,4 +34,3 @@ class LoginViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
 }
-

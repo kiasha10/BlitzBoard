@@ -7,19 +7,13 @@
 
 import Foundation
 
-
-
 class FixturesViewModel {
-    
     private let repository: FixturesRepositoryType
     var fixtures: Fixtures? = nil
     var error: APIError?
-    
-    
-    init(repository: FixturesRepositoryType) {
+init(repository: FixturesRepositoryType) {
         self.repository = repository
     }
-    
     func fetchFixtures() {
         repository.fetchFixtures {[weak self] result in
             switch result {
@@ -27,10 +21,9 @@ class FixturesViewModel {
                 self?.fixtures = fetchedFixtures
                 print("Todays Fixtures are: \(String(describing: self?.fixtures))")
             case .failure(let error):
-                //Handle Error
+                // Handle Error
                 print("Error: \(error)")
             }
         }
     }
 }
-

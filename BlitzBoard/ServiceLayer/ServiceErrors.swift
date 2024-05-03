@@ -6,8 +6,6 @@
 //
 
 import Foundation
-
-
 enum APIError: String, Error {
     case internalError
     case serverError

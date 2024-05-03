@@ -8,11 +8,9 @@
 import Foundation
 
 class LoginViewModel {
-    
     // MARK: - Properties
     private let validEmail = "user@example.com"
     private let validPassword = "password123"
-    
     // MARK: - Public Methods
     func validateCredentials(email: String?, password: String?) -> Bool {
         guard let email = email, !email.isEmpty,

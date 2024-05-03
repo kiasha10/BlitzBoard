@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 typealias LeagueTableResult = (Result<[LeagueTableModel], APIError>)
 
 protocol LeagueTableRepositoryType {
@@ -15,9 +14,7 @@ protocol LeagueTableRepositoryType {
 }
 
 class LeagueTableRepository: LeagueTableRepositoryType {
-    
     private let apiHandler = APIHandler()
-    
     func fetchLeagueTableResults(completion: @escaping (LeagueTableResult) -> Void) {
         apiHandler.request(endpoint: EndPoint.leagueTableEndpoint, method: "GET", completion: completion)
     }

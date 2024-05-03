@@ -4,11 +4,9 @@
 //
 //  Created by Kiasha Rangasamy on 2024/04/11.
 //
-
-
 import Foundation
 
-enum CustomError: Error{
+enum CustomError: Error {
     case invalidResponse
     case invalidRequest
     case invalidUrl
@@ -22,13 +20,11 @@ class APIHandler {
         completion(.failure(.internalError))
         return
     }
-    
     var request = URLRequest(url: url)
     request.httpMethod = method
     request.allHTTPHeaderFields = ["Content-Type": "application/json"]
     call(with: request, completion: completion)
 }
-    
     private func call<T: Codable>(with request: URLRequest, completion: @escaping ((Result<T, APIError>) -> Void)) {
         let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
             guard error == nil else {

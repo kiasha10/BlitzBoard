@@ -1,12 +1,9 @@
-//
 //  LeagueTableModel.swift
 //  BlitzBoard
 //
 //  Created by Kiasha Rangasamy on 2024/04/11.
 //
-
 import Foundation
-
 
 struct LeagueTableModel: Codable {
     var leagueName: LeagueName
@@ -27,7 +24,6 @@ enum CodingKeys: String, CodingKey {
     case teamBadge = "team_badge"
     }
 }
-
 enum CountryName: String, Codable {
     case england = "England"
     case unknown

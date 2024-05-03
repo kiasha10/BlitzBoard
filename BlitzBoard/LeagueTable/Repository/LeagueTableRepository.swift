@@ -14,9 +14,7 @@ protocol LeagueTableRepositoryType: AnyObject {
 }
 
 class LeagueTableRepository: LeagueTableRepositoryType {
-    
     private let apiHandler = APIHandler()
-    
     func fetchLeagueTableResults(completion: @escaping (LeagueTableResult)) {
         let url = EndPoint.leagueTableEndpoint
         apiHandler.request(endpoint: url, method: "GET", completion: completion)

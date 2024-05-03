@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 // MARK: - Fixtures
 struct FixturesModel: Codable {
     let matchID, countryID, countryName, leagueID: String
