@@ -15,16 +15,47 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FixturesWallaper" translatesAutoresizingMaskIntoConstraints="NO" id="xBG-Am-e6o">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIXTURES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU3-qT-wIq">
+                                <rect key="frame" x="120" y="80" width="197" height="34"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mny-TY-Eje">
+                                <rect key="frame" x="28" y="167" width="336" height="597"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aU3-qT-wIq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="120" id="0Lt-xP-JqN"/>
+                            <constraint firstItem="xBG-Am-e6o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="0nY-LL-TMQ"/>
+                            <constraint firstItem="xBG-Am-e6o" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="7SI-hZ-brU"/>
+                            <constraint firstItem="mny-TY-Eje" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="28" id="7g8-cM-JBh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="mny-TY-Eje" secondAttribute="bottom" constant="54" id="F0I-Yv-Ro1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="xBG-Am-e6o" secondAttribute="bottom" id="H70-e7-pWq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xBG-Am-e6o" secondAttribute="trailing" id="TFn-8S-gfM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aU3-qT-wIq" secondAttribute="trailing" constant="76" id="dkA-iF-lXF"/>
+                            <constraint firstItem="mny-TY-Eje" firstAttribute="top" secondItem="aU3-qT-wIq" secondAttribute="bottom" constant="53" id="fVG-mJ-Yy3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mny-TY-Eje" secondAttribute="trailing" constant="29" id="iHp-3a-boq"/>
+                            <constraint firstItem="aU3-qT-wIq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="21" id="mvg-B3-XEe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="aU3-qT-wIq" secondAttribute="bottom" constant="704" id="xFL-ML-8RW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13" y="-30"/>
+            <point key="canvasLocation" x="12.977099236641221" y="-30.281690140845072"/>
         </scene>
     </scenes>
     <resources>
+        <image name="FixturesWallaper" width="277.5" height="600"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

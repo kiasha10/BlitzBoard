@@ -7,18 +7,25 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Outlets
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
+    // MARK: - UITextFieldDelegate
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return true
+        }
        @IBAction func loginButtonTapped(_ sender: Any) {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
-        if email == "admin@gmail.com" && password == "admin123" {
+        if email == "kiashar@gmail.com" && password == "Kiasha1006" {
             print("Login successful!")
         } else {
         showAlert(message: "Invalid email or password.")

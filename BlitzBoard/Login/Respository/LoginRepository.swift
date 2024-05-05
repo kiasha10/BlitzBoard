@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+class LoginRepository {
+    private let loginModel = LoginModel()
+    func authenticate(email: String?, password: String?, completion: @escaping (Bool) -> Void) {
+        let isAuthenticated = loginModel.authenticate(email: email, password: password)
+        completion(isAuthenticated)
+    }
+}

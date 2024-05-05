@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,7 +14,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y9q-NP-O4c">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.5" green="0.11018732432138789" blue="0.07398537470571892" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="yXz-tI-7fd" kind="relationship" relationship="viewControllers" id="S4r-0E-W32"/>
@@ -25,11 +27,13 @@
             </objects>
             <point key="canvasLocation" x="401" y="-784"/>
         </scene>
-        <!--Item-->
+        <!--Top Scorers-->
         <scene sceneID="H0f-w0-ld4">
             <objects>
                 <navigationController id="X9R-on-3QJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yVa-OD-69k"/>
+                    <tabBarItem key="tabBarItem" title="Top Scorers" id="yVa-OD-69k">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gDv-c4-nCe">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -42,11 +46,13 @@
             </objects>
             <point key="canvasLocation" x="1276" y="185"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="lek-K9-ks7">
             <objects>
                 <navigationController id="yXz-tI-7fd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CG0-2x-aRV"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="CG0-2x-aRV">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ChJ-bV-JTl">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -89,11 +95,13 @@
             </objects>
             <point key="canvasLocation" x="1276" y="668"/>
         </scene>
-        <!--Item-->
+        <!--Standings-->
         <scene sceneID="LTD-KI-E5W">
             <objects>
                 <navigationController id="j2O-XW-qBE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ih5-rA-uje"/>
+                    <tabBarItem key="tabBarItem" title="Standings" id="Ih5-rA-uje">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hoY-LP-iGK">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -107,4 +115,10 @@
             <point key="canvasLocation" x="401" y="185"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

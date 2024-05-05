@@ -101,12 +101,21 @@
                                     <constraint firstItem="A9b-dK-0l8" firstAttribute="top" secondItem="lQn-c5-pRZ" secondAttribute="bottom" constant="30" id="l54-CL-XAE"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghb-MU-Q5M">
+                                <rect key="frame" x="88" y="708" width="217" height="25"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="No Account? Sign Up"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SRz-MU-KzS" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="8xh-lf-fK0"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Ghb-MU-Q5M" secondAttribute="bottom" constant="85" id="FLb-aP-gEI"/>
+                            <constraint firstItem="Ghb-MU-Q5M" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="72" id="Kve-7H-djP"/>
                             <constraint firstAttribute="trailing" secondItem="SRz-MU-KzS" secondAttribute="trailing" id="Nh6-bc-hkk"/>
+                            <constraint firstItem="Ghb-MU-Q5M" firstAttribute="top" secondItem="SRz-MU-KzS" secondAttribute="bottom" constant="27.670000000000002" id="T9O-fR-dH5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ghb-MU-Q5M" secondAttribute="trailing" constant="72" id="peD-dS-PSs"/>
                             <constraint firstItem="SRz-MU-KzS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="yzC-WX-zR7"/>
                         </constraints>
                     </view>
@@ -117,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="-30"/>
+            <point key="canvasLocation" x="41.984732824427482" y="-30.281690140845072"/>
         </scene>
         <!--Main-->
         <scene sceneID="RsK-pl-Bdy">

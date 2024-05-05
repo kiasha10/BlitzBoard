@@ -20,6 +20,9 @@
 		45AA3ED72BC81F4A00A2C05E /* FixturesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3ED62BC81F4A00A2C05E /* FixturesRepository.swift */; };
 		45AA3ED92BC81F5B00A2C05E /* FixturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3ED82BC81F5B00A2C05E /* FixturesModel.swift */; };
 		45AA3EFA2BC821D700A2C05E /* Fixtures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EF92BC821D700A2C05E /* Fixtures.storyboard */; };
+		45D98DBD2BE786F100AE0353 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DBC2BE786F100AE0353 /* SettingsViewController.swift */; };
+		45D98DBF2BE786FD00AE0353 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DBE2BE786FD00AE0353 /* SettingsViewModel.swift */; };
+		45D98DC12BE7870500AE0353 /* SettingsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DC02BE7870500AE0353 /* SettingsPage.storyboard */; };
 		45DDFC7B2BD119D000196F32 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DDFC792BD119D000196F32 /* TableViewCellViewController.swift */; };
 		45DDFC7C2BD119D000196F32 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45DDFC7A2BD119D000196F32 /* TableViewCell.xib */; };
 		45DDFC7F2BD6375500196F32 /* BlitzBoardDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45DDFC7D2BD6375500196F32 /* BlitzBoardDB.xcdatamodeld */; };
@@ -65,6 +68,9 @@
 		45AA3ED62BC81F4A00A2C05E /* FixturesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesRepository.swift; sourceTree = "<group>"; };
 		45AA3ED82BC81F5B00A2C05E /* FixturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesModel.swift; sourceTree = "<group>"; };
 		45AA3EF92BC821D700A2C05E /* Fixtures.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fixtures.storyboard; sourceTree = "<group>"; };
+		45D98DBC2BE786F100AE0353 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		45D98DBE2BE786FD00AE0353 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		45D98DC02BE7870500AE0353 /* SettingsPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsPage.storyboard; sourceTree = "<group>"; };
 		45DDFC792BD119D000196F32 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
 		45DDFC7A2BD119D000196F32 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		45DDFC7E2BD6375500196F32 /* BlitzBoardDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlitzBoardDB.xcdatamodel; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 		45AA3EAC2BC81E3F00A2C05E /* BlitzBoard */ = {
 			isa = PBXGroup;
 			children = (
+				45D98DBA2BE786CC00AE0353 /* SettingsPage */,
 				45AA3EE92BC8203600A2C05E /* ServiceLayer */,
 				45AA3EF02BC8210600A2C05E /* Login */,
 				45FF26AC2BCC205800F75682 /* HomeScreen */,
@@ -252,6 +259,16 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		45D98DBA2BE786CC00AE0353 /* SettingsPage */ = {
+			isa = PBXGroup;
+			children = (
+				45D98DBC2BE786F100AE0353 /* SettingsViewController.swift */,
+				45D98DBE2BE786FD00AE0353 /* SettingsViewModel.swift */,
+				45D98DC02BE7870500AE0353 /* SettingsPage.storyboard */,
+			);
+			path = SettingsPage;
+			sourceTree = "<group>";
+		};
 		45FF26AC2BCC205800F75682 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45FF265D2BC90E4300F75682 /* Login.storyboard in Resources */,
+				45D98DC12BE7870500AE0353 /* SettingsPage.storyboard in Resources */,
 				455C9EE32BDF9C6200BDB334 /* TopScorerTableViewCell.xib in Resources */,
 				45DDFC7C2BD119D000196F32 /* TableViewCell.xib in Resources */,
 				45FF26582BC90DD900F75682 /* LeagueTable.storyboard in Resources */,
@@ -396,11 +414,13 @@
 				45AA3ED92BC81F5B00A2C05E /* FixturesModel.swift in Sources */,
 				45FF26492BC90D5000F75682 /* TopScorersViewModel.swift in Sources */,
 				45FF265E2BC90E4300F75682 /* LoginViewController.swift in Sources */,
+				45D98DBF2BE786FD00AE0353 /* SettingsViewModel.swift in Sources */,
 				45AA3EB22BC81E3F00A2C05E /* ViewController.swift in Sources */,
 				45FF26BF2BCC228600F75682 /* HomeScreenViewController.swift in Sources */,
 				45AA3ECB2BC81ED700A2C05E /* FixtureViewModel.swift in Sources */,
 				45DDFC7F2BD6375500196F32 /* BlitzBoardDB.xcdatamodeld in Sources */,
 				45FF26612BC90E5700F75682 /* LoginModel.swift in Sources */,
+				45D98DBD2BE786F100AE0353 /* SettingsViewController.swift in Sources */,
 				45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */,
 				45AA3ED22BC81F2200A2C05E /* FixtureViewController.swift in Sources */,
 				45FF26622BC90E5700F75682 /* LoginRepository.swift in Sources */,

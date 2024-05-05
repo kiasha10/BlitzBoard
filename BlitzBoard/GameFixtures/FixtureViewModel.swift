@@ -11,6 +11,7 @@ class FixturesViewModel {
     private let repository: FixturesRepositoryType
     var fixtures: Fixtures? = nil
     var error: APIError?
+
 init(repository: FixturesRepositoryType) {
         self.repository = repository
     }

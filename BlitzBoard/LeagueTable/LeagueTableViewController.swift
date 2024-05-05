@@ -23,8 +23,8 @@ class LeagueTableViewController: UIViewController, ViewModelDelegate {
         viewModel.fetchLeagueTable()
     }
     private func setupTableView() {
-        tableView.register(StandingTableViewCell.tableViewNib(),forCellReuseIdentifier:
-TableViewIdentifiers.customCellIdentifier)
+        tableView.register(StandingTableViewCell.tableViewNib(),
+                           forCellReuseIdentifier: TableViewIdentifiers.customCellIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -34,8 +34,9 @@ extension LeagueTableViewController: UITableViewDataSource, UITableViewDelegate 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.getNumberOfTeams()
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewIdentifiers.customCellIdentifier) as? StandingTableViewCell else {
+    func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewIdentifiers.customCellIdentifier) as? StandingTableViewCell
+        else {
             return UITableViewCell()
         }
         let teamStanding = viewModel.leagueTables[indexPath.row]
