@@ -28,7 +28,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if email == "kiashar@gmail.com" && password == "Kiasha1006" {
             print("Login successful!")
         } else {
-        showAlert(message: "Invalid email or password.")
+        showAlert(message: "Please check login credentials.")
         }
     }
     func showAlert(message: String) {

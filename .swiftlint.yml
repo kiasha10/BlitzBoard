@@ -1,6 +1,7 @@
 
 isabled_rules:
 - trailing_whitespace
+
 opt_in_rules:
  - attributes
  - closure_spacing
@@ -60,6 +61,7 @@ opt_in_rules:
  - vertical_whitespace
  - weak_delegate
  - yoda_condition
+ 
 line_length:
 warning: 140
 error: 1200
