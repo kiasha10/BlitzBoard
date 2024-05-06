@@ -22,6 +22,11 @@
 		45D98DE32BE8FA4300AE0353 /* TopScorersScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DE22BE8FA4300AE0353 /* TopScorersScreen.storyboard */; };
 		45D98DE52BE8FA7B00AE0353 /* SettingsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DE42BE8FA7B00AE0353 /* SettingsScreenViewController.swift */; };
 		45D98DE72BE8FA9B00AE0353 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DE62BE8FA9B00AE0353 /* SettingsScreen.storyboard */; };
+		45D98DF22BE9598200AE0353 /* HomeScreenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DF12BE9598200AE0353 /* HomeScreenRepository.swift */; };
+		45D98DF42BE9599000AE0353 /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DF32BE9599000AE0353 /* HomeScreenModel.swift */; };
+		45D98DF62BE959A400AE0353 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DF52BE959A400AE0353 /* HomeScreenViewModel.swift */; };
+		45D98DFB2BE9637200AE0353 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DFA2BE9637200AE0353 /* TableViewCellViewController.swift */; };
+		45D98DFF2BE963CC00AE0353 /* HomeScreenTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DFE2BE963CC00AE0353 /* HomeScreenTableCell.xib */; };
 		45FF26662BC90E6D00F75682 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26632BC90E6D00F75682 /* Constants.swift */; };
 		45FF26672BC90E6D00F75682 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26642BC90E6D00F75682 /* APIHandler.swift */; };
 		45FF26682BC90E6D00F75682 /* ServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26652BC90E6D00F75682 /* ServiceErrors.swift */; };
@@ -45,6 +50,11 @@
 		45D98DE22BE8FA4300AE0353 /* TopScorersScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopScorersScreen.storyboard; sourceTree = "<group>"; };
 		45D98DE42BE8FA7B00AE0353 /* SettingsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewController.swift; sourceTree = "<group>"; };
 		45D98DE62BE8FA9B00AE0353 /* SettingsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsScreen.storyboard; sourceTree = "<group>"; };
+		45D98DF12BE9598200AE0353 /* HomeScreenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRepository.swift; sourceTree = "<group>"; };
+		45D98DF32BE9599000AE0353 /* HomeScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenModel.swift; sourceTree = "<group>"; };
+		45D98DF52BE959A400AE0353 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		45D98DFA2BE9637200AE0353 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
+		45D98DFE2BE963CC00AE0353 /* HomeScreenTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenTableCell.xib; sourceTree = "<group>"; };
 		45FF26632BC90E6D00F75682 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ServiceLayer/Constants.swift; sourceTree = "<group>"; };
 		45FF26642BC90E6D00F75682 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHandler.swift; path = ServiceLayer/APIHandler.swift; sourceTree = "<group>"; };
 		45FF26652BC90E6D00F75682 /* ServiceErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceErrors.swift; path = ServiceLayer/ServiceErrors.swift; sourceTree = "<group>"; };
@@ -142,8 +152,11 @@
 		45D98DD42BE8F79400AE0353 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				45D98DF82BE9632B00AE0353 /* HomeScreenTableCell */,
+				45D98DF02BE9593E00AE0353 /* Repository */,
 				45D98DD52BE8F7D700AE0353 /* HomeScreen.storyboard */,
 				45D98DD72BE8F80700AE0353 /* HomeScreenViewController.swift */,
+				45D98DF52BE959A400AE0353 /* HomeScreenViewModel.swift */,
 			);
 			name = HomeScreen;
 			sourceTree = "<group>";
@@ -173,6 +186,24 @@
 				45D98DE62BE8FA9B00AE0353 /* SettingsScreen.storyboard */,
 			);
 			name = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		45D98DF02BE9593E00AE0353 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				45D98DF12BE9598200AE0353 /* HomeScreenRepository.swift */,
+				45D98DF32BE9599000AE0353 /* HomeScreenModel.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		45D98DF82BE9632B00AE0353 /* HomeScreenTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				45D98DFA2BE9637200AE0353 /* TableViewCellViewController.swift */,
+				45D98DFE2BE963CC00AE0353 /* HomeScreenTableCell.xib */,
+			);
+			path = HomeScreenTableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D98DDF2BE8F9DC00AE0353 /* FixturesScreen.storyboard in Resources */,
+				45D98DFF2BE963CC00AE0353 /* HomeScreenTableCell.xib in Resources */,
 				45D98DE72BE8FA9B00AE0353 /* SettingsScreen.storyboard in Resources */,
 				45D98DE32BE8FA4300AE0353 /* TopScorersScreen.storyboard in Resources */,
 				45D98DD02BE8F31A00AE0353 /* TabBar.storyboard in Resources */,
@@ -277,8 +309,12 @@
 				45FF26662BC90E6D00F75682 /* Constants.swift in Sources */,
 				45D98DD82BE8F80700AE0353 /* HomeScreenViewController.swift in Sources */,
 				45D98DE52BE8FA7B00AE0353 /* SettingsScreenViewController.swift in Sources */,
+				45D98DFB2BE9637200AE0353 /* TableViewCellViewController.swift in Sources */,
+				45D98DF42BE9599000AE0353 /* HomeScreenModel.swift in Sources */,
 				45D98DCA2BE8EBB500AE0353 /* CoredataHandler.swift in Sources */,
+				45D98DF22BE9598200AE0353 /* HomeScreenRepository.swift in Sources */,
 				45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */,
+				45D98DF62BE959A400AE0353 /* HomeScreenViewModel.swift in Sources */,
 				45FF26682BC90E6D00F75682 /* ServiceErrors.swift in Sources */,
 				45D98DDD2BE8F9CE00AE0353 /* FixturesScreenViewController.swift in Sources */,
 				45D98DE12BE8FA2C00AE0353 /* TopScorersScreenViewController.swift in Sources */,
