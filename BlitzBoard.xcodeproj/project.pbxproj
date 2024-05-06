@@ -9,71 +9,45 @@
 /* Begin PBXBuildFile section */
 		45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EAD2BC81E3F00A2C05E /* AppDelegate.swift */; };
 		45AA3EB02BC81E3F00A2C05E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EAF2BC81E3F00A2C05E /* SceneDelegate.swift */; };
-		45AA3EB22BC81E3F00A2C05E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EB12BC81E3F00A2C05E /* ViewController.swift */; };
-		45AA3EB52BC81E3F00A2C05E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EB32BC81E3F00A2C05E /* Main.storyboard */; };
 		45AA3EB72BC81E4000A2C05E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EB62BC81E4000A2C05E /* Assets.xcassets */; };
 		45AA3EBA2BC81E4000A2C05E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EB82BC81E4000A2C05E /* LaunchScreen.storyboard */; };
-		45AA3ECB2BC81ED700A2C05E /* FixtureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3ECA2BC81ED700A2C05E /* FixtureViewModel.swift */; };
-		45AA3ED22BC81F2200A2C05E /* FixtureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3ED12BC81F2200A2C05E /* FixtureViewController.swift */; };
-		45AA3ED72BC81F4A00A2C05E /* FixturesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3ED62BC81F4A00A2C05E /* FixturesRepository.swift */; };
-		45AA3ED92BC81F5B00A2C05E /* FixturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3ED82BC81F5B00A2C05E /* FixturesModel.swift */; };
-		45AA3EFA2BC821D700A2C05E /* Fixtures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EF92BC821D700A2C05E /* Fixtures.storyboard */; };
 		45D98DCA2BE8EBB500AE0353 /* CoredataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DC92BE8EBB500AE0353 /* CoredataHandler.swift */; };
 		45D98DCD2BE8ECBE00AE0353 /* Coredata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DCB2BE8ECBE00AE0353 /* Coredata.xcdatamodeld */; };
-		45FF26482BC90D5000F75682 /* TopScorers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FF26452BC90D5000F75682 /* TopScorers.storyboard */; };
-		45FF26492BC90D5000F75682 /* TopScorersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26462BC90D5000F75682 /* TopScorersViewModel.swift */; };
-		45FF264A2BC90D5000F75682 /* TopScorersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26472BC90D5000F75682 /* TopScorersViewController.swift */; };
-		45FF264D2BC90D6E00F75682 /* TopScorersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF264B2BC90D6E00F75682 /* TopScorersRepository.swift */; };
-		45FF264E2BC90D6E00F75682 /* TopScorersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF264C2BC90D6E00F75682 /* TopScorersModel.swift */; };
-		45FF26562BC90DD900F75682 /* LeagueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26532BC90DD900F75682 /* LeagueTableViewController.swift */; };
-		45FF26572BC90DD900F75682 /* LeagueTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26542BC90DD900F75682 /* LeagueTableViewModel.swift */; };
-		45FF26582BC90DD900F75682 /* LeagueTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FF26552BC90DD900F75682 /* LeagueTable.storyboard */; };
-		45FF265C2BC90E4300F75682 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26592BC90E4300F75682 /* LoginViewModel.swift */; };
-		45FF265D2BC90E4300F75682 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FF265A2BC90E4300F75682 /* Login.storyboard */; };
-		45FF265E2BC90E4300F75682 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF265B2BC90E4300F75682 /* LoginViewController.swift */; };
-		45FF26612BC90E5700F75682 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF265F2BC90E5700F75682 /* LoginModel.swift */; };
-		45FF26622BC90E5700F75682 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26602BC90E5700F75682 /* LoginRepository.swift */; };
+		45D98DD02BE8F31A00AE0353 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DCF2BE8F31A00AE0353 /* TabBar.storyboard */; };
+		45D98DD62BE8F7D700AE0353 /* HomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DD52BE8F7D700AE0353 /* HomeScreen.storyboard */; };
+		45D98DD82BE8F80700AE0353 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DD72BE8F80700AE0353 /* HomeScreenViewController.swift */; };
+		45D98DDD2BE8F9CE00AE0353 /* FixturesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DDC2BE8F9CE00AE0353 /* FixturesScreenViewController.swift */; };
+		45D98DDF2BE8F9DC00AE0353 /* FixturesScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DDE2BE8F9DC00AE0353 /* FixturesScreen.storyboard */; };
+		45D98DE12BE8FA2C00AE0353 /* TopScorersScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DE02BE8FA2C00AE0353 /* TopScorersScreenViewController.swift */; };
+		45D98DE32BE8FA4300AE0353 /* TopScorersScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DE22BE8FA4300AE0353 /* TopScorersScreen.storyboard */; };
+		45D98DE52BE8FA7B00AE0353 /* SettingsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DE42BE8FA7B00AE0353 /* SettingsScreenViewController.swift */; };
+		45D98DE72BE8FA9B00AE0353 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DE62BE8FA9B00AE0353 /* SettingsScreen.storyboard */; };
 		45FF26662BC90E6D00F75682 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26632BC90E6D00F75682 /* Constants.swift */; };
 		45FF26672BC90E6D00F75682 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26642BC90E6D00F75682 /* APIHandler.swift */; };
 		45FF26682BC90E6D00F75682 /* ServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26652BC90E6D00F75682 /* ServiceErrors.swift */; };
-		45FF266B2BC910DC00F75682 /* LeagueTableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26692BC910DC00F75682 /* LeagueTableRepository.swift */; };
-		45FF266C2BC910DC00F75682 /* LeagueTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF266A2BC910DC00F75682 /* LeagueTableModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45AA3EAA2BC81E3F00A2C05E /* BlitzBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlitzBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AA3EAD2BC81E3F00A2C05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45AA3EAF2BC81E3F00A2C05E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		45AA3EB12BC81E3F00A2C05E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		45AA3EB42BC81E3F00A2C05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45AA3EB62BC81E4000A2C05E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45AA3EB92BC81E4000A2C05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45AA3EBB2BC81E4000A2C05E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45AA3ECA2BC81ED700A2C05E /* FixtureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureViewModel.swift; sourceTree = "<group>"; };
-		45AA3ED12BC81F2200A2C05E /* FixtureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixtureViewController.swift; sourceTree = "<group>"; };
-		45AA3ED62BC81F4A00A2C05E /* FixturesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesRepository.swift; sourceTree = "<group>"; };
-		45AA3ED82BC81F5B00A2C05E /* FixturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesModel.swift; sourceTree = "<group>"; };
-		45AA3EF92BC821D700A2C05E /* Fixtures.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fixtures.storyboard; sourceTree = "<group>"; };
 		45D98DC92BE8EBB500AE0353 /* CoredataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataHandler.swift; sourceTree = "<group>"; };
 		45D98DCC2BE8ECBE00AE0353 /* Coredata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coredata.xcdatamodel; sourceTree = "<group>"; };
-		45FF26452BC90D5000F75682 /* TopScorers.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TopScorers.storyboard; path = TopScorers/TopScorers.storyboard; sourceTree = "<group>"; };
-		45FF26462BC90D5000F75682 /* TopScorersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopScorersViewModel.swift; path = TopScorers/TopScorersViewModel.swift; sourceTree = "<group>"; };
-		45FF26472BC90D5000F75682 /* TopScorersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopScorersViewController.swift; path = TopScorers/TopScorersViewController.swift; sourceTree = "<group>"; };
-		45FF264B2BC90D6E00F75682 /* TopScorersRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopScorersRepository.swift; path = TopScorers/Repository/TopScorersRepository.swift; sourceTree = "<group>"; };
-		45FF264C2BC90D6E00F75682 /* TopScorersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TopScorersModel.swift; path = TopScorers/Repository/TopScorersModel.swift; sourceTree = "<group>"; };
-		45FF26532BC90DD900F75682 /* LeagueTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeagueTableViewController.swift; path = LeagueTable/LeagueTableViewController.swift; sourceTree = "<group>"; };
-		45FF26542BC90DD900F75682 /* LeagueTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeagueTableViewModel.swift; path = LeagueTable/LeagueTableViewModel.swift; sourceTree = "<group>"; };
-		45FF26552BC90DD900F75682 /* LeagueTable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LeagueTable.storyboard; path = LeagueTable/LeagueTable.storyboard; sourceTree = "<group>"; };
-		45FF26592BC90E4300F75682 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Login/LoginViewModel.swift; sourceTree = "<group>"; };
-		45FF265A2BC90E4300F75682 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Login/Login.storyboard; sourceTree = "<group>"; };
-		45FF265B2BC90E4300F75682 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Login/LoginViewController.swift; sourceTree = "<group>"; };
-		45FF265F2BC90E5700F75682 /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = Login/Respository/LoginModel.swift; sourceTree = "<group>"; };
-		45FF26602BC90E5700F75682 /* LoginRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginRepository.swift; path = Login/Respository/LoginRepository.swift; sourceTree = "<group>"; };
+		45D98DCF2BE8F31A00AE0353 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		45D98DD52BE8F7D700AE0353 /* HomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeScreen.storyboard; sourceTree = "<group>"; };
+		45D98DD72BE8F80700AE0353 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		45D98DDC2BE8F9CE00AE0353 /* FixturesScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesScreenViewController.swift; sourceTree = "<group>"; };
+		45D98DDE2BE8F9DC00AE0353 /* FixturesScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FixturesScreen.storyboard; sourceTree = "<group>"; };
+		45D98DE02BE8FA2C00AE0353 /* TopScorersScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersScreenViewController.swift; sourceTree = "<group>"; };
+		45D98DE22BE8FA4300AE0353 /* TopScorersScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopScorersScreen.storyboard; sourceTree = "<group>"; };
+		45D98DE42BE8FA7B00AE0353 /* SettingsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewController.swift; sourceTree = "<group>"; };
+		45D98DE62BE8FA9B00AE0353 /* SettingsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsScreen.storyboard; sourceTree = "<group>"; };
 		45FF26632BC90E6D00F75682 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ServiceLayer/Constants.swift; sourceTree = "<group>"; };
 		45FF26642BC90E6D00F75682 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHandler.swift; path = ServiceLayer/APIHandler.swift; sourceTree = "<group>"; };
 		45FF26652BC90E6D00F75682 /* ServiceErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceErrors.swift; path = ServiceLayer/ServiceErrors.swift; sourceTree = "<group>"; };
-		45FF26692BC910DC00F75682 /* LeagueTableRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeagueTableRepository.swift; path = BlitzBoard/LeagueTable/Repository/LeagueTableRepository.swift; sourceTree = SOURCE_ROOT; };
-		45FF266A2BC910DC00F75682 /* LeagueTableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeagueTableModel.swift; path = BlitzBoard/LeagueTable/Repository/LeagueTableModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,81 +80,17 @@
 		45AA3EAC2BC81E3F00A2C05E /* BlitzBoard */ = {
 			isa = PBXGroup;
 			children = (
+				45D98DD32BE8F78500AE0353 /* Features */,
+				45D98DCE2BE8F2DF00AE0353 /* TabBar */,
 				45D98DC82BE8EB8C00AE0353 /* Coredata */,
 				45AA3EE92BC8203600A2C05E /* ServiceLayer */,
-				45AA3EF02BC8210600A2C05E /* Login */,
-				45AA3EDB2BC81F7000A2C05E /* LeagueTable */,
-				45AA3EC92BC81EBD00A2C05E /* GameFixtures */,
-				45AA3EC22BC81E5400A2C05E /* TopScorers */,
 				45AA3F002BC8222400A2C05E /* Resources */,
 				45AA3EAD2BC81E3F00A2C05E /* AppDelegate.swift */,
 				45AA3EAF2BC81E3F00A2C05E /* SceneDelegate.swift */,
-				45AA3EB12BC81E3F00A2C05E /* ViewController.swift */,
-				45AA3EB32BC81E3F00A2C05E /* Main.storyboard */,
 				45AA3EB82BC81E4000A2C05E /* LaunchScreen.storyboard */,
 				45AA3EBB2BC81E4000A2C05E /* Info.plist */,
 			);
 			path = BlitzBoard;
-			sourceTree = "<group>";
-		};
-		45AA3EC22BC81E5400A2C05E /* TopScorers */ = {
-			isa = PBXGroup;
-			children = (
-				45AA3ECC2BC81EDE00A2C05E /* Repository */,
-				45FF26452BC90D5000F75682 /* TopScorers.storyboard */,
-				45FF26472BC90D5000F75682 /* TopScorersViewController.swift */,
-				45FF26462BC90D5000F75682 /* TopScorersViewModel.swift */,
-			);
-			name = TopScorers;
-			sourceTree = "<group>";
-		};
-		45AA3EC92BC81EBD00A2C05E /* GameFixtures */ = {
-			isa = PBXGroup;
-			children = (
-				45AA3ED52BC81F2F00A2C05E /* Repository */,
-				45AA3ECA2BC81ED700A2C05E /* FixtureViewModel.swift */,
-				45AA3ED12BC81F2200A2C05E /* FixtureViewController.swift */,
-				45AA3EF92BC821D700A2C05E /* Fixtures.storyboard */,
-			);
-			path = GameFixtures;
-			sourceTree = "<group>";
-		};
-		45AA3ECC2BC81EDE00A2C05E /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				45FF264C2BC90D6E00F75682 /* TopScorersModel.swift */,
-				45FF264B2BC90D6E00F75682 /* TopScorersRepository.swift */,
-			);
-			name = Repository;
-			sourceTree = "<group>";
-		};
-		45AA3ED52BC81F2F00A2C05E /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				45AA3ED62BC81F4A00A2C05E /* FixturesRepository.swift */,
-				45AA3ED82BC81F5B00A2C05E /* FixturesModel.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		45AA3EDB2BC81F7000A2C05E /* LeagueTable */ = {
-			isa = PBXGroup;
-			children = (
-				45AA3EE22BC81FC200A2C05E /* Repository */,
-				45FF26552BC90DD900F75682 /* LeagueTable.storyboard */,
-				45FF26532BC90DD900F75682 /* LeagueTableViewController.swift */,
-				45FF26542BC90DD900F75682 /* LeagueTableViewModel.swift */,
-			);
-			name = LeagueTable;
-			sourceTree = "<group>";
-		};
-		45AA3EE22BC81FC200A2C05E /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				45FF266A2BC910DC00F75682 /* LeagueTableModel.swift */,
-				45FF26692BC910DC00F75682 /* LeagueTableRepository.swift */,
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 		45AA3EE92BC8203600A2C05E /* ServiceLayer */ = {
@@ -191,26 +101,6 @@
 				45FF26652BC90E6D00F75682 /* ServiceErrors.swift */,
 			);
 			name = ServiceLayer;
-			sourceTree = "<group>";
-		};
-		45AA3EF02BC8210600A2C05E /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				45AA3EFB2BC821E300A2C05E /* Repository */,
-				45FF265A2BC90E4300F75682 /* Login.storyboard */,
-				45FF265B2BC90E4300F75682 /* LoginViewController.swift */,
-				45FF26592BC90E4300F75682 /* LoginViewModel.swift */,
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
-		45AA3EFB2BC821E300A2C05E /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				45FF265F2BC90E5700F75682 /* LoginModel.swift */,
-				45FF26602BC90E5700F75682 /* LoginRepository.swift */,
-			);
-			name = Repository;
 			sourceTree = "<group>";
 		};
 		45AA3F002BC8222400A2C05E /* Resources */ = {
@@ -228,6 +118,61 @@
 				45D98DCB2BE8ECBE00AE0353 /* Coredata.xcdatamodeld */,
 			);
 			name = Coredata;
+			sourceTree = "<group>";
+		};
+		45D98DCE2BE8F2DF00AE0353 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				45D98DCF2BE8F31A00AE0353 /* TabBar.storyboard */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		45D98DD32BE8F78500AE0353 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				45D98DDB2BE8F99100AE0353 /* SettingsScreen */,
+				45D98DDA2BE8F97C00AE0353 /* TopScorersScreen */,
+				45D98DD92BE8F95F00AE0353 /* FixturesScreen */,
+				45D98DD42BE8F79400AE0353 /* HomeScreen */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		45D98DD42BE8F79400AE0353 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				45D98DD52BE8F7D700AE0353 /* HomeScreen.storyboard */,
+				45D98DD72BE8F80700AE0353 /* HomeScreenViewController.swift */,
+			);
+			name = HomeScreen;
+			sourceTree = "<group>";
+		};
+		45D98DD92BE8F95F00AE0353 /* FixturesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				45D98DDC2BE8F9CE00AE0353 /* FixturesScreenViewController.swift */,
+				45D98DDE2BE8F9DC00AE0353 /* FixturesScreen.storyboard */,
+			);
+			name = FixturesScreen;
+			sourceTree = "<group>";
+		};
+		45D98DDA2BE8F97C00AE0353 /* TopScorersScreen */ = {
+			isa = PBXGroup;
+			children = (
+				45D98DE02BE8FA2C00AE0353 /* TopScorersScreenViewController.swift */,
+				45D98DE22BE8FA4300AE0353 /* TopScorersScreen.storyboard */,
+			);
+			name = TopScorersScreen;
+			sourceTree = "<group>";
+		};
+		45D98DDB2BE8F99100AE0353 /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				45D98DE42BE8FA7B00AE0353 /* SettingsScreenViewController.swift */,
+				45D98DE62BE8FA9B00AE0353 /* SettingsScreen.storyboard */,
+			);
+			name = SettingsScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,13 +234,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45FF265D2BC90E4300F75682 /* Login.storyboard in Resources */,
-				45FF26582BC90DD900F75682 /* LeagueTable.storyboard in Resources */,
-				45FF26482BC90D5000F75682 /* TopScorers.storyboard in Resources */,
-				45AA3EFA2BC821D700A2C05E /* Fixtures.storyboard in Resources */,
+				45D98DDF2BE8F9DC00AE0353 /* FixturesScreen.storyboard in Resources */,
+				45D98DE72BE8FA9B00AE0353 /* SettingsScreen.storyboard in Resources */,
+				45D98DE32BE8FA4300AE0353 /* TopScorersScreen.storyboard in Resources */,
+				45D98DD02BE8F31A00AE0353 /* TabBar.storyboard in Resources */,
 				45AA3EBA2BC81E4000A2C05E /* LaunchScreen.storyboard in Resources */,
+				45D98DD62BE8F7D700AE0353 /* HomeScreen.storyboard in Resources */,
 				45AA3EB72BC81E4000A2C05E /* Assets.xcassets in Resources */,
-				45AA3EB52BC81E3F00A2C05E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,28 +273,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D98DCD2BE8ECBE00AE0353 /* Coredata.xcdatamodeld in Sources */,
-				45FF265C2BC90E4300F75682 /* LoginViewModel.swift in Sources */,
-				45FF264D2BC90D6E00F75682 /* TopScorersRepository.swift in Sources */,
-				45FF264E2BC90D6E00F75682 /* TopScorersModel.swift in Sources */,
 				45FF26672BC90E6D00F75682 /* APIHandler.swift in Sources */,
-				45FF26572BC90DD900F75682 /* LeagueTableViewModel.swift in Sources */,
-				45FF266C2BC910DC00F75682 /* LeagueTableModel.swift in Sources */,
-				45FF26562BC90DD900F75682 /* LeagueTableViewController.swift in Sources */,
 				45FF26662BC90E6D00F75682 /* Constants.swift in Sources */,
-				45FF266B2BC910DC00F75682 /* LeagueTableRepository.swift in Sources */,
-				45AA3ED92BC81F5B00A2C05E /* FixturesModel.swift in Sources */,
-				45FF26492BC90D5000F75682 /* TopScorersViewModel.swift in Sources */,
-				45FF265E2BC90E4300F75682 /* LoginViewController.swift in Sources */,
-				45AA3EB22BC81E3F00A2C05E /* ViewController.swift in Sources */,
-				45AA3ECB2BC81ED700A2C05E /* FixtureViewModel.swift in Sources */,
-				45FF26612BC90E5700F75682 /* LoginModel.swift in Sources */,
+				45D98DD82BE8F80700AE0353 /* HomeScreenViewController.swift in Sources */,
+				45D98DE52BE8FA7B00AE0353 /* SettingsScreenViewController.swift in Sources */,
 				45D98DCA2BE8EBB500AE0353 /* CoredataHandler.swift in Sources */,
 				45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */,
-				45AA3ED22BC81F2200A2C05E /* FixtureViewController.swift in Sources */,
-				45FF26622BC90E5700F75682 /* LoginRepository.swift in Sources */,
-				45AA3ED72BC81F4A00A2C05E /* FixturesRepository.swift in Sources */,
-				45FF264A2BC90D5000F75682 /* TopScorersViewController.swift in Sources */,
 				45FF26682BC90E6D00F75682 /* ServiceErrors.swift in Sources */,
+				45D98DDD2BE8F9CE00AE0353 /* FixturesScreenViewController.swift in Sources */,
+				45D98DE12BE8FA2C00AE0353 /* TopScorersScreenViewController.swift in Sources */,
 				45AA3EB02BC81E3F00A2C05E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,14 +289,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		45AA3EB32BC81E3F00A2C05E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				45AA3EB42BC81E3F00A2C05E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		45AA3EB82BC81E4000A2C05E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -506,7 +430,6 @@
 				INFOPLIST_FILE = BlitzBoard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -533,7 +456,6 @@
 				INFOPLIST_FILE = BlitzBoard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

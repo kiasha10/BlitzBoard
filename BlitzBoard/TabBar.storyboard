@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7kB-st-KPo">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2q8-AJ-ypz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7kB-st-KPo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YeY-z2-Knb">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fEf-nn-gLM" kind="relationship" relationship="viewControllers" id="fps-u3-NQA"/>
+                        <segue destination="ffm-iE-oHL" kind="relationship" relationship="viewControllers" id="yWb-He-5mr"/>
+                        <segue destination="Nev-Lb-6kV" kind="relationship" relationship="viewControllers" id="7sa-vR-92W"/>
+                        <segue destination="3SW-zY-gFv" kind="relationship" relationship="viewControllers" id="ccE-G2-zhy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHw-6m-1lt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="-126"/>
+        </scene>
+        <!--HomeScreen-->
+        <scene sceneID="FOI-2W-Iv7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fEf-nn-gLM" userLabel="HomeScreen" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="wHD-nD-dn2" userLabel="Home"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PBY-sJ-L8K">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i1f-Mm-Xck" kind="relationship" relationship="rootViewController" id="b0r-yS-gBG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33s-ik-7s2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-821" y="780"/>
+        </scene>
+        <!--HomeScreen-->
+        <scene sceneID="LkK-bd-gMU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeScreen" id="i1f-Mm-Xck" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MFx-rV-dRE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3M-eb-N3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-822" y="1185"/>
+        </scene>
+        <!--FixturesScreen-->
+        <scene sceneID="laz-ku-f9N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ffm-iE-oHL" userLabel="FixturesScreen" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fixtures" image="gamecontroller" catalog="system" id="HV8-4o-H0y" userLabel="Fixtures"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uv4-hB-EcI">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uag-Jl-JFD" kind="relationship" relationship="rootViewController" id="BcB-em-bad"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TlQ-kX-RGn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="806"/>
+        </scene>
+        <!--FixturesScreen-->
+        <scene sceneID="QVt-ip-IPm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FixturesScreen" id="uag-Jl-JFD" userLabel="FixturesScreen" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jIl-Xf-Cde"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ymL-As-2Uc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="1265"/>
+        </scene>
+        <!--TopScorersScreen-->
+        <scene sceneID="lMF-4E-5jg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nev-Lb-6kV" userLabel="TopScorersScreen" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="TopScorers" image="play" catalog="system" id="BNB-Zs-wKc"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sIa-Rm-nrx">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ov8-UI-dkW" kind="relationship" relationship="rootViewController" id="sTj-dB-5St"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHg-YQ-dFF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.4656488549617" y="826.76056338028172"/>
+        </scene>
+        <!--TopScorersScreen-->
+        <scene sceneID="2Au-UA-r4v">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TopScorersScreen" id="ov8-UI-dkW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="diw-0c-L6u"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="552-Ek-Zt7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069" y="1275"/>
+        </scene>
+        <!--SettingsScreen-->
+        <scene sceneID="Zll-wR-FRL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3SW-zY-gFv" userLabel="SettingsScreen" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="BXA-Hk-QSp" userLabel="Settings"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gwt-aU-Cit">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="quf-WV-Wrn" kind="relationship" relationship="rootViewController" id="GmP-nS-LAR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LIi-Px-nBg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2090.8396946564885" y="855.63380281690149"/>
+        </scene>
+        <!--SettingsScreen-->
+        <scene sceneID="O0Q-zV-lmv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SettingsScreen" id="quf-WV-Wrn" userLabel="SettingsScreen" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5su-YS-t50"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLT-1L-FpW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2091" y="1275"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gamecontroller" catalog="system" width="128" height="79"/>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="play" catalog="system" width="117" height="128"/>
+    </resources>
+</document>
