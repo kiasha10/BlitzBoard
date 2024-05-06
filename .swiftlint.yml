@@ -63,5 +63,5 @@ opt_in_rules:
  - yoda_condition
  
 line_length:
-warning: 140
-error: 1200
+ warning: 140
+ error: 200
