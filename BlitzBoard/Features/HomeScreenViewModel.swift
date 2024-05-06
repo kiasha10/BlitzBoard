@@ -39,10 +39,10 @@ class LeagueTableViewModel {
     }
     
     func getNumberOfTeams() -> Int {
-        return leagueTables.count
+         leagueTables.count
     }
     
     func getTeam(at index: Int) -> LeagueTableModel? {
-        return leagueTables[index]
+         leagueTables[index]
     }
 }
