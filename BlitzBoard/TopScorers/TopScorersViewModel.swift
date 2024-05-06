@@ -23,7 +23,7 @@ class TopScorerViewModel {
     }
 
     func fetchTopScorers() {
-        repository.fetchSearchResults{[weak self] result in
+        repository.fetchSearchResults { [weak self] result in
             switch result {
             case .success(let players):
                 // Handle successful retrieval of players

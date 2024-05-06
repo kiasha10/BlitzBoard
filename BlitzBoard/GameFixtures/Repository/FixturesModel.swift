@@ -24,8 +24,7 @@ struct FixturesModel: Codable {
     let substitutions: Substitutions
     let lineup: Lineup
     let statistics, statistics1Half: [Statistic]
-
-    enum CodingKeys: String, CodingKey {
+enum CodingKeys: String, CodingKey {
         case matchID = "match_id"
         case countryID = "country_id"
         case countryName = "country_name"
@@ -73,7 +72,7 @@ struct CardElement: Codable {
     let awayFault, info, homePlayerID, awayPlayerID: String
     let scoreInfoTime: ScoreInfoTime
 
-    enum CodingKeys: String, CodingKey {
+enum CodingKeys: String, CodingKey {
         case time
         case homeFault = "home_fault"
         case card
@@ -84,17 +83,14 @@ struct CardElement: Codable {
         case scoreInfoTime = "score_info_time"
     }
 }
-
 enum CardEnum: String, Codable {
     case redCard = "red card"
     case yellowCard = "yellow card"
 }
-
 enum ScoreInfoTime: String, Codable {
     case the1StHalf = "1st Half"
     case the2NdHalf = "2nd Half"
 }
-
 // MARK: - Goalscorer
 struct Goalscorer: Codable {
     let time, homeScorer, homeScorerID, homeAssist: String
@@ -117,7 +113,6 @@ struct Goalscorer: Codable {
         case scoreInfoTime = "score_info_time"
     }
 }
-
 // MARK: - Lineup
 struct Lineup: Codable {
     let home, away: LineupAway
@@ -134,7 +129,6 @@ struct LineupAway: Codable {
         case missingPlayers = "missing_players"
     }
 }
-
 // MARK: - Coach
 struct Coach: Codable {
     let lineupPlayer, lineupNumber, lineupPosition, playerKey: String
@@ -146,17 +140,14 @@ struct Coach: Codable {
         case playerKey = "player_key"
     }
 }
-
 // MARK: - Statistic
 struct Statistic: Codable {
     let type, home, away: String
 }
-
 // MARK: - Substitutions
 struct Substitutions: Codable {
     let home, away: [AwayElement]
 }
-
 // MARK: - AwayElement
 struct AwayElement: Codable {
     let time, substitution, substitutionPlayerID: String
@@ -166,5 +157,4 @@ struct AwayElement: Codable {
         case substitutionPlayerID = "substitution_player_id"
     }
 }
-
 typealias Fixtures = [FixturesModel]

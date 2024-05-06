@@ -26,7 +26,7 @@ class APIHandler {
     call(with: request, completion: completion)
 }
     private func call<T: Codable>(with request: URLRequest, completion: @escaping ((Result<T, APIError>) -> Void)) {
-        let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
+        let dataTask = URLSession.shared.dataTask(with: request) { data, _, error in
             guard error == nil else {
                 DispatchQueue.main.async {
                     completion(.failure(.serverError))
@@ -34,7 +34,7 @@ class APIHandler {
                 return
             }
             do {
-                guard let data = data else {
+                guard let data else {
                     DispatchQueue.main.async {
                         completion(.failure(.serverError))
                     }

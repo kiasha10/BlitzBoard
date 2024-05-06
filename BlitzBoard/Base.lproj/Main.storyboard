@@ -21,6 +21,7 @@
                         <segue destination="yXz-tI-7fd" kind="relationship" relationship="viewControllers" id="S4r-0E-W32"/>
                         <segue destination="j2O-XW-qBE" kind="relationship" relationship="viewControllers" id="OX2-R9-Ckm"/>
                         <segue destination="X9R-on-3QJ" kind="relationship" relationship="viewControllers" id="gmI-ol-1gP"/>
+                        <segue destination="AP3-OD-6Lc" kind="relationship" relationship="viewControllers" id="tk1-fM-9ey"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KcK-Ao-xMO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -45,6 +46,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOq-N1-MvD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1276" y="185"/>
+        </scene>
+        <!--Fixtures-->
+        <scene sceneID="kHG-NN-edc">
+            <objects>
+                <navigationController id="AP3-OD-6Lc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fixtures" id="Myv-ts-hhK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gdt-fA-pcp">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UCO-O4-cxb" kind="relationship" relationship="rootViewController" id="w6O-ey-3d0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdn-0D-dPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2086" y="190"/>
+        </scene>
+        <!--Fixtures-->
+        <scene sceneID="SGg-jE-rEQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Fixtures" id="UCO-O4-cxb" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Sd9-9h-NHT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jPe-rU-7wJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2084" y="668"/>
         </scene>
         <!--Home-->
         <scene sceneID="lek-K9-ks7">

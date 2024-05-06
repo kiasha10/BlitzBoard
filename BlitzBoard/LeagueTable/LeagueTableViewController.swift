@@ -32,10 +32,10 @@ class LeagueTableViewController: UIViewController, ViewModelDelegate {
 extension LeagueTableViewController: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.getNumberOfTeams()
+         viewModel.getNumberOfTeams()
     }
-    func tableView(_ tableView: UITableView,cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewIdentifiers.customCellIdentifier) as? StandingTableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewIdentifiers.customCellIdentifier) as? StandingTableViewCell
         else {
             return UITableViewCell()
         }
@@ -44,6 +44,6 @@ extension LeagueTableViewController: UITableViewDataSource, UITableViewDelegate 
          return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 20
+         20
     }
 }
