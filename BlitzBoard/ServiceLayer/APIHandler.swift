@@ -1,14 +1,12 @@
 //
-//  APIHandler.swift
-//  BlitzBoard
+// APIHandler.swift
+// BlitzBoard
 //
-//  Created by Kiasha Rangasamy on 2024/04/11.
+// Created by Kiasha Rangasamy on 2024/04/11.
 //
-
-
 import Foundation
 
-enum CustomError: Error{
+enum CustomError: Error {
     case invalidResponse
     case invalidRequest
     case invalidUrl
@@ -16,21 +14,20 @@ enum CustomError: Error{
 }
 
 class APIHandler {
-
- func request<T: Codable>(endpoint: String, method: String, completion: @escaping ((Result<T, APIError>) -> Void)) {
-    guard let url = URL(string: endpoint) else {
-        completion(.failure(.internalError))
-        return
+    
+    func request<T: Codable>(endpoint: String, method: String, completion: @escaping ((Result<T, APIError>) -> Void)) {
+        guard let url = URL(string: endpoint) else {
+            completion(.failure(.internalError))
+            return
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = method
+        request.allHTTPHeaderFields = ["Content-Type": "application/json"]
+        call(with: request, completion: completion)
     }
     
-    var request = URLRequest(url: url)
-    request.httpMethod = method
-    request.allHTTPHeaderFields = ["Content-Type": "application/json"]
-    call(with: request, completion: completion)
-}
-    
     private func call<T: Codable>(with request: URLRequest, completion: @escaping ((Result<T, APIError>) -> Void)) {
-        let dataTask = URLSession.shared.dataTask(with: request) { data, response, error in
+        let dataTask = URLSession.shared.dataTask(with: request) { data, _, error in
             guard error == nil else {
                 DispatchQueue.main.async {
                     completion(.failure(.serverError))
@@ -38,7 +35,7 @@ class APIHandler {
                 return
             }
             do {
-                guard let data = data else {
+                guard let data else {
                     DispatchQueue.main.async {
                         completion(.failure(.serverError))
                     }
