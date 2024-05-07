@@ -12,7 +12,7 @@ typealias LeagueTableResult = (Result<[LeagueTableModel], APIError>) -> Void
 // MARK: HomeScreenRepository Protocol
 
 protocol HomeScreenRepositoryType: AnyObject {
-    func fetchLeagueTableResults(completion: @escaping(LeagueTableResult))
+    func fetchLeagueTableResults(completion: @escaping LeagueTableResult )
 }
 
 class HomeScreenRepository: HomeScreenRepositoryType {
