@@ -16,7 +16,7 @@ protocol ViewModelDelegate: AnyObject {
 
 // MARK: ViewModel Class
 class LeagueTableViewModel {
-
+    
     private let repository: LeagueTableRepositoryType
     private weak var delegate: ViewModelDelegate?
     var leagueTables: [LeagueTableModel] = []
