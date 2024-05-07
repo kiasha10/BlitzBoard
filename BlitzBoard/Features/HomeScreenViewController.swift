@@ -8,8 +8,6 @@ import UIKit
 
 class HomeScreenViewController: UIViewController {
     
-    
-    
     // MARK: IBOutlets
     
     @IBOutlet private weak var tableView: UITableView!
@@ -30,7 +28,7 @@ class HomeScreenViewController: UIViewController {
     // MARK: Private Functions
     
     private func setupTableView() {
-        tableView.register(HomeScreenTableViewCellViewController.tableViewNib(),
+        tableView.register(HomeScreenTableViewCell.tableViewNib(),
                            forCellReuseIdentifier: TableViewIdentifiers.customCellIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
@@ -46,7 +44,7 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewIdentifiers.customCellIdentifier)
-                as? HomeScreenTableViewCellViewController
+                as? HomeScreenTableViewCell
         else {
             return UITableViewCell()
         }

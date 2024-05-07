@@ -19,7 +19,7 @@ class HomeScreenRepository: HomeScreenRepositoryType {
     
     private let apiHandler = APIHandler()
     
-    func fetchLeagueTableResults(completion: @escaping (LeagueTableResult)) {
+    func fetchLeagueTableResults(completion: @escaping LeagueTableResult) {
         apiHandler.request(endpoint: EndPoint.leagueTableEndpoint, method: "GET", completion: completion)
     }
 }

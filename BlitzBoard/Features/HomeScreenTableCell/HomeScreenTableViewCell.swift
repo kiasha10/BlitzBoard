@@ -1,4 +1,4 @@
-//  HomeScreenTableViewCellViewController.swift
+//  HomeScreenTableViewCell.swift
 //  BlitzBoard
 //
 //  Created by Kiasha Rangasamy on 2024/04/17.
@@ -6,7 +6,7 @@
 
 import UIKit
 
-class HomeScreenTableViewCellViewController: UITableViewCell {
+class HomeScreenTableViewCell: UITableViewCell {
     
     // MARK: IBOulets
     

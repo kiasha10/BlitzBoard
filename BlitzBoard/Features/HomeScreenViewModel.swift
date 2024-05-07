@@ -43,7 +43,7 @@ class HomeScreenViewModel {
             case .success(let positions):
                 self?.leagueTables = positions
                 self?.delegate?.reloadView()
-                print("Here are the stats: \(String(describing: self?.leagueTables))")
+                print("Here are the stats: \(String(describing: self?.leagueTables))") // Warning: Will remove print statement in the future
             case .failure(let error):
                 self?.delegate?.show(error: error.rawValue)
             }

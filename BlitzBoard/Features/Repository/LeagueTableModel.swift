@@ -5,10 +5,10 @@
 
 import Foundation
 
-// MARK: LeagueTable Structs
+// MARK: LeagueTable Struct
 
 struct LeagueTableModel: Codable {
-    var leagueName: LeagueName
+    var leagueName: String
     var teamName: String
     var overallLeaguePosition: String
     var overallLeagueWin: String
@@ -24,33 +24,5 @@ struct LeagueTableModel: Codable {
         case overallLeagueDraw = "overall_league_Draw"
         case overallLeagueLoss = "overall_league_Loss"
         case teamBadge = "team_badge"
-    }
-}
-
-// MARK: Enums
-
-enum CountryName: String, Codable {
-    case england = "England"
-    case unknown
-    
-    init(from decoder: Decoder) throws {
-        self = try CountryName(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .unknown
-    }
-}
-
-enum LeagueName: String, Codable {
-    case premierLeague = "Premier League"
-    case unknown
-    
-    init(from decoder: Decoder) throws {
-        self = try LeagueName(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .unknown
-    }
-}
-
-enum StageNames: String, Codable {
-    case current = "Current"
-    case unknown
-    init(from decoder: Decoder) throws {
-        self = try StageNames(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .unknown
     }
 }
