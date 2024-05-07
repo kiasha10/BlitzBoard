@@ -19,8 +19,6 @@ class LeagueTableViewController: UIViewController, ViewModelDelegate {
     @IBOutlet private weak var wallpapers: UIImageView!
     private lazy var viewModel = LeagueTableViewModel(repository: LeagueTableRepository(), delegate: self)
     
-    
-    
     // MARK: Functions
     override func viewDidLoad() {
         super.viewDidLoad()
