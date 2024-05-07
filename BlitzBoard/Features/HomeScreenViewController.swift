@@ -6,13 +6,9 @@
 
 import UIKit
 
-class HomeScreenViewController: UIViewController, ViewModelDelegate {
+class HomeScreenViewController: UIViewController {
     
-    func reloadView() {
-    }
     
-    func show(error: String) {
-    }
     
     // MARK: IBOutlets
     
@@ -62,5 +58,13 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         20
+    }
+}
+
+extension HomeScreenViewController: ViewModelDelegate {
+    func reloadView() {
+    }
+    
+    func show(error: String) {
     }
 }

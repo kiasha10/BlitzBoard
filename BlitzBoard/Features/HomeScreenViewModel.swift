@@ -31,12 +31,11 @@ class HomeScreenViewModel {
     var fetchNumberOfTeams: Int {
         leagueTables.count
     }
+    // MARK: Functions
     
     func fetchTeam(at index: Int) -> LeagueTableModel? {
         leagueTables[index]
     }
-    
-    // MARK: Functions
     
     func fetchLeagueTable() {
         repository.fetchLeagueTableResults { [weak self] result in
