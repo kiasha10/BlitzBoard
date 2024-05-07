@@ -12,18 +12,18 @@ struct LeagueTableModel: Codable {
     var leagueName: LeagueName
     var teamName: String
     var overallLeaguePosition: String
-    var overallLeagueW: String
-    var overallLeagueD: String
-    var overallLeagueL: String
+    var overallLeagueWin: String
+    var overallLeagueDraw: String
+    var overallLeagueLoss: String
     var teamBadge: String
     
     enum CodingKeys: String, CodingKey {
         case leagueName = "league_name"
         case teamName = "team_name"
         case overallLeaguePosition = "overall_league_position"
-        case overallLeagueW = "overall_league_W"
-        case overallLeagueD = "overall_league_D"
-        case overallLeagueL = "overall_league_L"
+        case overallLeagueWin = "overall_league_Win"
+        case overallLeagueDraw = "overall_league_Draw"
+        case overallLeagueLoss = "overall_league_Loss"
         case teamBadge = "team_badge"
     }
 }

@@ -17,6 +17,8 @@ class LeagueTableViewController: UIViewController, ViewModelDelegate {
     // MARK: IBOutlets
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var wallpapers: UIImageView!
+    
+    // MARK: Private variables
     private lazy var viewModel = LeagueTableViewModel(repository: LeagueTableRepository(), delegate: self)
     
     // MARK: Functions
@@ -26,6 +28,7 @@ class LeagueTableViewController: UIViewController, ViewModelDelegate {
         viewModel.fetchLeagueTable()
     }
     
+    // MARK: Private Functions
     private func setupTableView() {
         tableView.register(StandingTableViewCell.tableViewNib(),
                            forCellReuseIdentifier: TableViewIdentifiers.customCellIdentifier)

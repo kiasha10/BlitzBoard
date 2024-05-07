@@ -7,6 +7,7 @@
 import Foundation
 
 // MARK: ViewModel Delegate
+
 protocol ViewModelDelegate: AnyObject {
     
     func reloadView()
@@ -15,7 +16,7 @@ protocol ViewModelDelegate: AnyObject {
 
 // MARK: ViewModel Class
 class LeagueTableViewModel {
-    
+
     private let repository: LeagueTableRepositoryType
     private weak var delegate: ViewModelDelegate?
     var leagueTables: [LeagueTableModel] = []
@@ -27,6 +28,7 @@ class LeagueTableViewModel {
         self.leagueTables = []
     }
     
+    // MARK: Functions
     func fetchLeagueTable() {
         repository.fetchLeagueTableResults(completion: { [weak self] result in
             switch result {

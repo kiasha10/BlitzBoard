@@ -7,9 +7,9 @@
 
 import UIKit
 
-// MARK: IBOulets
 class StandingTableViewCell: UITableViewCell {
     
+    // MARK: IBOulets
     @IBOutlet private weak var positionLabel: UILabel!
     @IBOutlet private weak var teamLogoImageView: UIImageView!
     @IBOutlet private weak var teamNameLabel: UILabel!
@@ -21,13 +21,12 @@ class StandingTableViewCell: UITableViewCell {
     func configure(with teamStanding: LeagueTableModel) {
         positionLabel.text = teamStanding.overallLeaguePosition
         teamNameLabel.text = teamStanding.teamName
-        winsLabel.text = "Wins: \(teamStanding.overallLeagueW)"
-        drawsLabel.text = "Draws: \(teamStanding.overallLeagueD)"
-        lossesLabel.text = "Losses: \(teamStanding.overallLeagueL)"
+        winsLabel.text = "Wins: \(teamStanding.overallLeagueWin)"
+        drawsLabel.text = "Draws: \(teamStanding.overallLeagueDraw)"
+        lossesLabel.text = "Losses: \(teamStanding.overallLeagueLoss)"
     }
     
     static func tableViewNib() -> UINib {
-        
         UINib(nibName: TableViewIdentifiers.customCellIdentifier, bundle: nil)
     }
 }
