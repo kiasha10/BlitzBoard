@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StandingTableViewCell: UITableViewCell {
+class HomeScreenTableViewCell: UITableViewCell {
     
     // MARK: IBOulets
     @IBOutlet private weak var positionLabel: UILabel!
@@ -18,7 +18,7 @@ class StandingTableViewCell: UITableViewCell {
     @IBOutlet private weak var lossesLabel: UILabel!
     
     // MARK: Function Configuration
-    func configure(with teamStanding: LeagueTableModel) {
+    func configure(with teamStanding: HomeScreenModel) {
         positionLabel.text = teamStanding.overallLeaguePosition
         teamNameLabel.text = teamStanding.teamName
         winsLabel.text = "Wins: \(teamStanding.overallLeagueWin)"

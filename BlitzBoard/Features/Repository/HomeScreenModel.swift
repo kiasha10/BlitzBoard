@@ -5,10 +5,10 @@
 
 import Foundation
 
-typealias LeagueTable = [LeagueTableModel]
+typealias HomeScreen = [HomeScreenModel]
 
 // MARK: LeagueTable Structs
-struct LeagueTableModel: Codable {
+struct HomeScreenModel: Codable {
     var leagueName: LeagueName
     var teamName: String
     var overallLeaguePosition: String

@@ -6,7 +6,7 @@
 
 import UIKit
 
-class LeagueTableViewController: UIViewController, ViewModelDelegate {
+class HomeScreenViewController: UIViewController, ViewModelDelegate {
     
     func reloadView() {
     }
@@ -17,9 +17,9 @@ class LeagueTableViewController: UIViewController, ViewModelDelegate {
     // MARK: IBOutlets
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var wallpapers: UIImageView!
-    
+
     // MARK: Private variables
-    private lazy var viewModel = LeagueTableViewModel(repository: LeagueTableRepository(), delegate: self)
+    private lazy var viewModel = LeagueTableViewModel(repository: HomeScreenRepository(), delegate: self)
     
     // MARK: Functions
     override func viewDidLoad() {
@@ -30,7 +30,7 @@ class LeagueTableViewController: UIViewController, ViewModelDelegate {
     
     // MARK: Private Functions
     private func setupTableView() {
-        tableView.register(StandingTableViewCell.tableViewNib(),
+        tableView.register(HomeScreenTableViewCell.tableViewNib(),
                            forCellReuseIdentifier: TableViewIdentifiers.customCellIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
@@ -38,13 +38,14 @@ class LeagueTableViewController: UIViewController, ViewModelDelegate {
 }
 
 // MARK: Extensions
-extension LeagueTableViewController: UITableViewDataSource, UITableViewDelegate {
+extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.fetchNumberOfTeams
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewIdentifiers.customCellIdentifier) as? StandingTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewIdentifiers.customCellIdentifier)
+                as? HomeScreenTableViewCell
         else {
             return UITableViewCell()
         }

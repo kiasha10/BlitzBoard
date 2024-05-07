@@ -17,12 +17,12 @@ protocol ViewModelDelegate: AnyObject {
 // MARK: ViewModel Class
 class LeagueTableViewModel {
     
-    private let repository: LeagueTableRepositoryType
+    private let repository: HomeScreenRepositoryType
     private weak var delegate: ViewModelDelegate?
-    var leagueTables: [LeagueTableModel] = []
+    var leagueTables: [HomeScreenModel] = []
     
     // MARK: Initializing
-    init(repository: LeagueTableRepositoryType, delegate: ViewModelDelegate) {
+    init(repository: HomeScreenRepositoryType, delegate: ViewModelDelegate) {
         self.repository = repository
         self.delegate = delegate
         self.leagueTables = []
@@ -47,7 +47,7 @@ class LeagueTableViewModel {
         leagueTables.count
     }
     
-    func fetchTeam(at index: Int) -> LeagueTableModel? {
+    func fetchTeam(at index: Int) -> HomeScreenModel? {
         leagueTables[index]
     }
 }
