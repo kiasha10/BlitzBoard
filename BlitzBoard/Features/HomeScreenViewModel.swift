@@ -6,25 +6,28 @@
 
 import Foundation
 
+// MARK: ViewModel Delegate
 protocol ViewModelDelegate: AnyObject {
     
     func reloadView()
     func show(error: String)
 }
 
+// MARK: ViewModel Class
 class LeagueTableViewModel {
     
     private let repository: LeagueTableRepositoryType
     var leagueTables: [LeagueTableModel]
     private weak var delegate: ViewModelDelegate?
     
+    // MARK: Initializing
     init(repository: LeagueTableRepositoryType, delegate: ViewModelDelegate) {
-        
         self.repository = repository
         self.delegate = delegate
         self.leagueTables = []
     }
     
+    // MARK: Method
     func fetchLeagueTable() {
         repository.fetchLeagueTableResults(completion: { [weak self] result in
             switch result {
@@ -38,11 +41,12 @@ class LeagueTableViewModel {
         })
     }
     
-    func getNumberOfTeams() -> Int {
+    // MARK: Computed Properties
+    var fetchNumberOfTeams: Int {
          leagueTables.count
     }
     
-    func getTeam(at index: Int) -> LeagueTableModel? {
-         leagueTables[index]
+    var fetchTeam: Int {
+        leagueTables.count
     }
 }

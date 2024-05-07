@@ -15,10 +15,10 @@ class LeagueTableViewController: UIViewController, ViewModelDelegate {
     }
     
     // MARK: IBOutlets
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var wallpapers: UIImageView!
     private lazy var viewModel = LeagueTableViewModel(repository: LeagueTableRepository(), delegate: self)
     
-    @IBOutlet weak var wallpapers: UIImageView!
     var leagueTable: [LeagueTableModel] = []
     
     // MARK: Functions
@@ -36,15 +36,15 @@ class LeagueTableViewController: UIViewController, ViewModelDelegate {
     }
 }
 
+// MARK: Extensions
 extension LeagueTableViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.getNumberOfTeams()
+        viewModel.fetchNumberOfTeams
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewIdentifiers.customCellIdentifier) as? StandingTableViewCell
         else {
-            
             return UITableViewCell()
         }
         

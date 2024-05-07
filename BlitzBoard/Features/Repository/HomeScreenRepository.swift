@@ -5,16 +5,20 @@
 
 import Foundation
 
+// MARK: Typealias
 typealias LeagueTableResult = (Result<[LeagueTableModel], APIError>) -> Void
 
+// MARK: LeagueTableRepository Protocol
 protocol LeagueTableRepositoryType: AnyObject {
     
     func fetchLeagueTableResults(completion: @escaping(LeagueTableResult))
 }
 
+// MARK: Classes
 class LeagueTableRepository: LeagueTableRepositoryType {
     
     private let apiHandler = APIHandler()
+    
     func fetchLeagueTableResults(completion: @escaping (LeagueTableResult)) {
         
         let url = EndPoint.leagueTableEndpoint

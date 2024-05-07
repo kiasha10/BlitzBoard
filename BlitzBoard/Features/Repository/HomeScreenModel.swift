@@ -5,6 +5,9 @@
 
 import Foundation
 
+typealias LeagueTable = [LeagueTableModel]
+
+// MARK: LeagueTable Structs
 struct LeagueTableModel: Codable {
     var leagueName: LeagueName
     var teamName: String
@@ -25,6 +28,7 @@ struct LeagueTableModel: Codable {
     }
 }
 
+// MARK: Enums
 enum CountryName: String, Codable {
     case england = "England"
     case unknown
@@ -50,5 +54,3 @@ enum StageNames: String, Codable {
         self = try StageNames(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .unknown
     }
 }
-
-typealias LeagueTable = [LeagueTableModel]

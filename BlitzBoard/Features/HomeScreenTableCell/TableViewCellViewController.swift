@@ -7,15 +7,17 @@
 
 import UIKit
 
+// MARK: IBOulets
 class StandingTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var positionLabel: UILabel!
-    @IBOutlet weak var teamLogoImageView: UIImageView!
-    @IBOutlet weak var teamNameLabel: UILabel!
-    @IBOutlet weak var winsLabel: UILabel!
-    @IBOutlet weak var drawsLabel: UILabel!
-    @IBOutlet weak var lossesLabel: UILabel!
+    @IBOutlet private weak var positionLabel: UILabel!
+    @IBOutlet private weak var teamLogoImageView: UIImageView!
+    @IBOutlet private weak var teamNameLabel: UILabel!
+    @IBOutlet private weak var winsLabel: UILabel!
+    @IBOutlet private weak var drawsLabel: UILabel!
+    @IBOutlet private weak var lossesLabel: UILabel!
     
+    // MARK: Function Configuration
     func configure(with teamStanding: LeagueTableModel) {
         positionLabel.text = teamStanding.overallLeaguePosition
         teamNameLabel.text = teamStanding.teamName
