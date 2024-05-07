@@ -1,4 +1,4 @@
-// LeagueTableViewController.swift
+// HomeScreenViewController.swift
 // BlitzBoard
 //
 // Created by Kiasha Rangasamy on 2024/04/11.
@@ -15,13 +15,16 @@ class HomeScreenViewController: UIViewController, ViewModelDelegate {
     }
     
     // MARK: IBOutlets
+    
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var wallpapers: UIImageView!
-
+    
     // MARK: Private variables
-    private lazy var viewModel = LeagueTableViewModel(repository: HomeScreenRepository(), delegate: self)
+    
+    private lazy var viewModel = HomeScreenViewModel(repository: HomeScreenRepository(), delegate: self)
     
     // MARK: Functions
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
@@ -29,6 +32,7 @@ class HomeScreenViewController: UIViewController, ViewModelDelegate {
     }
     
     // MARK: Private Functions
+    
     private func setupTableView() {
         tableView.register(HomeScreenTableViewCell.tableViewNib(),
                            forCellReuseIdentifier: TableViewIdentifiers.customCellIdentifier)
@@ -38,6 +42,7 @@ class HomeScreenViewController: UIViewController, ViewModelDelegate {
 }
 
 // MARK: Extensions
+
 extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.fetchNumberOfTeams

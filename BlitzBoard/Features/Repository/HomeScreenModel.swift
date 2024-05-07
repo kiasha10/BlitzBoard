@@ -1,14 +1,13 @@
-// LeagueTableModel.swift
+// HomeScreenModel.swift
 // BlitzBoard
 //
 // Created by Kiasha Rangasamy on 2024/04/11.
 
 import Foundation
 
-typealias HomeScreen = [HomeScreenModel]
-
 // MARK: LeagueTable Structs
-struct HomeScreenModel: Codable {
+
+struct LeagueTableModel: Codable {
     var leagueName: LeagueName
     var teamName: String
     var overallLeaguePosition: String
@@ -29,6 +28,7 @@ struct HomeScreenModel: Codable {
 }
 
 // MARK: Enums
+
 enum CountryName: String, Codable {
     case england = "England"
     case unknown

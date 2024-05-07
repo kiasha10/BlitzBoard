@@ -1,4 +1,4 @@
-// LeagueTableRepository.swift
+// HomeScreenRepository.swift
 // BlitzBoard
 //
 // Created by Kiasha Rangasamy on 2024/04/11.
@@ -6,20 +6,20 @@
 import Foundation
 
 // MARK: Typealias
-typealias HomeScreenResult = (Result<[HomeScreenModel], APIError>) -> Void
 
-// MARK: LeagueTableRepository Protocol
+typealias LeagueTableResult = (Result<[LeagueTableModel], APIError>) -> Void
+
+// MARK: HomeScreenRepository Protocol
+
 protocol HomeScreenRepositoryType: AnyObject {
-    
-    func fetchLeagueTableResults(completion: @escaping(HomeScreenResult))
+    func fetchLeagueTableResults(completion: @escaping(LeagueTableResult))
 }
 
-// MARK: Classes
 class HomeScreenRepository: HomeScreenRepositoryType {
     
     private let apiHandler = APIHandler()
     
-    func fetchLeagueTableResults(completion: @escaping (HomeScreenResult)) {
+    func fetchLeagueTableResults(completion: @escaping (LeagueTableResult)) {
         apiHandler.request(endpoint: EndPoint.leagueTableEndpoint, method: "GET", completion: completion)
     }
 }

@@ -1,5 +1,4 @@
-//
-//  TableViewCellViewController.swift
+//  HomeScreenTableViewCellViewController.swift
 //  BlitzBoard
 //
 //  Created by Kiasha Rangasamy on 2024/04/17.
@@ -10,6 +9,7 @@ import UIKit
 class HomeScreenTableViewCell: UITableViewCell {
     
     // MARK: IBOulets
+    
     @IBOutlet private weak var positionLabel: UILabel!
     @IBOutlet private weak var teamLogoImageView: UIImageView!
     @IBOutlet private weak var teamNameLabel: UILabel!
@@ -17,8 +17,9 @@ class HomeScreenTableViewCell: UITableViewCell {
     @IBOutlet private weak var drawsLabel: UILabel!
     @IBOutlet private weak var lossesLabel: UILabel!
     
-    // MARK: Function Configuration
-    func configure(with teamStanding: HomeScreenModel) {
+    // MARK: Function
+    
+    func configure(with teamStanding: LeagueTableModel) {
         positionLabel.text = teamStanding.overallLeaguePosition
         teamNameLabel.text = teamStanding.teamName
         winsLabel.text = "Wins: \(teamStanding.overallLeagueWin)"
