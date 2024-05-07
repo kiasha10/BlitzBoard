@@ -34,7 +34,7 @@ class HomeScreenViewController: UIViewController, ViewModelDelegate {
     // MARK: Private Functions
     
     private func setupTableView() {
-        tableView.register(HomeScreenTableViewCell.tableViewNib(),
+        tableView.register(HomeScreenTableViewCellViewController.tableViewNib(),
                            forCellReuseIdentifier: TableViewIdentifiers.customCellIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
@@ -50,7 +50,7 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewIdentifiers.customCellIdentifier)
-                as? HomeScreenTableViewCell
+                as? HomeScreenTableViewCellViewController
         else {
             return UITableViewCell()
         }

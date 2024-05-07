@@ -23,7 +23,7 @@
 		45D98DE52BE8FA7B00AE0353 /* SettingsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DE42BE8FA7B00AE0353 /* SettingsScreenViewController.swift */; };
 		45D98DE72BE8FA9B00AE0353 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DE62BE8FA9B00AE0353 /* SettingsScreen.storyboard */; };
 		45D98DF22BE9598200AE0353 /* HomeScreenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DF12BE9598200AE0353 /* HomeScreenRepository.swift */; };
-		45D98DF42BE9599000AE0353 /* HomeScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DF32BE9599000AE0353 /* HomeScreenModel.swift */; };
+		45D98DF42BE9599000AE0353 /* LeagueTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DF32BE9599000AE0353 /* LeagueTableModel.swift */; };
 		45D98DF62BE959A400AE0353 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DF52BE959A400AE0353 /* HomeScreenViewModel.swift */; };
 		45D98DFB2BE9637200AE0353 /* HomeScreenTableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DFA2BE9637200AE0353 /* HomeScreenTableViewCellViewController.swift */; };
 		45D98DFF2BE963CC00AE0353 /* HomeScreenTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DFE2BE963CC00AE0353 /* HomeScreenTableCell.xib */; };
@@ -51,7 +51,7 @@
 		45D98DE42BE8FA7B00AE0353 /* SettingsScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewController.swift; sourceTree = "<group>"; };
 		45D98DE62BE8FA9B00AE0353 /* SettingsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsScreen.storyboard; sourceTree = "<group>"; };
 		45D98DF12BE9598200AE0353 /* HomeScreenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRepository.swift; sourceTree = "<group>"; };
-		45D98DF32BE9599000AE0353 /* HomeScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenModel.swift; sourceTree = "<group>"; };
+		45D98DF32BE9599000AE0353 /* LeagueTableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTableModel.swift; sourceTree = "<group>"; };
 		45D98DF52BE959A400AE0353 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
 		45D98DFA2BE9637200AE0353 /* HomeScreenTableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTableViewCellViewController.swift; sourceTree = "<group>"; };
 		45D98DFE2BE963CC00AE0353 /* HomeScreenTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenTableCell.xib; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				45D98DF12BE9598200AE0353 /* HomeScreenRepository.swift */,
-				45D98DF32BE9599000AE0353 /* HomeScreenModel.swift */,
+				45D98DF32BE9599000AE0353 /* LeagueTableModel.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -310,7 +310,7 @@
 				45D98DD82BE8F80700AE0353 /* HomeScreenViewController.swift in Sources */,
 				45D98DE52BE8FA7B00AE0353 /* SettingsScreenViewController.swift in Sources */,
 				45D98DFB2BE9637200AE0353 /* HomeScreenTableViewCellViewController.swift in Sources */,
-				45D98DF42BE9599000AE0353 /* HomeScreenModel.swift in Sources */,
+				45D98DF42BE9599000AE0353 /* LeagueTableModel.swift in Sources */,
 				45D98DCA2BE8EBB500AE0353 /* CoredataHandler.swift in Sources */,
 				45D98DF22BE9598200AE0353 /* HomeScreenRepository.swift in Sources */,
 				45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */,

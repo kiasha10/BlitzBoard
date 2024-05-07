@@ -6,7 +6,7 @@
 
 import UIKit
 
-class HomeScreenTableViewCell: UITableViewCell {
+class HomeScreenTableViewCellViewController: UITableViewCell {
     
     // MARK: IBOulets
     
