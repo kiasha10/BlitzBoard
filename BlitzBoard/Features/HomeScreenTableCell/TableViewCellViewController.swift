@@ -28,6 +28,6 @@ class StandingTableViewCell: UITableViewCell {
     
     static func tableViewNib() -> UINib {
         
-         UINib(nibName: TableViewIdentifiers.customCellIdentifier, bundle: nil)
+        UINib(nibName: TableViewIdentifiers.customCellIdentifier, bundle: nil)
     }
 }

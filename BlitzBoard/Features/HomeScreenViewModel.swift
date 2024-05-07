@@ -42,7 +42,7 @@ class LeagueTableViewModel {
     
     // MARK: Computed Properties
     var fetchNumberOfTeams: Int {
-         leagueTables.count
+        leagueTables.count
     }
     
     func fetchTeam(at index: Int) -> LeagueTableModel? {
