@@ -28,8 +28,7 @@ class HomeScreenViewController: UIViewController {
     // MARK: Private Functions
     
     private func setupTableView() {
-        tableView.register(HomeScreenTableViewCell.tableViewNib(),
-                           forCellReuseIdentifier: TableViewIdentifiers.customCellIdentifier)
+        tableView.register(HomeScreenTableViewCell.tableViewNib(), forCellReuseIdentifier: TableViewIdentifiers.customCellIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
     }
