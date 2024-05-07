@@ -30,7 +30,7 @@ class LeagueTableViewModel {
     
     // MARK: Functions
     func fetchLeagueTable() {
-        repository.fetchLeagueTableResults(completion: { [weak self] result in
+        repository.fetchLeagueTableResults { [weak self] result in
             switch result {
             case .success(let positions):
                 self?.leagueTables = positions
@@ -39,7 +39,7 @@ class LeagueTableViewModel {
             case .failure(let error):
                 self?.delegate?.show(error: error.rawValue)
             }
-        })
+        }
     }
     
     // MARK: Computed Properties
