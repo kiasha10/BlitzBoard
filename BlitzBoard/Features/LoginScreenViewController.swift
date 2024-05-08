@@ -9,12 +9,12 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - IBOutlets
     
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
     
     // MARK: IBActions
     
-    @IBAction func loginButtonTapped(_ sender: Any) {
+    @IBAction private func loginButtonTapped(_ sender: Any) {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         if email == "kiashar@gmail.com" && password == "Kiasha1006" {
