@@ -7,12 +7,12 @@ import UIKit
 
 class LoginScreenViewController: UIViewController, UITextFieldDelegate {
     
-    // MARK: - Outlets
+    // MARK: - IBOutlets
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    // MARK: Actions
+    // MARK: IBActions
     
     @IBAction func loginButtonTapped(_ sender: Any) {
         let email = emailTextField.text ?? ""

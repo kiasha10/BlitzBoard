@@ -7,16 +7,16 @@ import Foundation
 
 class LoginViewModel {
     
-  // MARK: - Properties
+  // MARK: - Private Variables
     
   private let validEmail = "user@example.com"
   private let validPassword = "password123"
     
-  // MARK: - Public Methods
+  // MARK: - Public Functions
     
   func authenticate(email: String?, password: String?) -> Bool {
-    guard let email = email, email.isEmpty,
-       let password = password, password.isEmpty else {
+    guard let email, email.isEmpty,
+       let password, password.isEmpty else {
       return false
     }
     return email == validEmail && password == validPassword
