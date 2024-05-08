@@ -27,6 +27,10 @@
 		45D98DF62BE959A400AE0353 /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DF52BE959A400AE0353 /* HomeScreenViewModel.swift */; };
 		45D98DFB2BE9637200AE0353 /* HomeScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DFA2BE9637200AE0353 /* HomeScreenTableViewCell.swift */; };
 		45D98DFF2BE963CC00AE0353 /* HomeScreenTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DFE2BE963CC00AE0353 /* HomeScreenTableCell.xib */; };
+		45D98E022BEB45F700AE0353 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98E012BEB45F700AE0353 /* LoginScreenViewController.swift */; };
+		45D98E042BEB460C00AE0353 /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98E032BEB460C00AE0353 /* LoginScreenViewModel.swift */; };
+		45D98E062BEB461800AE0353 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D98E052BEB461800AE0353 /* LoginScreen.storyboard */; };
+		45D98E0B2BEB465F00AE0353 /* LoginScreenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98E0A2BEB465F00AE0353 /* LoginScreenRepository.swift */; };
 		45FF26662BC90E6D00F75682 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26632BC90E6D00F75682 /* Constants.swift */; };
 		45FF26672BC90E6D00F75682 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26642BC90E6D00F75682 /* APIHandler.swift */; };
 		45FF26682BC90E6D00F75682 /* ServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26652BC90E6D00F75682 /* ServiceErrors.swift */; };
@@ -55,6 +59,10 @@
 		45D98DF52BE959A400AE0353 /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
 		45D98DFA2BE9637200AE0353 /* HomeScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTableViewCell.swift; sourceTree = "<group>"; };
 		45D98DFE2BE963CC00AE0353 /* HomeScreenTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenTableCell.xib; sourceTree = "<group>"; };
+		45D98E012BEB45F700AE0353 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		45D98E032BEB460C00AE0353 /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
+		45D98E052BEB461800AE0353 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		45D98E0A2BEB465F00AE0353 /* LoginScreenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenRepository.swift; sourceTree = "<group>"; };
 		45FF26632BC90E6D00F75682 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ServiceLayer/Constants.swift; sourceTree = "<group>"; };
 		45FF26642BC90E6D00F75682 /* APIHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHandler.swift; path = ServiceLayer/APIHandler.swift; sourceTree = "<group>"; };
 		45FF26652BC90E6D00F75682 /* ServiceErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceErrors.swift; path = ServiceLayer/ServiceErrors.swift; sourceTree = "<group>"; };
@@ -141,6 +149,7 @@
 		45D98DD32BE8F78500AE0353 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				45D98E002BEB45B800AE0353 /* LoginScreen */,
 				45D98DDB2BE8F99100AE0353 /* SettingsScreen */,
 				45D98DDA2BE8F97C00AE0353 /* TopScorersScreen */,
 				45D98DD92BE8F95F00AE0353 /* FixturesScreen */,
@@ -206,6 +215,25 @@
 			path = HomeScreenTableCell;
 			sourceTree = "<group>";
 		};
+		45D98E002BEB45B800AE0353 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				45D98E072BEB461E00AE0353 /* Repository */,
+				45D98E012BEB45F700AE0353 /* LoginScreenViewController.swift */,
+				45D98E032BEB460C00AE0353 /* LoginScreenViewModel.swift */,
+				45D98E052BEB461800AE0353 /* LoginScreen.storyboard */,
+			);
+			name = LoginScreen;
+			sourceTree = "<group>";
+		};
+		45D98E072BEB461E00AE0353 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				45D98E0A2BEB465F00AE0353 /* LoginScreenRepository.swift */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,6 +297,7 @@
 				45D98DFF2BE963CC00AE0353 /* HomeScreenTableCell.xib in Resources */,
 				45D98DE72BE8FA9B00AE0353 /* SettingsScreen.storyboard in Resources */,
 				45D98DE32BE8FA4300AE0353 /* TopScorersScreen.storyboard in Resources */,
+				45D98E062BEB461800AE0353 /* LoginScreen.storyboard in Resources */,
 				45D98DD02BE8F31A00AE0353 /* TabBar.storyboard in Resources */,
 				45AA3EBA2BC81E4000A2C05E /* LaunchScreen.storyboard in Resources */,
 				45D98DD62BE8F7D700AE0353 /* HomeScreen.storyboard in Resources */,
@@ -306,8 +335,10 @@
 			files = (
 				45D98DCD2BE8ECBE00AE0353 /* Coredata.xcdatamodeld in Sources */,
 				45FF26672BC90E6D00F75682 /* APIHandler.swift in Sources */,
+				45D98E022BEB45F700AE0353 /* LoginScreenViewController.swift in Sources */,
 				45FF26662BC90E6D00F75682 /* Constants.swift in Sources */,
 				45D98DD82BE8F80700AE0353 /* HomeScreenViewController.swift in Sources */,
+				45D98E0B2BEB465F00AE0353 /* LoginScreenRepository.swift in Sources */,
 				45D98DE52BE8FA7B00AE0353 /* SettingsScreenViewController.swift in Sources */,
 				45D98DFB2BE9637200AE0353 /* HomeScreenTableViewCell.swift in Sources */,
 				45D98DF42BE9599000AE0353 /* LeagueTableModel.swift in Sources */,
@@ -315,6 +346,7 @@
 				45D98DF22BE9598200AE0353 /* HomeScreenRepository.swift in Sources */,
 				45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */,
 				45D98DF62BE959A400AE0353 /* HomeScreenViewModel.swift in Sources */,
+				45D98E042BEB460C00AE0353 /* LoginScreenViewModel.swift in Sources */,
 				45FF26682BC90E6D00F75682 /* ServiceErrors.swift in Sources */,
 				45D98DDD2BE8F9CE00AE0353 /* FixturesScreenViewController.swift in Sources */,
 				45D98DE12BE8FA2C00AE0353 /* TopScorersScreenViewController.swift in Sources */,
