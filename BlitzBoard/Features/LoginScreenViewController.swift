@@ -32,7 +32,7 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.delegate = self
     }
     
-    // MARK: - UITextFieldDelegate
+    // MARK: - Public Functions
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
