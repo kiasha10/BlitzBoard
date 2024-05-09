@@ -19,11 +19,7 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate {
     @IBAction private func loginButtonTapped(_ sender: Any) {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
-        if email == "kiashar@gmail.com" && password == "Kiasha1006" {
-            print("Login successful!")
-        } else {
-            showAlert(message: "Please check login credentials.")
-        }
+        viewModel.authenticate(email: email, password: password)
     }
     
     // MARK: - Functions
@@ -33,17 +29,13 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate {
         emailTextField.delegate = self
         passwordTextField.delegate = self
     }
-    
-    // MARK: - Public Functions
-    
 }
 
-extension LoginScreenViewController: ViewModelDelegate {
-    func reloadView() {
-        
+extension LoginScreenViewController: LoginViewModelDelegate {
+    func loginResult(isSuccessful: Bool) {
     }
     
-    func show(error: String) {
-        showAlert(message: "Please check login credentials")
+    func reloadView() {
+        
     }
 }

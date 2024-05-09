@@ -5,15 +5,19 @@
 
 import Foundation
 
+protocol LoginViewModelDelegate: AnyObject {
+    func loginResult(isSuccessful: Bool)
+}
+
 class LoginViewModel {
     
     // MARK: - Private Variables
-
-    private let validEmail = "user@example.com"
-    private let validPassword = "password123"
-    private weak var delegate: ViewModelDelegate?
     
-    init(delegate: ViewModelDelegate) {
+    private let validEmail = "kiashar@gmail.com"
+    private let validPassword = "Kiasha1006"
+    weak var delegate: LoginViewModelDelegate?
+    
+    init(delegate: LoginViewModelDelegate) {
         self.delegate = delegate
     }
     
@@ -22,10 +26,13 @@ class LoginViewModel {
     func authenticate(email: String?, password: String?) -> Bool {
         guard let email, email.isEmpty,
               let password, password.isEmpty else {
+            delegate?.loginResult(isSuccessful: false)
             return false
         }
         
-    return email == validEmail && password == validPassword
+        let isSuccessful = email == validEmail && password == validPassword
+        delegate?.loginResult(isSuccessful: isSuccessful)
         
+        return email == validEmail && password == validPassword
     }
 }
