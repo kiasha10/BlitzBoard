@@ -1,4 +1,4 @@
-// LoginModel.swift
+// LoginViewModel.swift
 // BlitzBoard
 //
 // Created by Kiasha Rangasamy on 2024/04/11.
@@ -8,9 +8,14 @@ import Foundation
 class LoginViewModel {
     
     // MARK: - Private Variables
-    
+
     private let validEmail = "user@example.com"
     private let validPassword = "password123"
+    private weak var delegate: ViewModelDelegate?
+    
+    init(delegate: ViewModelDelegate) {
+        self.delegate = delegate
+    }
     
     // MARK: - Public Functions
     
@@ -20,6 +25,7 @@ class LoginViewModel {
             return false
         }
         
-        return email == validEmail && password == validPassword
+    return email == validEmail && password == validPassword
+        
     }
 }

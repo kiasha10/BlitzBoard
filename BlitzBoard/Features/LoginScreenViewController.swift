@@ -12,6 +12,8 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     
+    private lazy var viewModel = LoginViewModel(delegate: self)
+    
     // MARK: IBActions
     
     @IBAction private func loginButtonTapped(_ sender: Any) {
@@ -34,15 +36,14 @@ class LoginScreenViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Public Functions
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
+}
+
+extension LoginScreenViewController: ViewModelDelegate {
+    func reloadView() {
+        
     }
     
-    func showAlert(message: String) {
-        let alertController = UIAlertController(title: "Alert", message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
+    func show(error: String) {
+        showAlert(message: "Please check login credentials")
     }
 }

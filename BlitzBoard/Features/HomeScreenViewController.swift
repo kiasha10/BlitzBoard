@@ -59,8 +59,10 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension HomeScreenViewController: ViewModelDelegate {
+    
     func reloadView() {
     }
+
     
     func show(error: String) {
     }
