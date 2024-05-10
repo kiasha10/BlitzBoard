@@ -7,11 +7,3 @@
 
 import UIKit
 
-class SettingsScreenViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-    
-}
