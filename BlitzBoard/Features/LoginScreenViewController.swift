@@ -34,6 +34,6 @@ extension LoginScreenViewController: LoginViewModelDelegate {
     }
     
     func showError(message: String) {
-        showAlert(message: "Please Check Login credentials")
+        showAlert(message: "Please check login credentials")
     }
 }
