@@ -97,7 +97,7 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="loginButtonTapped:" destination="Rbr-lG-03D" eventType="touchUpInside" id="P9j-0H-DEz"/>
-                                                    <segue destination="1jg-VC-kSb" kind="show" identifier="LoginSegue" id="tQd-Lr-wLH"/>
+                                                    <segue destination="1jg-VC-kSb" kind="show" identifier="HomeScreenSegue" id="tQd-Lr-wLH"/>
                                                 </connections>
                                             </button>
                                         </subviews>

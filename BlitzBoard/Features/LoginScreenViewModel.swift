@@ -6,7 +6,8 @@
 import Foundation
 
 protocol LoginViewModelDelegate: AnyObject {
-    func loginResult(isSuccessful: Bool)
+    func navigateToHomeScreen()
+    func showError(message: String)
 }
 
 class LoginViewModel {
@@ -23,17 +24,17 @@ class LoginViewModel {
     
     // MARK: - Functions
     
-    @discardableResult
-    func authenticate(email: String?, password: String?) -> Bool {
+    func authenticate(email: String?, password: String?) {
         guard let email, !email.isEmpty,
               let password, !password.isEmpty else {
-            delegate?.loginResult(isSuccessful: false)
-            return false
+            delegate?.showError(message: "Please enter an email and/or password")
+            return
         }
         
-        let isSuccessful = email == validEmail && password == validPassword
-        delegate?.loginResult(isSuccessful: isSuccessful)
-        
-        return email == validEmail && password == validPassword
+        if email == validEmail && password == validPassword {
+            delegate?.navigateToHomeScreen()
+        } else {
+            delegate?.showError(message: "Please check login credentials")
+        }
     }
 }

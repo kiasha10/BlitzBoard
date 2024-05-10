@@ -25,17 +25,15 @@ class LoginScreenViewController: UIViewController {
     private lazy var viewModel = LoginViewModel(delegate: self)
 }
 
-    // MARK: Extensions
+// MARK: Extensions
 
 extension LoginScreenViewController: LoginViewModelDelegate {
-    func loginResult(isSuccessful: Bool) {
-        if isSuccessful {
-            performSegue(withIdentifier: "LoginSegue", sender: self)
-        } else {
-            showAlert(message: "Please Check Login credentials")
-        }
+    
+    func navigateToHomeScreen() {
+        performSegue(withIdentifier: "HomeScreenSegue", sender: self)
     }
     
-    func reloadView() {
+    func showError(message: String) {
+        showAlert(message: "Please Check Login credentials")
     }
 }
