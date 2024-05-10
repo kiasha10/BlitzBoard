@@ -5,37 +5,37 @@
 //
 import UIKit
 
-class LoginScreenViewController: UIViewController, UITextFieldDelegate {
+class LoginScreenViewController: UIViewController {
     
     // MARK: - IBOutlets
     
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     
-    private lazy var viewModel = LoginViewModel(delegate: self)
-    
     // MARK: IBActions
     
     @IBAction private func loginButtonTapped(_ sender: Any) {
-        let email = emailTextField.text ?? ""
-        let password = passwordTextField.text ?? ""
+        let email = emailTextField.text
+        let password = passwordTextField.text
         viewModel.authenticate(email: email, password: password)
     }
     
-    // MARK: - Functions
+    // MARK: Private Variables
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
-    }
+    private lazy var viewModel = LoginViewModel(delegate: self)
 }
+
+    // MARK: Extensions
 
 extension LoginScreenViewController: LoginViewModelDelegate {
     func loginResult(isSuccessful: Bool) {
+        if isSuccessful {
+            performSegue(withIdentifier: "LoginSegue", sender: self)
+        } else {
+            showAlert(message: "Please Check Login credentials")
+        }
     }
     
     func reloadView() {
-        
     }
 }

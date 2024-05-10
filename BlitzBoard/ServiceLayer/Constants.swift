@@ -28,3 +28,8 @@ struct TableViewIdentifiers {
     
     static let customCellIdentifier = "StandingTableViewCell"
 }
+
+struct SegueIdentifiers {
+    
+    static let loginSegueIdentifier = "LoginSegue"
+}

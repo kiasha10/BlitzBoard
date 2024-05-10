@@ -62,7 +62,7 @@ extension HomeScreenViewController: ViewModelDelegate {
     
     func reloadView() {
     }
-
+    
     func show(error: String) {
     }
 }

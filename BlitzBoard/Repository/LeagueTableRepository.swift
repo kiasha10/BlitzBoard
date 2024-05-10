@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 typealias LeagueTableResult = (Result<[LeagueTableModel], APIError>)
 
 protocol LeagueTableRepositoryType {

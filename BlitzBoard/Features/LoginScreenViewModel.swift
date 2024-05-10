@@ -13,19 +13,20 @@ class LoginViewModel {
     
     // MARK: - Private Variables
     
-    private let validEmail = "kiashar@gmail.com"
-    private let validPassword = "Kiasha1006"
-    weak var delegate: LoginViewModelDelegate?
+    private let validEmail = "kiasha@gmail.com"
+    private let validPassword = "10062000"
+    private weak var delegate: LoginViewModelDelegate?
     
     init(delegate: LoginViewModelDelegate) {
         self.delegate = delegate
     }
     
-    // MARK: - Public Functions
+    // MARK: - Functions
     
+    @discardableResult
     func authenticate(email: String?, password: String?) -> Bool {
-        guard let email, email.isEmpty,
-              let password, password.isEmpty else {
+        guard let email, !email.isEmpty,
+              let password, !password.isEmpty else {
             delegate?.loginResult(isSuccessful: false)
             return false
         }

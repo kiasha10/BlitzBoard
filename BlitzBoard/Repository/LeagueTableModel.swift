@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 // MARK: - League Table Model
 struct LeagueTableModel: Codable {
     var countryName: CountryName
@@ -27,7 +26,6 @@ struct LeagueTableModel: Codable {
     var teamBadge: String
     var fkStageKey: String
     var stageName: StageNames
-    
     
     enum CodingKeys: String, CodingKey {
         case countryName = "country_name"
