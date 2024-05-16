@@ -28,8 +28,3 @@ struct TableViewIdentifiers {
     
     static let customCellIdentifier = "HomeScreenTableViewCell"
 }
-
-struct SegueIdentifiers {
-    
-    static let loginSegueIdentifier = "LoginSegue"
-}
