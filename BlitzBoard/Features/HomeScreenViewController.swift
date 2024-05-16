@@ -92,6 +92,7 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension HomeScreenViewController: ViewModelDelegate {
+    
     func reloadView() {
         tableView.reloadData()
     }
