@@ -3,8 +3,6 @@
 //
 //  Created by Kiasha Rangasamy on 2024/05/16.
 //
-
-import Foundation
 import UIKit
 
 extension UIImageView {

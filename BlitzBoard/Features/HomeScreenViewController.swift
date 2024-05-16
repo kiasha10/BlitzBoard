@@ -82,7 +82,7 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
         }
         let teamStanding = viewModel.leagueTables[indexPath.row]
         cell.configure(teamStanding: teamStanding)
-        cell.teamLogo.load(urlString: teamStanding.teamBadge)
+        
         return cell
     }
     
