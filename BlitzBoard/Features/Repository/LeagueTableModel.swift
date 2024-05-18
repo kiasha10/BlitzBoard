@@ -5,7 +5,7 @@
 
 import Foundation
 
-// MARK: LeagueTable Struct
+    // MARK: LeagueTable Struct
 
 struct LeagueTableModel: Codable {
     var teamName: String

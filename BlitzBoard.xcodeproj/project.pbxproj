@@ -10,6 +10,8 @@
 		450CA0AE2BF5E9E0004FF11B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 450CA0AD2BF5E9E0004FF11B /* SDWebImage */; };
 		450CA0B02BF5E9E0004FF11B /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 450CA0AF2BF5E9E0004FF11B /* SDWebImageMapKit */; };
 		450CA0B22BF5FD2D004FF11B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA0B12BF5FD2D004FF11B /* UIImageViewExtension.swift */; };
+		450CA0CB2BF7975B004FF11B /* HomeScreenHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA0CA2BF7975B004FF11B /* HomeScreenHeaderView.swift */; };
+		450CA0CD2BF7976C004FF11B /* HomeScreenHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 450CA0CC2BF7976C004FF11B /* HomeScreenHeaderView.xib */; };
 		45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EAD2BC81E3F00A2C05E /* AppDelegate.swift */; };
 		45AA3EB02BC81E3F00A2C05E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EAF2BC81E3F00A2C05E /* SceneDelegate.swift */; };
 		45AA3EB72BC81E4000A2C05E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EB62BC81E4000A2C05E /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		450CA0A72BF3A1E4004FF11B /* BlitzBoard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BlitzBoard.xcodeproj; sourceTree = "<group>"; };
 		450CA0B12BF5FD2D004FF11B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		450CA0CA2BF7975B004FF11B /* HomeScreenHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenHeaderView.swift; sourceTree = "<group>"; };
+		450CA0CC2BF7976C004FF11B /* HomeScreenHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenHeaderView.xib; sourceTree = "<group>"; };
 		45AA3EAA2BC81E3F00A2C05E /* BlitzBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlitzBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AA3EAD2BC81E3F00A2C05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45AA3EAF2BC81E3F00A2C05E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 			children = (
 				45D98DFA2BE9637200AE0353 /* HomeScreenTableViewCell.swift */,
 				45D98DFE2BE963CC00AE0353 /* HomeScreenTableViewCell.xib */,
+				450CA0CA2BF7975B004FF11B /* HomeScreenHeaderView.swift */,
+				450CA0CC2BF7976C004FF11B /* HomeScreenHeaderView.xib */,
 			);
 			path = HomeScreenTableCell;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450CA0CD2BF7976C004FF11B /* HomeScreenHeaderView.xib in Resources */,
 				45D98DDF2BE8F9DC00AE0353 /* FixturesScreen.storyboard in Resources */,
 				45D98DFF2BE963CC00AE0353 /* HomeScreenTableViewCell.xib in Resources */,
 				45D98DE72BE8FA9B00AE0353 /* SettingsScreen.storyboard in Resources */,
@@ -340,6 +347,7 @@
 				45D98DF42BE9599000AE0353 /* LeagueTableModel.swift in Sources */,
 				45D98DCA2BE8EBB500AE0353 /* CoredataHandler.swift in Sources */,
 				45D98DF22BE9598200AE0353 /* HomeScreenRepository.swift in Sources */,
+				450CA0CB2BF7975B004FF11B /* HomeScreenHeaderView.swift in Sources */,
 				45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */,
 				45D98DF62BE959A400AE0353 /* HomeScreenViewModel.swift in Sources */,
 				45FF26682BC90E6D00F75682 /* ServiceErrors.swift in Sources */,
