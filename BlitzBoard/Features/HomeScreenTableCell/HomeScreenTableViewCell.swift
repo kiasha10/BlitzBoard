@@ -25,7 +25,6 @@ class HomeScreenTableViewCell: UITableViewCell {
         winsLabel.text = "\(teamStanding.overallLeagueWin)"
         drawsLabel.text = "\(teamStanding.overallLeagueDraw)"
         lossesLabel.text = "\(teamStanding.overallLeagueLoss)"
-        
         teamLogo.load(urlString: teamStanding.teamBadge)
     }
     

@@ -39,7 +39,7 @@ class HomeScreenViewController: UIViewController {
     }
 }
 
-    // MARK: Extensions
+// MARK: Extensions
 
 extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     
