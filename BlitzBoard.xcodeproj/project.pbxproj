@@ -12,6 +12,11 @@
 		450CA0B22BF5FD2D004FF11B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA0B12BF5FD2D004FF11B /* UIImageViewExtension.swift */; };
 		450CA0CB2BF7975B004FF11B /* HomeScreenHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA0CA2BF7975B004FF11B /* HomeScreenHeaderView.swift */; };
 		450CA0CD2BF7976C004FF11B /* HomeScreenHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 450CA0CC2BF7976C004FF11B /* HomeScreenHeaderView.xib */; };
+		450CA0DD2BFA3DD9004FF11B /* FixturesScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA0DC2BFA3DD9004FF11B /* FixturesScreenViewModel.swift */; };
+		450CA0E02BFA3DF8004FF11B /* FixturesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA0DF2BFA3DF8004FF11B /* FixturesModel.swift */; };
+		450CA0E22BFA3E06004FF11B /* FixturesScreenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA0E12BFA3E06004FF11B /* FixturesScreenRepository.swift */; };
+		450CA0E52BFA3E27004FF11B /* FixturesScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA0E42BFA3E27004FF11B /* FixturesScreenTableViewCell.swift */; };
+		450CA0E72BFA3E3D004FF11B /* FixturesScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 450CA0E62BFA3E3D004FF11B /* FixturesScreenTableViewCell.xib */; };
 		45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EAD2BC81E3F00A2C05E /* AppDelegate.swift */; };
 		45AA3EB02BC81E3F00A2C05E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EAF2BC81E3F00A2C05E /* SceneDelegate.swift */; };
 		45AA3EB72BC81E4000A2C05E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EB62BC81E4000A2C05E /* Assets.xcassets */; };
@@ -42,6 +47,11 @@
 		450CA0B12BF5FD2D004FF11B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		450CA0CA2BF7975B004FF11B /* HomeScreenHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenHeaderView.swift; sourceTree = "<group>"; };
 		450CA0CC2BF7976C004FF11B /* HomeScreenHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenHeaderView.xib; sourceTree = "<group>"; };
+		450CA0DC2BFA3DD9004FF11B /* FixturesScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesScreenViewModel.swift; sourceTree = "<group>"; };
+		450CA0DF2BFA3DF8004FF11B /* FixturesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesModel.swift; sourceTree = "<group>"; };
+		450CA0E12BFA3E06004FF11B /* FixturesScreenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesScreenRepository.swift; sourceTree = "<group>"; };
+		450CA0E42BFA3E27004FF11B /* FixturesScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesScreenTableViewCell.swift; sourceTree = "<group>"; };
+		450CA0E62BFA3E3D004FF11B /* FixturesScreenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FixturesScreenTableViewCell.xib; sourceTree = "<group>"; };
 		45AA3EAA2BC81E3F00A2C05E /* BlitzBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlitzBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AA3EAD2BC81E3F00A2C05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45AA3EAF2BC81E3F00A2C05E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +95,24 @@
 		450CA0A82BF3A1E4004FF11B /* Products */ = {
 			isa = PBXGroup;
 			name = Products;
+			sourceTree = "<group>";
+		};
+		450CA0DE2BFA3DDD004FF11B /* FixturesScreenRepository */ = {
+			isa = PBXGroup;
+			children = (
+				450CA0DF2BFA3DF8004FF11B /* FixturesModel.swift */,
+				450CA0E12BFA3E06004FF11B /* FixturesScreenRepository.swift */,
+			);
+			name = FixturesScreenRepository;
+			sourceTree = "<group>";
+		};
+		450CA0E32BFA3E0F004FF11B /* FixturesScreenTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				450CA0E42BFA3E27004FF11B /* FixturesScreenTableViewCell.swift */,
+				450CA0E62BFA3E3D004FF11B /* FixturesScreenTableViewCell.xib */,
+			);
+			name = FixturesScreenTableViewCell;
 			sourceTree = "<group>";
 		};
 		45AA3EA12BC81E3F00A2C05E = {
@@ -182,8 +210,11 @@
 		45D98DD92BE8F95F00AE0353 /* FixturesScreen */ = {
 			isa = PBXGroup;
 			children = (
+				450CA0DE2BFA3DDD004FF11B /* FixturesScreenRepository */,
+				450CA0E32BFA3E0F004FF11B /* FixturesScreenTableViewCell */,
 				45D98DDC2BE8F9CE00AE0353 /* FixturesScreenViewController.swift */,
 				45D98DDE2BE8F9DC00AE0353 /* FixturesScreen.storyboard */,
+				450CA0DC2BFA3DD9004FF11B /* FixturesScreenViewModel.swift */,
 			);
 			name = FixturesScreen;
 			sourceTree = "<group>";
@@ -307,6 +338,7 @@
 				45AA3EBA2BC81E4000A2C05E /* LaunchScreen.storyboard in Resources */,
 				45D98DD62BE8F7D700AE0353 /* HomeScreen.storyboard in Resources */,
 				45AA3EB72BC81E4000A2C05E /* Assets.xcassets in Resources */,
+				450CA0E72BFA3E3D004FF11B /* FixturesScreenTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,19 +374,23 @@
 				45FF26672BC90E6D00F75682 /* APIHandler.swift in Sources */,
 				45FF26662BC90E6D00F75682 /* Constants.swift in Sources */,
 				45D98DD82BE8F80700AE0353 /* HomeScreenViewController.swift in Sources */,
+				450CA0DD2BFA3DD9004FF11B /* FixturesScreenViewModel.swift in Sources */,
 				45D98DE52BE8FA7B00AE0353 /* SettingsScreenViewController.swift in Sources */,
 				45D98DFB2BE9637200AE0353 /* HomeScreenTableViewCell.swift in Sources */,
 				45D98DF42BE9599000AE0353 /* LeagueTableModel.swift in Sources */,
 				45D98DCA2BE8EBB500AE0353 /* CoredataHandler.swift in Sources */,
 				45D98DF22BE9598200AE0353 /* HomeScreenRepository.swift in Sources */,
 				450CA0CB2BF7975B004FF11B /* HomeScreenHeaderView.swift in Sources */,
+				450CA0E52BFA3E27004FF11B /* FixturesScreenTableViewCell.swift in Sources */,
 				45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */,
 				45D98DF62BE959A400AE0353 /* HomeScreenViewModel.swift in Sources */,
 				45FF26682BC90E6D00F75682 /* ServiceErrors.swift in Sources */,
 				45D98DDD2BE8F9CE00AE0353 /* FixturesScreenViewController.swift in Sources */,
+				450CA0E02BFA3DF8004FF11B /* FixturesModel.swift in Sources */,
 				45D98DE12BE8FA2C00AE0353 /* TopScorersScreenViewController.swift in Sources */,
 				450CA0B22BF5FD2D004FF11B /* UIImageViewExtension.swift in Sources */,
 				45AA3EB02BC81E3F00A2C05E /* SceneDelegate.swift in Sources */,
+				450CA0E22BFA3E06004FF11B /* FixturesScreenRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
