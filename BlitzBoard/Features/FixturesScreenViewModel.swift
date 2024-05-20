@@ -33,6 +33,7 @@ class FixturesScreenViewModel {
             switch result {
             case .success(let fetchedFixtures):
                 self?.fixtures = fetchedFixtures
+                self?.delegate?.reloadView()
                 print("Todays Fixtures are: \(String(describing: self?.fixtures))")
             case .failure(let error):
                 // Handle Error

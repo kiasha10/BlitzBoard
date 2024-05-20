@@ -27,5 +27,5 @@ struct TableViewIdentifiers {
     
     static let customCellIdentifier = "HomeScreenTableViewCell"
     static let headerViewIdentifier = "HomeScreenHeaderView"
-    static let fixtureTableIdentifier = "FixturesTableView"
+    static let fixtureTableIdentifier = "FixturesScreenTableViewCell"
 }

@@ -49,7 +49,7 @@ extension FixturesScreenViewController: UITableViewDataSource, UITableViewDelega
         else {
             return UITableViewCell()
         }
-        viewModel.fetchFixtures()
+        //viewModel.fetchFixtures()
         let gameFixture = viewModel.fixtures[indexPath.row]
         cell.configure(gameFixtures: gameFixture)
         

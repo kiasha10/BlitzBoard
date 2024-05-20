@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="109" id="EN0-vJ-ARV">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="109" id="EN0-vJ-ARV" customClass="FixturesScreenTableViewCell" customModule="BlitzBoard" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="438" height="109"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EN0-vJ-ARV" id="YJ6-hG-ByN">
@@ -75,7 +75,16 @@
                     <constraint firstItem="wPK-kk-krw" firstAttribute="top" secondItem="IRX-et-AoA" secondAttribute="bottom" constant="16" id="wZQ-Nw-1GZ"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-381.67938931297709" y="-73.591549295774655"/>
+            <connections>
+                <outlet property="awayTeamLogo" destination="tHA-Nv-6Ef" id="Knu-8O-D06"/>
+                <outlet property="awayTeamName" destination="lLa-BE-hTj" id="U1t-n2-rgD"/>
+                <outlet property="homeTeamLogo" destination="bcr-YJ-Q2y" id="b8o-Lt-Lje"/>
+                <outlet property="homeTeamName" destination="iOp-yi-nsH" id="gl0-gK-tpo"/>
+                <outlet property="matchDate" destination="tBW-ea-6uf" id="qdx-rq-1td"/>
+                <outlet property="matchStadium" destination="wPK-kk-krw" id="9gJ-Yd-Ipa"/>
+                <outlet property="matchTime" destination="IRX-et-AoA" id="f5Y-f4-69S"/>
+            </connections>
+            <point key="canvasLocation" x="-46" y="-103"/>
         </tableViewCell>
     </objects>
 </document>
