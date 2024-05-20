@@ -66,6 +66,8 @@
 		45C98D742BFB4071005F5382 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		45C98D752BFB4071005F5382 /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
 		45C98D792BFB40D5005F5382 /* ViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		45C98D822BFB49F3005F5382 /* BlitzBoardTests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BlitzBoardTests; sourceTree = "<group>"; };
+		45C98D842BFB4A8E005F5382 /* OrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTests.swift; sourceTree = "<group>"; };
 		45D98DC92BE8EBB500AE0353 /* CoredataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataHandler.swift; sourceTree = "<group>"; };
 		45D98DCC2BE8ECBE00AE0353 /* Coredata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coredata.xcdatamodel; sourceTree = "<group>"; };
 		45D98DCF2BE8F31A00AE0353 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,8 @@
 		45AA3EA12BC81E3F00A2C05E = {
 			isa = PBXGroup;
 			children = (
+				45C98D822BFB49F3005F5382 /* BlitzBoardTests */,
+				45C98D842BFB4A8E005F5382 /* OrderTests.swift */,
 				450CA0A72BF3A1E4004FF11B /* BlitzBoard.xcodeproj */,
 				45AA3EAC2BC81E3F00A2C05E /* BlitzBoard */,
 				45AA3EAB2BC81E3F00A2C05E /* Products */,
