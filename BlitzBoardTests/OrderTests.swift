@@ -1,11 +1,11 @@
-//
 //  OrderTests.swift
 //  BlitzBoardTests
 //
-//  Created by Kiasha Rangasamy on 2024/05/13.
+//  Created by Kiasha Rangasamy on 2024/05/21.
 //
 
 import XCTest
+@testable import BlitzBoard
 
 final class OrderTests: XCTestCase {
 
@@ -19,9 +19,7 @@ final class OrderTests: XCTestCase {
     }
 
     func testPerformanceExample() throws {
-
         self.measure {
         }
     }
-
 }
