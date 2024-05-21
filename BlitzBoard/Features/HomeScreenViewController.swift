@@ -33,13 +33,12 @@ class HomeScreenViewController: UIViewController {
                            forHeaderFooterViewReuseIdentifier: TableViewIdentifiers.headerViewIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
-        
         tableView.layer.borderWidth = 6.0
         tableView.layer.borderColor = UIColor.purple.cgColor
     }
 }
 
-// MARK: Extensions
+    // MARK: Extensions
 
 extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -77,6 +76,7 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension HomeScreenViewController: ViewModelDelegate {
+    
     func reloadView() {
         tableView.reloadData()
     }

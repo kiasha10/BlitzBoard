@@ -21,6 +21,12 @@
 		45AA3EB02BC81E3F00A2C05E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EAF2BC81E3F00A2C05E /* SceneDelegate.swift */; };
 		45AA3EB72BC81E4000A2C05E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EB62BC81E4000A2C05E /* Assets.xcassets */; };
 		45AA3EBA2BC81E4000A2C05E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EB82BC81E4000A2C05E /* LaunchScreen.storyboard */; };
+		45C98D762BFB4071005F5382 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C98D732BFB4071005F5382 /* LoginScreen.storyboard */; };
+		45C98D772BFB4071005F5382 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D742BFB4071005F5382 /* LoginScreenViewController.swift */; };
+		45C98D782BFB4071005F5382 /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D752BFB4071005F5382 /* LoginScreenViewModel.swift */; };
+		45C98D7A2BFB40D5005F5382 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D792BFB40D5005F5382 /* ViewController+Extension.swift */; };
+		45C98D942BFC926F005F5382 /* BlitzBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D932BFC926F005F5382 /* BlitzBoardTests.swift */; };
+		45C98D9B2BFC92AA005F5382 /* OrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D9A2BFC92AA005F5382 /* OrderTests.swift */; };
 		45C98D8B2BFB8C86005F5382 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D8A2BFB8C86005F5382 /* DateFormatter.swift */; };
 		45D98DCA2BE8EBB500AE0353 /* CoredataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DC92BE8EBB500AE0353 /* CoredataHandler.swift */; };
 		45D98DCD2BE8ECBE00AE0353 /* Coredata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DCB2BE8ECBE00AE0353 /* Coredata.xcdatamodeld */; };
@@ -43,6 +49,16 @@
 		45FF26682BC90E6D00F75682 /* ServiceErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FF26652BC90E6D00F75682 /* ServiceErrors.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		45C98D952BFC926F005F5382 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45AA3EA22BC81E3F00A2C05E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45AA3EA92BC81E3F00A2C05E;
+			remoteInfo = BlitzBoard;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		450CA0A72BF3A1E4004FF11B /* BlitzBoard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BlitzBoard.xcodeproj; sourceTree = "<group>"; };
 		450CA0B12BF5FD2D004FF11B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
@@ -59,6 +75,13 @@
 		45AA3EB62BC81E4000A2C05E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45AA3EB92BC81E4000A2C05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45AA3EBB2BC81E4000A2C05E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45C98D732BFB4071005F5382 /* LoginScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		45C98D742BFB4071005F5382 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		45C98D752BFB4071005F5382 /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
+		45C98D792BFB40D5005F5382 /* ViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		45C98D912BFC926F005F5382 /* BlitzBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlitzBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45C98D932BFC926F005F5382 /* BlitzBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlitzBoardTests.swift; sourceTree = "<group>"; };
+		45C98D9A2BFC92AA005F5382 /* OrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTests.swift; sourceTree = "<group>"; };
 		45C98D8A2BFB8C86005F5382 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		45D98DC92BE8EBB500AE0353 /* CoredataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataHandler.swift; sourceTree = "<group>"; };
 		45D98DCC2BE8ECBE00AE0353 /* Coredata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coredata.xcdatamodel; sourceTree = "<group>"; };
@@ -88,6 +111,13 @@
 			files = (
 				450CA0B02BF5E9E0004FF11B /* SDWebImageMapKit in Frameworks */,
 				450CA0AE2BF5E9E0004FF11B /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45C98D8E2BFC926F005F5382 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +152,7 @@
 			children = (
 				450CA0A72BF3A1E4004FF11B /* BlitzBoard.xcodeproj */,
 				45AA3EAC2BC81E3F00A2C05E /* BlitzBoard */,
+				45C98D922BFC926F005F5382 /* BlitzBoardTests */,
 				45AA3EAB2BC81E3F00A2C05E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				45AA3EAA2BC81E3F00A2C05E /* BlitzBoard.app */,
+				45C98D912BFC926F005F5382 /* BlitzBoardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +169,7 @@
 		45AA3EAC2BC81E3F00A2C05E /* BlitzBoard */ = {
 			isa = PBXGroup;
 			children = (
+				45D98E0C2BEB810500AE0353 /* Helpers */,
 				45D98DD32BE8F78500AE0353 /* Features */,
 				45D98DCE2BE8F2DF00AE0353 /* TabBar */,
 				45D98DC82BE8EB8C00AE0353 /* Coredata */,
@@ -170,6 +203,15 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		45C98D922BFC926F005F5382 /* BlitzBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				45C98D932BFC926F005F5382 /* BlitzBoardTests.swift */,
+				45C98D9A2BFC92AA005F5382 /* OrderTests.swift */,
+			);
+			path = BlitzBoardTests;
+			sourceTree = "<group>";
+		};
 		45D98DC82BE8EB8C00AE0353 /* Coredata */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +232,7 @@
 		45D98DD32BE8F78500AE0353 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				45D98E002BEB45B800AE0353 /* LoginScreen */,
 				45D98DDB2BE8F99100AE0353 /* SettingsScreen */,
 				45D98DDA2BE8F97C00AE0353 /* TopScorersScreen */,
 				45D98DD92BE8F95F00AE0353 /* FixturesScreen */,
@@ -260,6 +303,24 @@
 			path = HomeScreenTableCell;
 			sourceTree = "<group>";
 		};
+		45D98E002BEB45B800AE0353 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				45C98D732BFB4071005F5382 /* LoginScreen.storyboard */,
+				45C98D742BFB4071005F5382 /* LoginScreenViewController.swift */,
+				45C98D752BFB4071005F5382 /* LoginScreenViewModel.swift */,
+			);
+			name = LoginScreen;
+			sourceTree = "<group>";
+		};
+		45D98E0C2BEB810500AE0353 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				45C98D792BFB40D5005F5382 /* ViewController+Extension.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -285,6 +346,24 @@
 			productReference = 45AA3EAA2BC81E3F00A2C05E /* BlitzBoard.app */;
 			productType = "com.apple.product-type.application";
 		};
+		45C98D902BFC926F005F5382 /* BlitzBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45C98D972BFC926F005F5382 /* Build configuration list for PBXNativeTarget "BlitzBoardTests" */;
+			buildPhases = (
+				45C98D8D2BFC926F005F5382 /* Sources */,
+				45C98D8E2BFC926F005F5382 /* Frameworks */,
+				45C98D8F2BFC926F005F5382 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45C98D962BFC926F005F5382 /* PBXTargetDependency */,
+			);
+			name = BlitzBoardTests;
+			productName = BlitzBoardTests;
+			productReference = 45C98D912BFC926F005F5382 /* BlitzBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -297,6 +376,10 @@
 				TargetAttributes = {
 					45AA3EA92BC81E3F00A2C05E = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					45C98D902BFC926F005F5382 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 45AA3EA92BC81E3F00A2C05E;
 					};
 				};
 			};
@@ -323,6 +406,7 @@
 			projectRoot = "";
 			targets = (
 				45AA3EA92BC81E3F00A2C05E /* BlitzBoard */,
+				45C98D902BFC926F005F5382 /* BlitzBoardTests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,8 +424,16 @@
 				45D98DD02BE8F31A00AE0353 /* TabBar.storyboard in Resources */,
 				45AA3EBA2BC81E4000A2C05E /* LaunchScreen.storyboard in Resources */,
 				45D98DD62BE8F7D700AE0353 /* HomeScreen.storyboard in Resources */,
+				45C98D762BFB4071005F5382 /* LoginScreen.storyboard in Resources */,
 				45AA3EB72BC81E4000A2C05E /* Assets.xcassets in Resources */,
 				450CA0E72BFA3E3D004FF11B /* FixturesScreenTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45C98D8F2BFC926F005F5382 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +456,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n \nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -374,12 +467,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D98DCD2BE8ECBE00AE0353 /* Coredata.xcdatamodeld in Sources */,
+				45C98D782BFB4071005F5382 /* LoginScreenViewModel.swift in Sources */,
 				45FF26672BC90E6D00F75682 /* APIHandler.swift in Sources */,
+				45C98D772BFB4071005F5382 /* LoginScreenViewController.swift in Sources */,
 				45FF26662BC90E6D00F75682 /* Constants.swift in Sources */,
 				45D98DD82BE8F80700AE0353 /* HomeScreenViewController.swift in Sources */,
 				450CA0DD2BFA3DD9004FF11B /* FixturesScreenViewModel.swift in Sources */,
 				45D98DE52BE8FA7B00AE0353 /* SettingsScreenViewController.swift in Sources */,
 				45D98DFB2BE9637200AE0353 /* HomeScreenTableViewCell.swift in Sources */,
+				45C98D7A2BFB40D5005F5382 /* ViewController+Extension.swift in Sources */,
 				45D98DF42BE9599000AE0353 /* LeagueTableModel.swift in Sources */,
 				45D98DCA2BE8EBB500AE0353 /* CoredataHandler.swift in Sources */,
 				45D98DF22BE9598200AE0353 /* HomeScreenRepository.swift in Sources */,
@@ -398,7 +494,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45C98D8D2BFC926F005F5382 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45C98D9B2BFC92AA005F5382 /* OrderTests.swift in Sources */,
+				45C98D942BFC926F005F5382 /* BlitzBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45C98D962BFC926F005F5382 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45AA3EA92BC81E3F00A2C05E /* BlitzBoard */;
+			targetProxy = 45C98D952BFC926F005F5382 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		45AA3EB82BC81E4000A2C05E /* LaunchScreen.storyboard */ = {
@@ -464,7 +577,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -521,7 +634,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -583,6 +696,44 @@
 			};
 			name = Release;
 		};
+		45C98D982BFC926F005F5382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvt.kiasharangasamy.BlitzBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlitzBoard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlitzBoard";
+			};
+			name = Debug;
+		};
+		45C98D992BFC926F005F5382 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dvt.kiasharangasamy.BlitzBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlitzBoard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BlitzBoard";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -600,6 +751,15 @@
 			buildConfigurations = (
 				45AA3EBF2BC81E4000A2C05E /* Debug */,
 				45AA3EC02BC81E4000A2C05E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45C98D972BFC926F005F5382 /* Build configuration list for PBXNativeTarget "BlitzBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45C98D982BFC926F005F5382 /* Debug */,
+				45C98D992BFC926F005F5382 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
