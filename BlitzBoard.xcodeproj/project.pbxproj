@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		450CA0AE2BF5E9E0004FF11B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 450CA0AD2BF5E9E0004FF11B /* SDWebImage */; };
-		450CA0B02BF5E9E0004FF11B /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 450CA0AF2BF5E9E0004FF11B /* SDWebImageMapKit */; };
 		450CA0B22BF5FD2D004FF11B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA0B12BF5FD2D004FF11B /* UIImageViewExtension.swift */; };
 		450CA0CB2BF7975B004FF11B /* HomeScreenHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450CA0CA2BF7975B004FF11B /* HomeScreenHeaderView.swift */; };
 		450CA0CD2BF7976C004FF11B /* HomeScreenHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 450CA0CC2BF7976C004FF11B /* HomeScreenHeaderView.xib */; };
@@ -25,9 +23,9 @@
 		45C98D772BFB4071005F5382 /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D742BFB4071005F5382 /* LoginScreenViewController.swift */; };
 		45C98D782BFB4071005F5382 /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D752BFB4071005F5382 /* LoginScreenViewModel.swift */; };
 		45C98D7A2BFB40D5005F5382 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D792BFB40D5005F5382 /* ViewController+Extension.swift */; };
+		45C98D8B2BFB8C86005F5382 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D8A2BFB8C86005F5382 /* DateFormatter.swift */; };
 		45C98D942BFC926F005F5382 /* BlitzBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D932BFC926F005F5382 /* BlitzBoardTests.swift */; };
 		45C98D9B2BFC92AA005F5382 /* OrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D9A2BFC92AA005F5382 /* OrderTests.swift */; };
-		45C98D8B2BFB8C86005F5382 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D8A2BFB8C86005F5382 /* DateFormatter.swift */; };
 		45D98DCA2BE8EBB500AE0353 /* CoredataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DC92BE8EBB500AE0353 /* CoredataHandler.swift */; };
 		45D98DCD2BE8ECBE00AE0353 /* Coredata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DCB2BE8ECBE00AE0353 /* Coredata.xcdatamodeld */; };
 		45D98DD02BE8F31A00AE0353 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DCF2BE8F31A00AE0353 /* TabBar.storyboard */; };
@@ -79,10 +77,10 @@
 		45C98D742BFB4071005F5382 /* LoginScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
 		45C98D752BFB4071005F5382 /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
 		45C98D792BFB40D5005F5382 /* ViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		45C98D8A2BFB8C86005F5382 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		45C98D912BFC926F005F5382 /* BlitzBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlitzBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C98D932BFC926F005F5382 /* BlitzBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlitzBoardTests.swift; sourceTree = "<group>"; };
 		45C98D9A2BFC92AA005F5382 /* OrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTests.swift; sourceTree = "<group>"; };
-		45C98D8A2BFB8C86005F5382 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		45D98DC92BE8EBB500AE0353 /* CoredataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataHandler.swift; sourceTree = "<group>"; };
 		45D98DCC2BE8ECBE00AE0353 /* Coredata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coredata.xcdatamodel; sourceTree = "<group>"; };
 		45D98DCF2BE8F31A00AE0353 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
@@ -109,8 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				450CA0B02BF5E9E0004FF11B /* SDWebImageMapKit in Frameworks */,
-				450CA0AE2BF5E9E0004FF11B /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,8 +335,6 @@
 			);
 			name = BlitzBoard;
 			packageProductDependencies = (
-				450CA0AD2BF5E9E0004FF11B /* SDWebImage */,
-				450CA0AF2BF5E9E0004FF11B /* SDWebImageMapKit */,
 			);
 			productName = BlitzBoard;
 			productReference = 45AA3EAA2BC81E3F00A2C05E /* BlitzBoard.app */;
@@ -393,7 +387,6 @@
 			);
 			mainGroup = 45AA3EA12BC81E3F00A2C05E;
 			packageReferences = (
-				450CA0AC2BF5E9E0004FF11B /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 45AA3EAB2BC81E3F00A2C05E /* Products */;
 			projectDirPath = "";
@@ -765,30 +758,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		450CA0AC2BF5E9E0004FF11B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.19.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		450CA0AD2BF5E9E0004FF11B /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 450CA0AC2BF5E9E0004FF11B /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-		450CA0AF2BF5E9E0004FF11B /* SDWebImageMapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 450CA0AC2BF5E9E0004FF11B /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImageMapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		45D98DCB2BE8ECBE00AE0353 /* Coredata.xcdatamodeld */ = {
