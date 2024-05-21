@@ -10,8 +10,8 @@ class FixturesScreenViewController: UIViewController {
     
     // MARK: Properties
     
+    var fixtures: [FixturesModel] = []
     private lazy var viewModel = FixturesScreenViewModel(repository: FixturesScreenRepository(), delegate: self )
-    var fixtures: [FixturesScreenModel] = []
     
     // MARK: IBOutlets
     
@@ -30,11 +30,11 @@ class FixturesScreenViewController: UIViewController {
         tableView.delegate = self
         tableView.register(FixturesScreenTableViewCell.tableViewNib(), forCellReuseIdentifier: TableViewIdentifiers.fixtureTableIdentifier)
         tableView.layer.borderWidth = 6.0
-        tableView.layer.borderColor = UIColor.purple.cgColor
+        tableView.layer.borderColor = UIColor.lightGray.cgColor
     }
 }
 
-// MARK: - UITableViewDataSource, UITableViewDelegate
+// MARK: - Extensions
 
 extension FixturesScreenViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -49,16 +49,16 @@ extension FixturesScreenViewController: UITableViewDataSource, UITableViewDelega
         else {
             return UITableViewCell()
         }
-        //viewModel.fetchFixtures()
         let gameFixture = viewModel.fixtures[indexPath.row]
-        cell.configure(gameFixtures: gameFixture)
+        cell.configure(gameFixtures: gameFixture, matchDate: viewModel.matchDate(result: gameFixture.matchDate))
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        50
+        107
     }
+    
 }
 
 extension FixturesScreenViewController: ViewModelDelegate {

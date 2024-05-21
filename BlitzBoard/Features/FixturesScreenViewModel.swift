@@ -1,30 +1,39 @@
-//
 //  FixturesScreenViewModel.swift
 //  BlitzBoard
 //
 //  Created by Kiasha Rangasamy on 2024/05/19.
 //
-
 import Foundation
 
 class FixturesScreenViewModel {
     
-    private let repository: FixturesRepositoryType
+    // MARK: Variables
     
-    var fixtures: [FixturesScreenModel]
+    var fixtures: [FixturesModel]
+    
+    private let repository: FixturesRepositoryType
     private weak var delegate: ViewModelDelegate?
     
     init(repository: FixturesRepositoryType, delegate: ViewModelDelegate) {
         self.repository = repository
         self.delegate = delegate
         self.fixtures = []
+        
     }
+    
+    // MARK: Computed Properties
     
     var fetchNumberOfGames: Int {
         fixtures.count
     }
     
-    func fetchFixtures(at index: Int) -> FixturesScreenModel {
+    // MARK: Functions
+    
+    func matchDate(result: String) -> DateComponents {
+        DateFormatter().customDateFormatter(date: "matchDate")
+    }
+    
+    func fetchFixtures(at index: Int) -> FixturesModel {
         fixtures[index]
     }
     
@@ -36,7 +45,6 @@ class FixturesScreenViewModel {
                 self?.delegate?.reloadView()
                 print("Todays Fixtures are: \(String(describing: self?.fixtures))")
             case .failure(let error):
-                // Handle Error
                 print("Error: \(error)")
             }
         }

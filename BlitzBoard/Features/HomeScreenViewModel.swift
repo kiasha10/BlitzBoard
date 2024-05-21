@@ -31,6 +31,7 @@ class HomeScreenViewModel {
     var fetchNumberOfTeams: Int {
         leagueTables.count
     }
+    
     // MARK: Functions
     
     func fetchTeam(at index: Int) -> LeagueTableModel {

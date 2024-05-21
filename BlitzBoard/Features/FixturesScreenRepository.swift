@@ -7,20 +7,23 @@
 
 import Foundation
 
-// MARK: FixturesResult Typealias
+    // MARK: Typealias
 
-typealias FixturesResult = (Result<[FixturesScreenModel], APIError>)
+typealias FixturesResult = (Result<[FixturesModel], APIError>)
 
-// MARK: FixturesScreenRepositpry Protocol
+    // MARK: Protocol
 
 protocol FixturesRepositoryType: AnyObject {
-    
-  func fetchFixtures(completion: @escaping(FixturesResult) -> Void)
+    func fetchFixtures(completion: @escaping(FixturesResult) -> Void)
 }
 
 class FixturesScreenRepository: FixturesRepositoryType {
-  private let apiHandler = APIHandler()
-  func fetchFixtures(completion: @escaping (FixturesResult) -> Void) {
-    apiHandler.request(endpoint: EndPoint.gameFixtures, method: "GET", completion: completion)
-  }
+    
+    private let apiHandler = APIHandler()
+    
+    // MARK: Functions
+    
+    func fetchFixtures(completion: @escaping (FixturesResult) -> Void) {
+        apiHandler.request(endpoint: EndPoint.gameFixtures, method: "GET", completion: completion)
+    }
 }

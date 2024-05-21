@@ -15,13 +15,23 @@ class FixturesScreenTableViewCell: UITableViewCell {
     @IBOutlet private weak var matchTime: UILabel!
     @IBOutlet private weak var awayTeamName: UILabel!
     @IBOutlet private weak var awayTeamLogo: UIImageView!
-    @IBOutlet weak var matchStadium: UILabel!
+    @IBOutlet private weak var matchStadium: UILabel!
     
-    func configure(gameFixtures: FixturesScreenModel) {
-        matchDate.text = gameFixtures.matchDate
-        homeTeamName.text = "\(gameFixtures.matchHometeamName)"
+    // MARK: Functions
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        contentView.layer.cornerRadius = 30
+        contentView.layer.masksToBounds = true
+        contentView.layer.borderWidth = 6
+        contentView.layer.borderColor = UIColor.lightGray.cgColor
+    }
+    
+    func configure(gameFixtures: FixturesModel, matchDate: DateComponents) {
+        self.matchDate.text = "\(matchDate.day ?? 0) \(MonthConverter.matchDateMonths[(matchDate.month ?? 1) - 1])"
+        homeTeamName.text = convertToShorthand(teamName: gameFixtures.matchHometeamName)
         matchTime.text = "\(gameFixtures.matchTime)"
-        awayTeamName.text = "\(gameFixtures.matchAwayteamName)"
+        awayTeamName.text = convertToShorthand(teamName: gameFixtures.matchAwayteamName)
         matchStadium.text = "\(gameFixtures.matchStadium)"
         homeTeamLogo.load(urlString: gameFixtures.teamHomeBadge)
         awayTeamLogo.load(urlString: gameFixtures.teamAwayBadge)

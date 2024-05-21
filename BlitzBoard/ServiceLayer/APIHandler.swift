@@ -62,21 +62,31 @@ func convertToShorthand(teamName: String) -> String {
         "Liverpool": "LIV",
         "Aston Villa": "AVL",
         "Tottenham": "TOT",
+        "Tottenham Hotspur": "TOT",
         "Newcastle": "NEW",
+        "Newcastle United": "NEW",
         "Chelsea": "CHE",
         "Manchester Utd": "MUN",
+        "Manchester United": "MUN",
         "West Ham": "WHU",
+        "West Ham United": "WHU",
         "Brighton": "BHA",
+        "Brighton & Hove Albion": "BHA",
         "Bournemouth": "BOU",
+        "AFC Bournemouth": "BOU",
         "Crystal Palace": "CRY",
         "Wolves": "WOL",
+        "Wolverhampton Wanderers": "WOL",
         "Fulham": "FUL",
         "Everton": "EVE",
         "Brentford": "BRE",
         "Nottingham": "NFO",
+        "Nottingham Forest": "NFO",
         "Luton": "LUT",
+        "Luton Town": "LUT",
         "Burnley": "BUR",
-        "Sheffield Utd": "SHU"
+        "Sheffield Utd": "SHU",
+        "Sheffield United": "SHU"
     ]
     return teamNameMapping[teamName] ?? teamName
 }

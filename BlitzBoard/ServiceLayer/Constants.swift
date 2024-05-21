@@ -29,3 +29,7 @@ struct TableViewIdentifiers {
     static let headerViewIdentifier = "HomeScreenHeaderView"
     static let fixtureTableIdentifier = "FixturesScreenTableViewCell"
 }
+
+struct MonthConverter {
+    static let matchDateMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+}
