@@ -54,29 +54,3 @@ class APIHandler {
         dataTask.resume()
     }
 }
-
-func convertToShorthand(teamName: String) -> String {
-    let teamNameMapping: [String: String] = [
-        "Manchester City": "MCI",
-        "Arsenal": "ARS",
-        "Liverpool": "LIV",
-        "Aston Villa": "AVL",
-        "Tottenham": "TOT",
-        "Newcastle": "NEW",
-        "Chelsea": "CHE",
-        "Manchester Utd": "MUN",
-        "West Ham": "WHU",
-        "Brighton": "BHA",
-        "Bournemouth": "BOU",
-        "Crystal Palace": "CRY",
-        "Wolves": "WOL",
-        "Fulham": "FUL",
-        "Everton": "EVE",
-        "Brentford": "BRE",
-        "Nottingham": "NFO",
-        "Luton": "LUT",
-        "Burnley": "BUR",
-        "Sheffield Utd": "SHU"
-    ]
-    return teamNameMapping[teamName] ?? teamName
-}

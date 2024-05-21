@@ -11,21 +11,20 @@ class HomeScreenTableViewCell: UITableViewCell {
     // MARK: IBOulets
     
     @IBOutlet private weak var positionLabel: UILabel!
-    @IBOutlet private weak var teamLogo: UIImageView!
-    @IBOutlet private weak var teamName: UILabel!
+    @IBOutlet private weak var teamLogoImageView: UIImageView!
+    @IBOutlet private weak var teamNameLabel: UILabel!
     @IBOutlet private weak var winsLabel: UILabel!
     @IBOutlet private weak var drawsLabel: UILabel!
     @IBOutlet private weak var lossesLabel: UILabel!
     
     // MARK: Function
     
-    func configure(teamStanding: LeagueTableModel) {
+    func configure(with teamStanding: LeagueTableModel) {
         positionLabel.text = teamStanding.overallLeaguePosition
-        teamName.text = convertToShorthand(teamName: teamStanding.teamName)
-        winsLabel.text = "\(teamStanding.overallLeagueWin)"
-        drawsLabel.text = "\(teamStanding.overallLeagueDraw)"
-        lossesLabel.text = "\(teamStanding.overallLeagueLoss)"
-        teamLogo.load(urlString: teamStanding.teamBadge)
+        teamNameLabel.text = teamStanding.teamName
+        winsLabel.text = "Wins: \(teamStanding.overallLeagueWin)"
+        drawsLabel.text = "Draws: \(teamStanding.overallLeagueDraw)"
+        lossesLabel.text = "Losses: \(teamStanding.overallLeagueLoss)"
     }
     
     static func tableViewNib() -> UINib {

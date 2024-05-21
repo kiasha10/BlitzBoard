@@ -1,5 +1,5 @@
 //
-//  BlitzBoardTests.swift
+//  OrderTests.swift
 //  BlitzBoardTests
 //
 //  Created by Kiasha Rangasamy on 2024/05/13.
@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class BlitzBoardTests: XCTestCase {
+final class OrderTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -27,7 +27,7 @@ final class BlitzBoardTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        measure {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

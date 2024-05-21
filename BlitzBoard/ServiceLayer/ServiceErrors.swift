@@ -1,3 +1,4 @@
+//
 // ServiceErrors.swift
 // BlitzBoard
 //

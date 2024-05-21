@@ -5,11 +5,11 @@
 
 import Foundation
 
-    // MARK: Typealias
+// MARK: Typealias
 
 typealias LeagueTableResult = (Result<[LeagueTableModel], APIError>) -> Void
 
-    // MARK: Protocol
+// MARK: HomeScreenRepository Protocol
 
 protocol HomeScreenRepositoryType: AnyObject {
     func fetchLeagueTableResults(completion: @escaping LeagueTableResult )

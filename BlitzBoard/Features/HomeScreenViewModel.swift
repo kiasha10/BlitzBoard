@@ -15,7 +15,7 @@ class HomeScreenViewModel {
     
     // MARK: Variables
     
-    var leagueTables: [LeagueTableModel]
+    var leagueTables: [LeagueTableModel] = []
     
     private let repository: HomeScreenRepositoryType
     private weak var delegate: ViewModelDelegate?
@@ -33,16 +33,17 @@ class HomeScreenViewModel {
     }
     // MARK: Functions
     
-    func fetchTeam(at index: Int) -> LeagueTableModel {
+    func fetchTeam(at index: Int) -> LeagueTableModel? {
         leagueTables[index]
     }
     
     func fetchLeagueTable() {
         repository.fetchLeagueTableResults { [weak self] result in
             switch result {
-            case .success(let teamStandings):
-                self?.leagueTables = teamStandings
+            case .success(let positions):
+                self?.leagueTables = positions
                 self?.delegate?.reloadView()
+                print("Here are the stats: \(String(describing: self?.leagueTables))") // #Warning("Will remove print statement in the future ")
             case .failure(let error):
                 self?.delegate?.show(error: error.rawValue)
             }
