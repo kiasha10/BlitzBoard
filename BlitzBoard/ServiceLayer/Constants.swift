@@ -26,7 +26,8 @@ struct EndPoint {
 
 struct TableViewIdentifiers {
     
-    static let customCellIdentifier = "StandingTableViewCell"
+    static let customCellIdentifier = "HomeScreenTableViewCell"
+    static let headerViewIdentifier = "HomeScreenHeaderView"
 }
 
 struct SegueIdentifiers {

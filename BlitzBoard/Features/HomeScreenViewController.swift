@@ -11,7 +11,6 @@ class HomeScreenViewController: UIViewController {
     // MARK: IBOutlets
     
     @IBOutlet private weak var tableView: UITableView!
-    @IBOutlet private weak var wallpapers: UIImageView!
     
     // MARK: Private variables
     
@@ -29,14 +28,20 @@ class HomeScreenViewController: UIViewController {
     
     private func setupTableView() {
         tableView.register(HomeScreenTableViewCell.tableViewNib(), forCellReuseIdentifier: TableViewIdentifiers.customCellIdentifier)
+        tableView.register(UINib(nibName: TableViewIdentifiers.headerViewIdentifier,
+                                 bundle: nil),
+                           forHeaderFooterViewReuseIdentifier: TableViewIdentifiers.headerViewIdentifier)
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.layer.borderWidth = 6.0
+        tableView.layer.borderColor = UIColor.purple.cgColor
     }
 }
 
-// MARK: Extensions
+    // MARK: Extensions
 
 extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.fetchNumberOfTeams
     }
@@ -47,20 +52,32 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
         else {
             return UITableViewCell()
         }
-        
         let teamStanding = viewModel.leagueTables[indexPath.row]
-        cell.configure(with: teamStanding)
+        cell.configure(teamStanding: teamStanding)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        20
+        50
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: TableViewIdentifiers.headerViewIdentifier) as? HomeScreenHeaderView else {
+            return UITableViewHeaderFooterView()
+        }
+        
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        50
     }
 }
 
 extension HomeScreenViewController: ViewModelDelegate {
     
     func reloadView() {
+        tableView.reloadData()
     }
     
     func show(error: String) {

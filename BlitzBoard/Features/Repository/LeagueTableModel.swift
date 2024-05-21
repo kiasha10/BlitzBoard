@@ -5,10 +5,9 @@
 
 import Foundation
 
-// MARK: LeagueTable Struct
+    // MARK: LeagueTable Struct
 
 struct LeagueTableModel: Codable {
-    var leagueName: String
     var teamName: String
     var overallLeaguePosition: String
     var overallLeagueWin: String
@@ -17,12 +16,11 @@ struct LeagueTableModel: Codable {
     var teamBadge: String
     
     enum CodingKeys: String, CodingKey {
-        case leagueName = "league_name"
         case teamName = "team_name"
         case overallLeaguePosition = "overall_league_position"
-        case overallLeagueWin = "overall_league_Win"
-        case overallLeagueDraw = "overall_league_Draw"
-        case overallLeagueLoss = "overall_league_Loss"
+        case overallLeagueWin = "overall_league_W"
+        case overallLeagueDraw = "overall_league_D"
+        case overallLeagueLoss = "overall_league_L"
         case teamBadge = "team_badge"
     }
 }
