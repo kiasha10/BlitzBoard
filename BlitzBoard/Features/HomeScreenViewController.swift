@@ -62,7 +62,8 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: TableViewIdentifiers.headerViewIdentifier) as? HomeScreenHeaderView 
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(
+            withIdentifier: TableViewIdentifiers.headerViewIdentifier) as? HomeScreenHeaderView 
         else {
             return UITableViewHeaderFooterView()
         }

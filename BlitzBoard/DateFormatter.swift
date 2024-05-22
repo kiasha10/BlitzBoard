@@ -14,7 +14,6 @@ extension DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy'-'MM'-'dd'"
         let date = dateFormatter.date(from: date) ?? Date()
-        let dateComps = Calendar.current.dateComponents([.year, .month, .day], from: date)
-        return dateComps
+        return Calendar.current.dateComponents([.year, .month, .day], from: date)
     }
 }
