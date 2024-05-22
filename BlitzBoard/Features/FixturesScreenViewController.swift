@@ -1,21 +1,22 @@
-//
 //  FixturesScreenViewController.swift
 //  BlitzBoard
 //
 //  Created by Kiasha Rangasamy on 2024/05/06.
 //
+
 import UIKit
 
 class FixturesScreenViewController: UIViewController {
     
-    // MARK: Properties
-    
-    var fixtures: [FixturesModel] = []
-    private lazy var viewModel = FixturesScreenViewModel(repository: FixturesScreenRepository(), delegate: self )
-    
     // MARK: IBOutlets
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet private weak var tableView: UITableView!
+    
+    // MARK: Variables
+    
+    var fixtures: [FixturesModel] = []
+    
+    private lazy var viewModel = FixturesScreenViewModel(repository: FixturesScreenRepository(), delegate: self )
     
     // MARK: Functions
     
@@ -34,7 +35,7 @@ class FixturesScreenViewController: UIViewController {
     }
 }
 
-// MARK: - Extensions
+    // MARK: - Extensions
 
 extension FixturesScreenViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -51,14 +52,12 @@ extension FixturesScreenViewController: UITableViewDataSource, UITableViewDelega
         }
         let gameFixture = viewModel.fixtures[indexPath.row]
         cell.configure(gameFixtures: gameFixture, matchDate: viewModel.matchDate(result: gameFixture.matchDate))
-        
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         107
     }
-    
 }
 
 extension FixturesScreenViewController: ViewModelDelegate {

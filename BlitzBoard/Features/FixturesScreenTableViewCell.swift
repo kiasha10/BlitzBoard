@@ -3,6 +3,7 @@
 //
 //  Created by Kiasha Rangasamy on 2024/05/19.
 //
+
 import UIKit
 
 class FixturesScreenTableViewCell: UITableViewCell {

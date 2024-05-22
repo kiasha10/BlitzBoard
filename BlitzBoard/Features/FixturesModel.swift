@@ -6,7 +6,7 @@
 
 import Foundation
 
-// MARK: - Fixtures Model
+    // MARK: - Fixtures Model
 
 struct FixturesModel: Codable {
     var matchDate: String

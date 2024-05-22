@@ -1,4 +1,3 @@
-//
 //  DateFormatter.swift
 //  BlitzBoard
 //
@@ -6,6 +5,8 @@
 //
 
 import Foundation
+
+    // MARK: Extensions
 
 extension DateFormatter {
     
