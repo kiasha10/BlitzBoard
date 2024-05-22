@@ -18,6 +18,8 @@ protocol FixturesRepositoryType: AnyObject {
 
 class FixturesScreenRepository: FixturesRepositoryType {
     
+    // MARK: Variables
+    
     private let apiHandler = APIHandler()
     
     // MARK: Functions

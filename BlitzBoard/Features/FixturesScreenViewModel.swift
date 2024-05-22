@@ -11,7 +11,6 @@ class FixturesScreenViewModel {
     // MARK: Variables
     
     var fixtures: [FixturesModel]
-    
     private let repository: FixturesRepositoryType
     private weak var delegate: ViewModelDelegate?
     

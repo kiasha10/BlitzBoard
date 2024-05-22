@@ -15,7 +15,6 @@ class FixturesScreenViewController: UIViewController {
     // MARK: Variables
     
     var fixtures: [FixturesModel] = []
-    
     private lazy var viewModel = FixturesScreenViewModel(repository: FixturesScreenRepository(), delegate: self )
     
     // MARK: Functions
