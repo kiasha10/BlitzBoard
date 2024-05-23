@@ -43,7 +43,7 @@ class HomeScreenViewController: UIViewController {
 extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.fetchNumberOfTeams
+        viewModel.numberOfTeams
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,7 +62,8 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: TableViewIdentifiers.headerViewIdentifier) as? HomeScreenHeaderView else {
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(
+            withIdentifier: TableViewIdentifiers.headerViewIdentifier) as? HomeScreenHeaderView else {
             return UITableViewHeaderFooterView()
         }
         

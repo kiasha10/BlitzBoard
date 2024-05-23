@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,18 +14,55 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fixtures" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jY-UO-G9S">
+                                <rect key="frame" x="16" y="59" width="298" height="50.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UUn-vo-kzG">
+                                <rect key="frame" x="0.0" y="117.66666666666669" width="393" height="700.33333333333326"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="70" id="EeE-pR-RSC" customClass="FixturesScreenTableViewCell" customModule="BlitzBoard" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EeE-pR-RSC" id="AIE-5A-W5R">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="5EZ-qb-Rvc" id="eXX-WS-FT0"/>
+                                    <outlet property="delegate" destination="5EZ-qb-Rvc" id="05C-55-ud2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UUn-vo-kzG" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="9ml-bG-5Mv"/>
+                            <constraint firstItem="UUn-vo-kzG" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Bdd-LP-gsI"/>
+                            <constraint firstItem="UUn-vo-kzG" firstAttribute="top" secondItem="5jY-UO-G9S" secondAttribute="bottom" constant="8" symbolic="YES" id="Epo-rV-SVy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5jY-UO-G9S" secondAttribute="trailing" constant="79" id="HWo-lX-6jY"/>
+                            <constraint firstItem="5jY-UO-G9S" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="R5M-kN-aS6"/>
+                            <constraint firstItem="UUn-vo-kzG" firstAttribute="top" secondItem="5jY-UO-G9S" secondAttribute="bottom" constant="8" id="Sbv-T7-zsg"/>
+                            <constraint firstItem="5jY-UO-G9S" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="hd6-LP-sGF"/>
+                            <constraint firstItem="UUn-vo-kzG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="oUU-NS-wS6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="UUn-vo-kzG" id="h5g-MT-MB0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95" y="-2"/>
+            <point key="canvasLocation" x="-950.38167938931292" y="-32.394366197183103"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
