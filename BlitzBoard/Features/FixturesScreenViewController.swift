@@ -14,7 +14,6 @@ class FixturesScreenViewController: UIViewController {
     
     // MARK: Variables
     
-    var fixtures: [FixturesModel] = []
     private lazy var viewModel = FixturesScreenViewModel(repository: FixturesScreenRepository(), delegate: self )
     
     // MARK: Functions
@@ -39,7 +38,7 @@ class FixturesScreenViewController: UIViewController {
 extension FixturesScreenViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.fetchNumberOfGames
+        viewModel.numberOfGames
         
     }
     

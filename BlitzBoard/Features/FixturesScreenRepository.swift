@@ -13,7 +13,7 @@ typealias FixturesResult = (Result<[FixturesModel], APIError>) -> Void
     // MARK: Protocol
 
 protocol FixturesRepositoryType: AnyObject {
-    func fetchFixtures(completion: @escaping(FixturesResult) -> Void)
+    func fetchFixtures(completion: @escaping FixturesResult)
 }
 
 class FixturesScreenRepository: FixturesRepositoryType {
@@ -24,7 +24,7 @@ class FixturesScreenRepository: FixturesRepositoryType {
     
     // MARK: Functions
     
-    func fetchFixtures(completion: @escaping (FixturesResult) -> Void) {
+    func fetchFixtures(completion: @escaping FixturesResult) {
         apiHandler.request(endpoint: EndPoint.gameFixtures, method: "GET", completion: completion)
     }
 }

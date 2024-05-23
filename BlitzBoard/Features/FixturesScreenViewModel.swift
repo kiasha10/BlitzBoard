@@ -18,12 +18,11 @@ class FixturesScreenViewModel {
         self.repository = repository
         self.delegate = delegate
         self.fixtures = []
-        
     }
     
     // MARK: Computed Properties
     
-    var fetchNumberOfGames: Int {
+    var numberOfGames: Int {
         fixtures.count
     }
     
@@ -33,17 +32,16 @@ class FixturesScreenViewModel {
         DateFormatter().customDateFormatter(date: "matchDate")
     }
     
-    func fetchFixtures(at index: Int) -> FixturesModel {
-        fixtures[index]
+    func fixtures(atIndex: Int) -> FixturesModel {
+        fixtures[atIndex]
     }
     
     func fetchFixtures() {
-        repository.fetchFixtures {[weak self] result in
+        repository.fetchFixtures { [weak self] result in
             switch result {
             case .success(let fetchedFixtures):
                 self?.fixtures = fetchedFixtures
                 self?.delegate?.reloadView()
-                print("Todays Fixtures are: \(String(describing: self?.fixtures))")
             case .failure(let error):
                 print("Error: \(error)")
             }
