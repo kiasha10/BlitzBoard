@@ -8,7 +8,7 @@ import Foundation
 
     // MARK: Typealias
 
-typealias FixturesResult = (Result<[FixturesModel], APIError>)
+typealias FixturesResult = (Result<[FixturesModel], APIError>) -> Void
 
     // MARK: Protocol
 
