@@ -25,7 +25,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="qlG-64-UhM" userLabel="Main Stack View">
                                 <rect key="frame" x="0.0" y="59" width="393" height="646.33333333333337"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Jdi-dM-os5">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIconDark" translatesAutoresizingMaskIntoConstraints="NO" id="Jdi-dM-os5">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="6tH-bC-DJN"/>
@@ -148,7 +148,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen" width="564" height="564"/>
+        <image name="AppIconDark" width="564" height="564"/>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
