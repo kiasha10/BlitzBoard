@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,9 +26,14 @@
                                 <rect key="frame" x="0.0" y="117.66666666666669" width="393" height="700.33333333333326"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="kiZ-bV-fvD">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="53"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </activityIndicatorView>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="70" id="EeE-pR-RSC" customClass="FixturesScreenTableViewCell" customModule="BlitzBoard" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="70"/>
+                                        <rect key="frame" x="0.0" y="103" width="393" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EeE-pR-RSC" id="AIE-5A-W5R">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
@@ -57,6 +63,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="spinner" destination="kiZ-bV-fvD" id="5EL-6c-nHo"/>
                         <outlet property="tableView" destination="UUn-vo-kzG" id="h5g-MT-MB0"/>
                     </connections>
                 </viewController>

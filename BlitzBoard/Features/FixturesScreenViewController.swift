@@ -11,6 +11,7 @@ class FixturesScreenViewController: UIViewController {
     // MARK: IBOutlets
     
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak  var spinner: UIActivityIndicatorView!
     
     // MARK: Variables
     
@@ -22,6 +23,21 @@ class FixturesScreenViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         viewModel.fetchFixtures()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        spinner.isHidden = false
+        spinner.startAnimating()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        do {
+            sleep(3)
+        }
+        spinner.isHidden = true
+        spinner.stopAnimating()
     }
     
     private func setupTableView() {
