@@ -34,7 +34,7 @@ class FixturesScreenViewController: UIViewController {
     }
 }
 
-    // MARK: - Extensions
+// MARK: - Extensions
 
 extension FixturesScreenViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -69,7 +69,7 @@ extension FixturesScreenViewController: ViewModelDelegate {
         }
     }
     
-        func show(error: String) {
-            
-        }
+    func show(error: String) {
+        
     }
+}

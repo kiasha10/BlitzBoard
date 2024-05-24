@@ -87,5 +87,6 @@ extension HomeScreenViewController: ViewModelDelegate {
     }
     
     func show(error: String) {
+        
     }
 }
