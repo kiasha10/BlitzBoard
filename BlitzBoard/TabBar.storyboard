@@ -32,7 +32,7 @@
         <scene sceneID="FOI-2W-Iv7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fEf-nn-gLM" userLabel="HomeScreen" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Standings" image="homekit" catalog="system" id="wHD-nD-dn2" userLabel="Home"/>
+                    <tabBarItem key="tabBarItem" title="Standings" image="table.fill" catalog="system" id="wHD-nD-dn2" userLabel="Home"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PBY-sJ-L8K">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -61,7 +61,7 @@
         <scene sceneID="laz-ku-f9N">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="ffm-iE-oHL" userLabel="FixturesScreen" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Fixtures" image="gamecontroller" catalog="system" id="HV8-4o-H0y" userLabel="Fixtures"/>
+                    <tabBarItem key="tabBarItem" title="Fixtures" image="soccerball" catalog="system" id="HV8-4o-H0y" userLabel="Fixtures"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uv4-hB-EcI">
@@ -91,7 +91,7 @@
         <scene sceneID="lMF-4E-5jg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Nev-Lb-6kV" userLabel="TopScorersScreen" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="TopScorers" image="play" catalog="system" id="BNB-Zs-wKc"/>
+                    <tabBarItem key="tabBarItem" title="Top Scorers" image="rosette" catalog="system" id="BNB-Zs-wKc"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sIa-Rm-nrx">
@@ -149,9 +149,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gamecontroller" catalog="system" width="128" height="79"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
-        <image name="homekit" catalog="system" width="128" height="104"/>
-        <image name="play" catalog="system" width="117" height="128"/>
+        <image name="rosette" catalog="system" width="107" height="128"/>
+        <image name="soccerball" catalog="system" width="128" height="123"/>
+        <image name="table.fill" catalog="system" width="128" height="93"/>
     </resources>
 </document>
