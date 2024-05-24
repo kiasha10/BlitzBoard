@@ -25,21 +25,6 @@ class FixturesScreenViewController: UIViewController {
         viewModel.fetchFixtures()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        spinner.isHidden = false
-        spinner.startAnimating()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        do {
-            sleep(3)
-        }
-        spinner.isHidden = true
-        spinner.stopAnimating()
-    }
-    
     private func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
@@ -75,10 +60,16 @@ extension FixturesScreenViewController: UITableViewDataSource, UITableViewDelega
 }
 
 extension FixturesScreenViewController: ViewModelDelegate {
+    
     func reloadView() {
-        tableView.reloadData()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+            self.viewModel.fetchFixtures()
+            self.spinner.isHidden = true
+        }
     }
     
-    func show(error: String) {
+        func show(error: String) {
+            
+        }
     }
-}

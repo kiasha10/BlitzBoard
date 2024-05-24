@@ -11,7 +11,7 @@ class HomeScreenViewController: UIViewController {
     // MARK: IBOutlets
     
     @IBOutlet private weak var tableView: UITableView!
-    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet private weak var spinner: UIActivityIndicatorView!
     
     // MARK: Private variables
     
@@ -23,21 +23,6 @@ class HomeScreenViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         viewModel.fetchLeagueTable()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        spinner.isHidden = false
-        spinner.startAnimating()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        do {
-            sleep(2)
-        }
-        spinner.isHidden = true
-        spinner.stopAnimating()
     }
     
     // MARK: Private Functions
@@ -94,7 +79,11 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
 extension HomeScreenViewController: ViewModelDelegate {
     
     func reloadView() {
-        tableView.reloadData()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+            self.viewModel.fetchLeagueTable()
+            self.spinner.isHidden = true
+        }
     }
     
     func show(error: String) {
