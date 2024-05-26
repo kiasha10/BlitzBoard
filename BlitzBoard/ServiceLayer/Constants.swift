@@ -39,5 +39,5 @@ struct MonthConverter {
 
 struct SegueIdentifiers {
     
-    static let loginSegueIdentifier = "LoginSegue"
+    static let loginSegueIdentifier = "HomeScreenSegue"
 }
