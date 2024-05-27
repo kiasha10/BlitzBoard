@@ -63,7 +63,6 @@ extension FixturesScreenViewController: ViewModelDelegate {
     
     func reloadView() {
             self.tableView.reloadData()
-            self.viewModel.fetchFixtures()
             self.spinner.isHidden = true
     }
     

@@ -80,7 +80,6 @@ extension HomeScreenViewController: ViewModelDelegate {
     
     func reloadView() {
             self.tableView.reloadData()
-            self.viewModel.fetchLeagueTable()
             self.spinner.isHidden = true
     }
     
