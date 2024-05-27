@@ -28,8 +28,15 @@ class FixturesScreenViewModel {
     
     // MARK: Functions
     
-    func matchDate(result: String) -> DateComponents {
-        DateFormatter().customDateFormatter(date: "matchDate")
+    func matchDate(result: String, dateFormatter: DateFormatter = DateFormatter()) -> DateComponents {
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        
+        guard let date = dateFormatter.date(from: result) else {
+            return DateComponents()
+        }
+        
+        return Calendar.current.dateComponents([.year, .month, .day], from: date)
     }
     
     func fixtures(atIndex: Int) -> FixturesModel {

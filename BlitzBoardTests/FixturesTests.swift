@@ -129,4 +129,20 @@ class FixturesScreenViewModelTests: XCTestCase {
             XCTAssertEqual(fixture.matchHometeamName, "Team C")
             XCTAssertEqual(fixture.matchAwayteamName, "Team D")
         }
+    
+    func testMatchDate() {
+        // Arrange
+        let expectedDateComponents = DateComponents(year: 2024, month: 5, day: 27)
+        let mockDateFormatter = DateFormatter()
+        mockDateFormatter.dateFormat = "yyyy-MM-dd"
+        mockDateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        
+        // Act
+        let dateComponents = viewModel.matchDate(result: "2024-05-27", dateFormatter: mockDateFormatter)
+        
+        // Assert
+        XCTAssertEqual(dateComponents.year, expectedDateComponents.year)
+        XCTAssertEqual(dateComponents.month, expectedDateComponents.month)
+        XCTAssertEqual(dateComponents.day, expectedDateComponents.day)
+    }
 }
