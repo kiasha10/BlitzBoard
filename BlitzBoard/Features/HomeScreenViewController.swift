@@ -79,11 +79,9 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
 extension HomeScreenViewController: ViewModelDelegate {
     
     func reloadView() {
-        DispatchQueue.main.async {
             self.tableView.reloadData()
             self.viewModel.fetchLeagueTable()
             self.spinner.isHidden = true
-        }
     }
     
     func show(error: String) {

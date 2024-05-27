@@ -62,11 +62,9 @@ extension FixturesScreenViewController: UITableViewDataSource, UITableViewDelega
 extension FixturesScreenViewController: ViewModelDelegate {
     
     func reloadView() {
-        DispatchQueue.main.async {
             self.tableView.reloadData()
             self.viewModel.fetchFixtures()
             self.spinner.isHidden = true
-        }
     }
     
     func show(error: String) {
