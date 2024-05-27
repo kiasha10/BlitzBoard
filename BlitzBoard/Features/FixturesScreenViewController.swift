@@ -11,6 +11,7 @@ class FixturesScreenViewController: UIViewController {
     // MARK: IBOutlets
     
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak  var spinner: UIActivityIndicatorView!
     
     // MARK: Variables
     
@@ -33,7 +34,7 @@ class FixturesScreenViewController: UIViewController {
     }
 }
 
-    // MARK: - Extensions
+// MARK: - Extensions
 
 extension FixturesScreenViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -59,10 +60,16 @@ extension FixturesScreenViewController: UITableViewDataSource, UITableViewDelega
 }
 
 extension FixturesScreenViewController: ViewModelDelegate {
+    
     func reloadView() {
-        tableView.reloadData()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+            self.viewModel.fetchFixtures()
+            self.spinner.isHidden = true
+        }
     }
     
     func show(error: String) {
+        
     }
 }
