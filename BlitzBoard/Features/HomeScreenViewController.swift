@@ -79,8 +79,8 @@ extension HomeScreenViewController: UITableViewDataSource, UITableViewDelegate {
 extension HomeScreenViewController: ViewModelDelegate {
     
     func reloadView() {
-            self.tableView.reloadData()
-            self.spinner.isHidden = true
+        self.tableView.reloadData()
+        self.spinner.isHidden = true
     }
     
     func show(error: String) {
