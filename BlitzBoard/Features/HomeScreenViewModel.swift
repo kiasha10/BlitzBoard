@@ -43,6 +43,7 @@ class HomeScreenViewModel {
             switch result {
             case .success(let teamStandings):
                 self?.leagueTables = teamStandings
+                print("\(teamStandings)")
                 self?.delegate?.reloadView()
             case .failure(let error):
                 self?.delegate?.show(error: error.rawValue)
