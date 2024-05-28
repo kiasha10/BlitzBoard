@@ -1,7 +1,12 @@
+excluded:
+  - Pods
+  - Carthage
+  - Build
+  - Generated
+  - Generated/Assets
 
 disabled_rules:
 - trailing_whitespace
-
 opt_in_rules:
  - attributes
  - closure_spacing
