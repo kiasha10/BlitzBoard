@@ -28,6 +28,7 @@
 		45C98D9B2BFC92AA005F5382 /* OrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98D9A2BFC92AA005F5382 /* OrderTests.swift */; };
 		45C98DC72C049052005F5382 /* FixturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98DC62C049052005F5382 /* FixturesTests.swift */; };
 		45C98DD52C04D0E0005F5382 /* HomeScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98DD42C04D0E0005F5382 /* HomeScreenTests.swift */; };
+		45C98DD92C05A970005F5382 /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C98DD82C05A970005F5382 /* LoginTests.swift */; };
 		45D98DCA2BE8EBB500AE0353 /* CoredataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DC92BE8EBB500AE0353 /* CoredataHandler.swift */; };
 		45D98DCD2BE8ECBE00AE0353 /* Coredata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45D98DCB2BE8ECBE00AE0353 /* Coredata.xcdatamodeld */; };
 		45D98DD02BE8F31A00AE0353 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45D98DCF2BE8F31A00AE0353 /* TabBar.storyboard */; };
@@ -85,6 +86,7 @@
 		45C98D9A2BFC92AA005F5382 /* OrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTests.swift; sourceTree = "<group>"; };
 		45C98DC62C049052005F5382 /* FixturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixturesTests.swift; sourceTree = "<group>"; };
 		45C98DD42C04D0E0005F5382 /* HomeScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenTests.swift; sourceTree = "<group>"; };
+		45C98DD82C05A970005F5382 /* LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
 		45D98DC92BE8EBB500AE0353 /* CoredataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataHandler.swift; sourceTree = "<group>"; };
 		45D98DCC2BE8ECBE00AE0353 /* Coredata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Coredata.xcdatamodel; sourceTree = "<group>"; };
 		45D98DCF2BE8F31A00AE0353 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				45C98D9A2BFC92AA005F5382 /* OrderTests.swift */,
 				45C98DC62C049052005F5382 /* FixturesTests.swift */,
 				45C98DD42C04D0E0005F5382 /* HomeScreenTests.swift */,
+				45C98DD82C05A970005F5382 /* LoginTests.swift */,
 			);
 			path = BlitzBoardTests;
 			sourceTree = "<group>";
@@ -499,6 +502,7 @@
 				45C98DD52C04D0E0005F5382 /* HomeScreenTests.swift in Sources */,
 				45C98DC72C049052005F5382 /* FixturesTests.swift in Sources */,
 				45C98D9B2BFC92AA005F5382 /* OrderTests.swift in Sources */,
+				45C98DD92C05A970005F5382 /* LoginTests.swift in Sources */,
 				45C98D942BFC926F005F5382 /* BlitzBoardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
