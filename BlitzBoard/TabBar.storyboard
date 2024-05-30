@@ -16,12 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="fEf-nn-gLM" kind="relationship" relationship="viewControllers" id="fps-u3-NQA"/>
                         <segue destination="ffm-iE-oHL" kind="relationship" relationship="viewControllers" id="yWb-He-5mr"/>
                         <segue destination="Nev-Lb-6kV" kind="relationship" relationship="viewControllers" id="7sa-vR-92W"/>
-                        <segue destination="3SW-zY-gFv" kind="relationship" relationship="viewControllers" id="ccE-G2-zhy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UHw-6m-1lt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -61,7 +62,9 @@
         <scene sceneID="laz-ku-f9N">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="ffm-iE-oHL" userLabel="FixturesScreen" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Fixtures" image="soccerball" catalog="system" id="HV8-4o-H0y" userLabel="Fixtures"/>
+                    <tabBarItem key="tabBarItem" title="Fixtures" image="soccerball" catalog="system" id="HV8-4o-H0y" userLabel="Fixtures">
+                        <color key="badgeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uv4-hB-EcI">
@@ -91,7 +94,7 @@
         <scene sceneID="lMF-4E-5jg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Nev-Lb-6kV" userLabel="TopScorersScreen" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Top Scorers" image="rosette" catalog="system" id="BNB-Zs-wKc"/>
+                    <tabBarItem key="tabBarItem" title="Top Scorers" image="medal" catalog="system" id="BNB-Zs-wKc"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sIa-Rm-nrx">
@@ -117,40 +120,9 @@
             </objects>
             <point key="canvasLocation" x="1069" y="1275"/>
         </scene>
-        <!--SettingsScreen-->
-        <scene sceneID="Zll-wR-FRL">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="3SW-zY-gFv" userLabel="SettingsScreen" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="BXA-Hk-QSp" userLabel="Settings"/>
-                    <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gwt-aU-Cit">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="quf-WV-Wrn" kind="relationship" relationship="rootViewController" id="GmP-nS-LAR"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LIi-Px-nBg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2090.8396946564885" y="855.63380281690149"/>
-        </scene>
-        <!--SettingsScreen-->
-        <scene sceneID="O0Q-zV-lmv">
-            <objects>
-                <viewControllerPlaceholder storyboardName="SettingsScreen" id="quf-WV-Wrn" userLabel="SettingsScreen" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="5su-YS-t50"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cLT-1L-FpW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2091" y="1275"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="gearshape" catalog="system" width="128" height="123"/>
-        <image name="rosette" catalog="system" width="107" height="128"/>
+        <image name="medal" catalog="system" width="121" height="128"/>
         <image name="soccerball" catalog="system" width="128" height="123"/>
         <image name="table.fill" catalog="system" width="128" height="93"/>
     </resources>
