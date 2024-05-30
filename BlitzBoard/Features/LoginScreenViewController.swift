@@ -23,6 +23,28 @@ class LoginScreenViewController: UIViewController {
     // MARK: Private Variables
     
     private lazy var viewModel = LoginViewModel(delegate: self)
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow),
+                                               name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide),
+                                               name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc private func keyboardWillShow(notification: NSNotification) {
+           if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+               if self.view.frame.origin.y == 0 {
+                   self.view.frame.origin.y -= 190
+               }
+           }
+       }
+
+       @objc private func keyboardWillHide(notification: NSNotification) {
+           if self.view.frame.origin.y != 0 {
+               self.view.frame.origin.y = 0
+           }
+       }
 }
 
 // MARK: Extensions
