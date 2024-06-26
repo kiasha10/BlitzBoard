@@ -28,6 +28,7 @@ struct TableViewIdentifiers {
     static let customCellIdentifier = "HomeScreenTableViewCell"
     static let headerViewIdentifier = "HomeScreenHeaderView"
     static let fixtureTableIdentifier = "FixturesScreenTableViewCell"
+    static let topScorersTableIdentifier = "TopScorersTableViewCell"
 }
 
 struct MonthConverter {
