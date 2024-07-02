@@ -67,6 +67,6 @@ extension FixturesScreenViewController: ViewModelDelegate {
     }
     
     func show(error: String) {
-        
+        showAlert(message: "Oh No! An Error Occured")
     }
 }

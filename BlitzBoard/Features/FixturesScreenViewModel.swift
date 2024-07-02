@@ -43,7 +43,8 @@ class FixturesScreenViewModel {
                 self?.fixtures = fetchedFixtures
                 self?.delegate?.reloadView()
             case .failure(let error):
-                print("Error: \(error)")
+                print(error)
+                self?.delegate?.show(error: error.rawValue)
             }
         }
     }
