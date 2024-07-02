@@ -12,9 +12,8 @@ class TopScorersScreenTableViewCell: UITableViewCell {
     
     @IBOutlet weak var playerPlace: UILabel!
     @IBOutlet weak var playerName: UILabel!
-    @IBOutlet weak var playerImage: UIImageView!
+    @IBOutlet weak var teamLogo: UIImageView!
     @IBOutlet weak var teamName: UILabel!
-    @IBOutlet weak var goals: UILabel!
     
     // MARK: Functions
     
@@ -24,9 +23,8 @@ class TopScorersScreenTableViewCell: UITableViewCell {
     
     func configure(topScorers: PlayerModel) {
         playerPlace.text = "\(topScorers.playerPlace)"
-        playerName.text = "\(topScorers.playerName)"
-        teamName.text = "\(topScorers.teamName)"
-        goals.text = "\(topScorers.goals)"
+        playerName.text = convertToShorthand(playerName: topScorers.playerName)
+        teamName.text = convertTeamToShorthand(teamName: topScorers.teamName)
     }
     
     static func tableViewNib() -> UINib {

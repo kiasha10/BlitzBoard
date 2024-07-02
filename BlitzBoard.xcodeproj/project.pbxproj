@@ -20,6 +20,8 @@
 		457D20102C2C01D30080A3D0 /* TopScorersScreenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457D200F2C2C01D30080A3D0 /* TopScorersScreenRepository.swift */; };
 		457D20132C2C118F0080A3D0 /* TopScorersScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457D20122C2C118F0080A3D0 /* TopScorersScreenTableViewCell.swift */; };
 		457D20152C2C11AF0080A3D0 /* TopScorersScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 457D20142C2C11AF0080A3D0 /* TopScorersScreenTableViewCell.xib */; };
+		457D20192C2EC7730080A3D0 /* TopScorersHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457D20182C2EC7730080A3D0 /* TopScorersHeaderView.swift */; };
+		457D201B2C2EC7950080A3D0 /* TopScorersHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 457D201A2C2EC7950080A3D0 /* TopScorersHeaderView.xib */; };
 		45AA3EAE2BC81E3F00A2C05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EAD2BC81E3F00A2C05E /* AppDelegate.swift */; };
 		45AA3EB02BC81E3F00A2C05E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA3EAF2BC81E3F00A2C05E /* SceneDelegate.swift */; };
 		45AA3EB72BC81E4000A2C05E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45AA3EB62BC81E4000A2C05E /* Assets.xcassets */; };
@@ -77,6 +79,8 @@
 		457D200F2C2C01D30080A3D0 /* TopScorersScreenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersScreenRepository.swift; sourceTree = "<group>"; };
 		457D20122C2C118F0080A3D0 /* TopScorersScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersScreenTableViewCell.swift; sourceTree = "<group>"; };
 		457D20142C2C11AF0080A3D0 /* TopScorersScreenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopScorersScreenTableViewCell.xib; sourceTree = "<group>"; };
+		457D20182C2EC7730080A3D0 /* TopScorersHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopScorersHeaderView.swift; sourceTree = "<group>"; };
+		457D201A2C2EC7950080A3D0 /* TopScorersHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopScorersHeaderView.xib; sourceTree = "<group>"; };
 		45AA3EAA2BC81E3F00A2C05E /* BlitzBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlitzBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45AA3EAD2BC81E3F00A2C05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45AA3EAF2BC81E3F00A2C05E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 			children = (
 				457D20122C2C118F0080A3D0 /* TopScorersScreenTableViewCell.swift */,
 				457D20142C2C11AF0080A3D0 /* TopScorersScreenTableViewCell.xib */,
+				457D20182C2EC7730080A3D0 /* TopScorersHeaderView.swift */,
+				457D201A2C2EC7950080A3D0 /* TopScorersHeaderView.xib */,
 			);
 			path = TopScorersScreenTableViewCell;
 			sourceTree = "<group>";
@@ -445,6 +451,7 @@
 				45D98DFF2BE963CC00AE0353 /* HomeScreenTableViewCell.xib in Resources */,
 				45D98DE72BE8FA9B00AE0353 /* SettingsScreen.storyboard in Resources */,
 				45D98DE32BE8FA4300AE0353 /* TopScorersScreen.storyboard in Resources */,
+				457D201B2C2EC7950080A3D0 /* TopScorersHeaderView.xib in Resources */,
 				45D98DD02BE8F31A00AE0353 /* TabBar.storyboard in Resources */,
 				45AA3EBA2BC81E4000A2C05E /* LaunchScreen.storyboard in Resources */,
 				457D20152C2C11AF0080A3D0 /* TopScorersScreenTableViewCell.xib in Resources */,
@@ -491,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D98DCD2BE8ECBE00AE0353 /* Coredata.xcdatamodeld in Sources */,
+				457D20192C2EC7730080A3D0 /* TopScorersHeaderView.swift in Sources */,
 				45C98D782BFB4071005F5382 /* LoginScreenViewModel.swift in Sources */,
 				45FF26672BC90E6D00F75682 /* APIHandler.swift in Sources */,
 				45C98D772BFB4071005F5382 /* LoginScreenViewController.swift in Sources */,

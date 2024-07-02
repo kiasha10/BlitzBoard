@@ -12,7 +12,7 @@ struct PlayerModel: Codable {
     let playerPlace: String
     let playerName: String
     let teamName: String
-    let goals:String
+    let goals: String
 
   enum CodingKeys: String, CodingKey {
     case playerPlace = "player_place"

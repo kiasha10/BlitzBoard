@@ -10,12 +10,11 @@ class TopScorersScreenViewController: UIViewController {
     
     // MARK: IBOutlest
     
-    @IBOutlet weak var wallpaper3: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: Variables
     
-    private lazy var viewModel = TopScorerViewModel()
+    private lazy var viewModel = TopScorerScreenViewModel(repository: TopScorersRepository(), delegate: self)
     
     // MARK: Functions
     
@@ -28,9 +27,14 @@ class TopScorersScreenViewController: UIViewController {
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(TopScorersScreenTableViewCell.tableViewNib(), 
+                           forCellReuseIdentifier: TableViewIdentifiers.topScorersTableIdentifier)
+        tableView.register(UINib(nibName: TableViewIdentifiers.topScorersHeaderIdentifier,
+                                 bundle: nil),
+                           forHeaderFooterViewReuseIdentifier: TableViewIdentifiers.topScorersHeaderIdentifier)
     }
 }
+
     // MARK: Extensions
 
 extension TopScorersScreenViewController: UITableViewDataSource, UITableViewDelegate {
@@ -40,7 +44,8 @@ extension TopScorersScreenViewController: UITableViewDataSource, UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewIdentifiers.topScorersTableIdentifier) as? TopScorersScreenTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewIdentifiers.topScorersTableIdentifier) 
+                as? TopScorersScreenTableViewCell
         else {
             return UITableViewCell()
         }
@@ -50,10 +55,23 @@ extension TopScorersScreenViewController: UITableViewDataSource, UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        115
+        60
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(
+            withIdentifier: TableViewIdentifiers.topScorersHeaderIdentifier) as? TopScorersScreenHeaderView else {
+            return UITableViewHeaderFooterView()
+        }
+        
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        50
     }
 }
-extension TopScorersScreenViewController : ViewModelDelegate {
+extension TopScorersScreenViewController: ViewModelDelegate {
     
     func reloadView() {
             self.tableView.reloadData()

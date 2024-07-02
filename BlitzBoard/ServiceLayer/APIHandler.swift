@@ -90,3 +90,21 @@ func convertToShorthand(teamName: String) -> String {
     ]
     return teamNameMapping[teamName] ?? teamName
 }
+
+func convertToShorthand(playerName: String) -> String {
+    let playerNameMapping: [String: String] = [
+    "Mohamed Salah": "M.Salah",
+    "Son Heung-Min": "S.Heung-Min",
+    "Matheus Cunha": "M.Cunha"
+    ]
+    return playerNameMapping[playerName] ?? playerName
+}
+
+func convertTeamToShorthand(teamName: String) -> String {
+    let teamNameMapping: [String: String] = [
+        "Wolverhampton Wanderers": "Wolverhampton",
+        "AFC Bournemouth": "Bournemouth",
+        "Tottenham Hotspur": "Tottenham"
+    ]
+    return teamNameMapping[teamName] ?? teamName
+}
