@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="tintColor"/>
+
                     </tabBar>
                     <connections>
                         <segue destination="fEf-nn-gLM" kind="relationship" relationship="viewControllers" id="fps-u3-NQA"/>
@@ -94,7 +95,11 @@
         <scene sceneID="lMF-4E-5jg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Nev-Lb-6kV" userLabel="TopScorersScreen" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Top Scorers" image="medal" catalog="system" id="BNB-Zs-wKc"/>
+
+                    <tabBarItem key="tabBarItem" title="Top Scorers" image="rosette" catalog="system" id="BNB-Zs-wKc">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sIa-Rm-nrx">
@@ -125,5 +130,8 @@
         <image name="medal" catalog="system" width="121" height="128"/>
         <image name="soccerball" catalog="system" width="128" height="123"/>
         <image name="table.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
