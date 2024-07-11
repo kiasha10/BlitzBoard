@@ -14,6 +14,7 @@ class TopScorersScreenTableViewCell: UITableViewCell {
     @IBOutlet weak var playerName: UILabel!
     @IBOutlet weak var teamLogo: UIImageView!
     @IBOutlet weak var teamName: UILabel!
+    @IBOutlet weak var playerStats: UIButton!
     
     // MARK: Functions
     

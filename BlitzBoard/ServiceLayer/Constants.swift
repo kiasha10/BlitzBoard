@@ -11,17 +11,14 @@ struct EndPoint {
     static let leagueTableEndpoint =
     "https://apiv3.apifootball.com/" +
     "?action=get_standings&league_id=152&" +
-
     "APIkey=d842804c1b06016d9030ba43942f5169c29bf74941e67047f05d1c2a98b6241a"
 
-    
     static let topScorers =
     "https://apiv3.apifootball.com/" +
     "?action=get_topscorers&league_id=152&" +
     "APIkey=d842804c1b06016d9030ba43942f5169c29bf74941e67047f05d1c2a98b6241a"
     
     static let gameFixtures =
-
     "https://apiv3.apifootball.com/?action=get_events&from=2024-05-19&to=2024-05-20&league_id=152&" +
     "APIkey=d842804c1b06016d9030ba43942f5169c29bf74941e67047f05d1c2a98b6241a"
 

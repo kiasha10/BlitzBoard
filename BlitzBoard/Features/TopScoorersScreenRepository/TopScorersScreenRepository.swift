@@ -25,7 +25,7 @@ class TopScorersRepository: TopScorersRepositoryType {
     // MARK: Functions
     
     func fetchTopScorers(completion: @escaping TopScorerResult) {
-        apiHandler.request(endpoint: EndPoint.topScorers, method: "GET", completion: completion)
+        apiHandler.request(endpoint: EndPoint.topScorers, method: .GET, completion: completion)
     }
     func fetchTeamLogo(completion: @escaping TopScorerResult) {
         apiHandler.request(endpoint: EndPoint.leagueTableEndpoint, method: "GET", completion: completion)
